@@ -57,7 +57,11 @@ export default function Hero() {
 
             {/* Practical Electronic Structure & Head-Gordon */}
             <p className="hero-bio">
-              Following this journey of abstractions that many would consider tangential to formal electronic structure theory, I worked with Prof. Martin Head-Gordon at Berkeley where I assisted in the rational design efforts for clean energy materials: metal-organic frameworks for gas storage and separations. This gave me a broad perspective on practical electronic structure theory and simulations. Despite improvements, the computational complexity of the CI (Configuration Interaction) and CC (Coupled Cluster) Hamiltonians entails that only a handful of electrons, about ten on your laptop, and about twenty if you have the luxury of high-performance compute, can be treated accurately in molecular systems. This barrier is not likely to be overcome by quantum hardware of any architecture: superconducting qubits, trapped ions, atoms, or silicon photonics in the next two years. Density Matrix Renormalization Group (DMRG) remains the best CI solver, and Density Functional Theory (DFT) remains the workhorse for practical computations for material systems, and is likely to remain so in the foreseeable future.
+              Following this journey of abstractions that many would consider tangential to formal electronic structure theory, I worked with Prof. Martin Head-Gordon at Berkeley where I assisted in the rational design efforts for clean energy materials: metal-organic frameworks for gas storage and separations.
+            </p>
+
+            <p className="hero-bio">
+              This gave me a broad perspective on practical electronic structure theory and simulations. Despite improvements, the computational complexity of the CI (Configuration Interaction) and CC (Coupled Cluster) Hamiltonians entails that only a handful of electrons, about ten on your laptop, and about twenty if you have the luxury of high-performance compute, can be treated accurately in molecular systems. This barrier is not likely to be overcome by quantum hardware of any architecture: superconducting qubits, trapped ions, atoms, or silicon photonics in the next two years. Density Matrix Renormalization Group (DMRG) remains the best CI solver, and Density Functional Theory (DFT) remains the workhorse for practical computations for material systems, and is likely to remain so in the foreseeable future.
             </p>
 
             {/* AI & Multimodal LLMs */}
