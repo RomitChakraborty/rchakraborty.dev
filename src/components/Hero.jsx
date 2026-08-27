@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section id="about" className="hero-section">
       <div className="academic-container hero-grid">
-        {/* Left Column: Portrait & Minimal Text Links (No Icons/Images) */}
+        {/* Left Column: Portrait & Minimal Links */}
         <div className="hero-portrait-col">
           <div className="portrait-frame">
             <img 
@@ -19,7 +19,7 @@ export default function Hero() {
             <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer" className="minimal-text-link">
               Point Reyes Sound ↗
             </a>
-            <a href={profileData.links.googleScholar} target="_blank" rel="noopener noreferrer" className="minimal-text-link">
+            <a href="https://scholar.google.com/citations?user=m4HlFRIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="minimal-text-link">
               Google Scholar ↗
             </a>
             <a href={profileData.links.personalGithub} target="_blank" rel="noopener noreferrer" className="minimal-text-link">
@@ -34,7 +34,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Column: Clean Bio & Point Reyes Sound Affiliation */}
+        {/* Right Column: Exact About Me Text & Point Reyes Sound Spotlight */}
         <div className="hero-content-col">
           <h1 className="hero-name">Romit Chakraborty</h1>
           <div className="hero-subtitle">
@@ -43,23 +43,62 @@ export default function Hero() {
             </a>
           </div>
 
+          {/* User Exact Text - Paragraph 1 */}
           <p className="hero-bio">
-            I am a computational quantum chemist and AI researcher specializing in <strong>non-equilibrium electronic structure</strong>, <strong>kinetic transport theory</strong>, and <strong>fault-tolerant quantum computing (FTQC)</strong>.
+            Welcome to my humble internet abode! I leverage the basic tenets of quantum chemistry to conduct simulations of clean energy materials with a broad view toward developing efficient energy storage and conversion systems. Central to these pursuits are the core principles of quantum mechanics, whose application enables the prediction of the physical and chemical characteristics of materials needed for the realization of a sustainable energy infrastructure. My scholarly pursuits are informed by the foundations of Density Functional Theory (DFT) and Reduced Density Matrix (RDM) theory, both of which furnish succinct descriptions of the Hilbert Space for wave functions that convey information about the electronic and vibrational degrees of freedom. DFT, a workhorse for practical materials simulations, is an effective one-electron theory that elegantly side-steps the well-known N-representability problem that applies to the treatment of many electron quantum systems. For a formal and concise outline of effective one-body constraints that ensure Pure N-representability, which Generalise the well-known Pauli Conditions as they apply to some chemical and biological systems, please peruse my <a href="https://www.proquest.com/openview/4e94e4be5bd5b67d83add173091d5b31/1?pq-origsite=gscholar&cbl=18750" target="_blank" rel="noopener noreferrer">dissertation on this topic</a>.
           </p>
 
+          {/* User Exact Text - Paragraph 2 */}
           <p className="hero-bio">
-            My work develops mathematical formulations and performant simulation pipelines that resolve fundamental bottlenecks in electronic structure theory—spanning from <strong>Quantum Boltzmann Equation (QBE-SCF)</strong> entropic regularization to block-encoded qubitization and physics-grounded generative foundation models.
+            Following this journey of abstractions that many would consider tangential to formal electronic structure theory, I worked with Prof. Martin Head-Gordon at Berkeley where I assisted in the rational design efforts for clean energy materials: metal-organic frameworks for gas storage and separations. This gave me a broad perspective on practical electronic structure theory and simulations. Despite improvements, the computational complexity of the CI (Configuration Interaction) and CC (Coupled Cluster) Hamiltonians entails that only a handful of electrons, about ten on your laptop, and about twenty if you have the luxury of high-performance compute, can be treated accurately in molecular systems. This barrier is not likely to be overcome by quantum hardware of any architecture: superconducting qubits, trapped ions, atoms, or silicon photonics in the next two years. Density Matrix Renormalization Group (DMRG) remains the best CI solver, and Density Functional Theory (DFT) remains the workhorse for practical computations for material systems, and is likely to remain so in the foreseeable future.
           </p>
 
-          <p className="hero-bio" style={{ marginBottom: 0 }}>
-            Ph.D. in Theoretical & Computational Chemistry from the <strong>University of Chicago</strong> (Advisor: Prof. David A. Mazziotti) and postdoctoral training at <strong>UC Berkeley</strong> and <strong>Lawrence Berkeley National Laboratory</strong> (Advisor: Prof. Martin Head-Gordon).
+          {/* User Exact Text - Paragraph 3 */}
+          <p className="hero-bio">
+            As an AI optimist, I am enthused by the prospect of using transformer-based architectures to learn more about the physical world. I enjoy building extensions to solutions in the natural sciences by programming multimodal large language models. Please find below some examples of applications and services derived from programming multimodal large language models. These are relatively simple augmentations of the underlying LLMs (GPT-4o for instance) that i) employ low rank adaptations of a large model by fine-tuning it with the QM9 dataset, and ii) train a large vision model (GPT-4o) to recognize molecular orbitals via prompt engineering.
           </p>
 
+          <div className="ongoing-work-box">
+            <div className="ongoing-work-title">Ongoing Research & Computational Directions:</div>
+            <ul className="ongoing-work-list">
+              <li><strong>i)</strong> Agentic Workflows that partition the Hilbert Space into interacting and non-interacting subsystems,</li>
+              <li><strong>ii)</strong> LoRA fine tuning of Multimodal Large Language models for Orbital Recognition,</li>
+              <li><strong>iii)</strong> Models for competitive adsorption in MOFs with open metal sites, and</li>
+              <li><strong>iv)</strong> Accurate Depictions for Anharmonicity in Small Molecule Binding to Open Metal sites in MOFs.</li>
+            </ul>
+            <p className="ongoing-work-note">
+              The first two of the above were carried out under the auspices of the Accelerate Foundation Models Research Grant generously provided by Microsoft Azure during my stint as a staff researcher at UChicago from 2023–2024. The last two are unpublished yet promising projects I undertook at UC Berkeley. Find out more info about peer reviewed and archived articles on my <a href="https://scholar.google.com/citations?user=m4HlFRIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>.
+            </p>
+          </div>
+
+          {/* User Exact Text - Paragraph 4 */}
+          <p className="hero-bio">
+            I seek research and development opportunities that lie at the intersection of quantum chemistry, materials science, quantum and classical information theory, and that can leverage my skills in programming multimodal large language models. Please peruse my résumé. Please note that none of the code that are due to my affiliations with PsiQuantum are available for public consumption and neither have they been at any stage.
+          </p>
+
+          {/* Concise Point Reyes Sound, Inc. Section */}
+          <div className="prs-spotlight-box">
+            <h3 className="prs-spotlight-title">Point Reyes Sound, Inc.</h3>
+            <p className="prs-spotlight-desc">
+              <strong>Point Reyes Sound, Inc.</strong> is a privately held theoretical and computational research pod specializing in building first-principles <strong>Quantum Boltzmann Solvers (QBE-SCF)</strong>, non-equilibrium electronic structure methods, and phase-space kinetic transport frameworks for molecules and functional materials.
+            </p>
+            <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer" className="prs-explore-link">
+              Explore Point Reyes Sound, Inc. &rarr;
+            </a>
+          </div>
+
+          {/* Contact Section with Requested Emails */}
           <div className="hero-contact-row">
             <span className="contact-label">Contact:</span>
-            <a href={`mailto:${profileData.email}`} className="contact-email">
-              {profileData.email}
-            </a>
+            <div className="contact-emails-group">
+              <a href="mailto:romit@pointreyessound.com" className="contact-email">
+                romit@pointreyessound.com
+              </a>
+              <span className="email-sep">&bull;</span>
+              <a href="mailto:romit@uchicago.edu" className="contact-email">
+                romit@uchicago.edu
+              </a>
+            </div>
           </div>
         </div>
       </div>

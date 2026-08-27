@@ -259,24 +259,114 @@ a:hover {
   color: var(--text-primary);
 }
 
+.ongoing-work-box {
+  background: var(--bg-secondary);
+  border-left: 3px solid var(--royal-blue);
+  padding: 16px 20px;
+  margin: 18px 0 20px;
+  border-radius: 0 4px 4px 0;
+}
+
+.ongoing-work-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.ongoing-work-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 12px;
+}
+
+.ongoing-work-list li {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.ongoing-work-note {
+  font-size: 0.94rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.prs-spotlight-box {
+  background: #fdfdfd;
+  border: 1px solid var(--border-medium);
+  border-left: 4px solid var(--royal-blue);
+  padding: 18px 22px;
+  margin: 24px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.prs-spotlight-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--royal-blue);
+  margin-bottom: 6px;
+}
+
+.prs-spotlight-desc {
+  font-size: 1.02rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.prs-explore-link {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--royal-blue);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.prs-explore-link:hover {
+  text-decoration: underline;
+}
+
 .hero-contact-row {
-  margin-top: 10px;
+  margin-top: 14px;
   padding-top: 14px;
   border-top: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   font-size: 0.95rem;
 }
 
 .contact-label {
   color: var(--text-muted);
+  font-weight: 600;
+}
+
+.contact-emails-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .contact-email {
   color: var(--royal-blue);
   font-family: var(--font-mono);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
+.email-sep {
+  color: var(--text-muted);
 }
 
 /* Research Section */
