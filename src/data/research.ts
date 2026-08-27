@@ -33,13 +33,13 @@ export const researchPillars: ResearchPillar[] = [
         label: "arXiv:2608.14979 — QBE-SCF Lead Preprint",
         type: "preprint",
         url: "https://arxiv.org/abs/2608.14979",
-        badge: "Lead Preprint"
+        badge: "Preprint"
       },
       {
         label: "Point Reyes Sound, Inc. — Research Pod Portal",
         type: "pod",
         url: "https://www.pointreyessound.com",
-        badge: "Official Pod"
+        badge: "Pod"
       },
       {
         label: "Point Reyes Sound — Open Research GitHub",

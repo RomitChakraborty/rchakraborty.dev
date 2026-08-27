@@ -81,10 +81,10 @@ export default function Research({ onSelectDomain }) {
             <div className="materials-header">
               <h4 className="materials-heading">Relevant Materials & Publications:</h4>
               <button 
-                className="filter-pubs-action-btn"
+                className="filter-pubs-action-btn" 
                 onClick={() => handleExploreAll(activePillar.categoryKey)}
               >
-                Browse All Related Papers Below &darr;
+                Browse All Related Papers Below ↓
               </button>
             </div>
 
@@ -99,7 +99,7 @@ export default function Research({ onSelectDomain }) {
                 >
                   <div className="material-link-header">
                     <span className="material-badge">{mat.badge || mat.type}</span>
-                    <span className="material-arrow">&nearr;</span>
+                    <span className="material-arrow">↗</span>
                   </div>
                   <div className="material-link-label">{mat.label}</div>
                 </a>
