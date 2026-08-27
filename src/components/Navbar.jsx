@@ -3,41 +3,35 @@ import React from 'react';
 export default function Navbar({ activeSection, theme, onToggleTheme, onOpenCV }) {
   return (
     <>
-      {/* Top Institutional Ribbon */}
+      {/* Top Quiet Ribbon */}
       <div className="top-ribbon">
         <div className="academic-container">
           <div className="ribbon-pedigree">
-            <span className="ribbon-tag">University of Chicago (Ph.D.) &bull; UC Berkeley &bull; Lawrence Berkeley National Lab</span>
+            <span>University of Chicago (Ph.D.) &bull; UC Berkeley & LBNL &bull; Point Reyes Sound, Inc.</span>
           </div>
           <div className="ribbon-links">
             <a href="https://www.pointreyessound.com" target="_blank" rel="noopener noreferrer" className="ribbon-link">
-              Point Reyes Sound, Inc. &rarr;
-            </a>
-            <a href="https://github.com/RomitChakraborty" target="_blank" rel="noopener noreferrer" className="ribbon-link">
-              GitHub (Personal)
-            </a>
-            <a href="https://github.com/point-reyes-sound" target="_blank" rel="noopener noreferrer" className="ribbon-link">
-              GitHub (PRS Org)
+              pointreyessound.com ↗
             </a>
           </div>
         </div>
       </div>
 
-      {/* Main Sticky Navigation */}
+      {/* Main Navigation */}
       <nav className="academic-navbar">
         <div className="academic-container navbar-inner">
           <div className="nav-brand">
             <a href="#about" className="brand-title">Romit Chakraborty, Ph.D.</a>
-            <span className="brand-subtitle">Computational Quantum Chemist & AI Researcher</span>
+            <span className="brand-subtitle">Theoretical Chemistry & AI</span>
           </div>
 
           <div className="nav-menu">
-            <a href="#about" className={`nav-item ${activeSection === 'about' ? 'active' : ''}`}>About</a>
-            <a href="#research" className={`nav-item ${activeSection === 'research' ? 'active' : ''}`}>Research</a>
-            <a href="#publications" className={`nav-item ${activeSection === 'publications' ? 'active' : ''}`}>Publications</a>
-            <a href="#experience" className={`nav-item ${activeSection === 'experience' ? 'active' : ''}`}>Experience</a>
-            <a href="#awards" className={`nav-item ${activeSection === 'awards' ? 'active' : ''}`}>Awards</a>
-            <a href="#talks" className={`nav-item ${activeSection === 'talks' ? 'active' : ''}`}>Talks</a>
+            <a href="#about" className="nav-item">About</a>
+            <a href="#research" className="nav-item">Research</a>
+            <a href="#publications" className="nav-item">Publications</a>
+            <a href="#experience" className="nav-item">Experience</a>
+            <a href="#awards" className="nav-item">Honors</a>
+            <a href="#talks" className="nav-item">Talks</a>
           </div>
 
           <div className="nav-actions">
@@ -47,14 +41,14 @@ export default function Navbar({ activeSection, theme, onToggleTheme, onOpenCV }
               aria-label="Toggle Theme"
               title="Toggle Light/Dark Theme"
             >
-              {theme === 'dark' ? '☀️ Light' : '🌙 Dark'}
+              {theme === 'dark' ? '☀️' : '🌙'}
             </button>
 
             <button 
               className="nav-cv-btn"
               onClick={onOpenCV}
             >
-              📄 Curriculum Vitae
+              Curriculum Vitae
             </button>
           </div>
         </div>
