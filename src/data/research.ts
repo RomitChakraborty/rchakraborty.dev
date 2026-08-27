@@ -18,7 +18,7 @@ export const researchPillars: ResearchPillar[] = [
   {
     id: "qbe-scf",
     categoryKey: "qbe",
-    title: "Quantum Boltzmann Solvers (QBE-SCF)",
+    title: "Quantum Boltzmann Solvers",
     subtitle: "Kinetic Transport & Entropic Regularization of Mean-Field Singularities",
     overview: "Conventional mean-field electronic structure methods frequently break down near degeneracies, conical intersections, and strong correlation regimes due to singularities in the self-consistent field (SCF). Pioneered at Point Reyes Sound, Inc., Quantum Boltzmann Equation Self-Consistent-Field (QBE-SCF) propagates the one-electron reduced density matrix (1-RDM) in phase space via a Bhatnagar-Gross-Krook (BGK) collision operator, achieving natural monotonic entropic regularization across mean-field singularities without artificial symmetry breaking.",
     keyContributions: [
@@ -52,7 +52,7 @@ export const researchPillars: ResearchPillar[] = [
   {
     id: "agentic-ai",
     categoryKey: "ai",
-    title: "Agentic AI for Quantum Chemistry",
+    title: "Agentic AI",
     subtitle: "Multimodal Foundation Models, LoRA Adaptations & Automated Orbital Recognition",
     overview: "Leveraging transformer architectures and multimodal large language models to accelerate scientific discovery in quantum chemistry. We build agentic systems that automate complex electronic structure workflows—partitioning the many-electron Hilbert space into interacting and non-interacting subspaces, fine-tuning multimodal models (such as GPT-4o) using the QM9 dataset via Low-Rank Adaptation (LoRA), and engineering vision models to identify and categorize molecular orbitals directly from 3D iso-surfaces.",
     keyContributions: [
@@ -144,7 +144,7 @@ export const researchPillars: ResearchPillar[] = [
   {
     id: "generalized-pauli",
     categoryKey: "pauli",
-    title: "Generalized Pauli Conditions & Pure N-Representability",
+    title: "Generalized Pauli Conditions",
     subtitle: "Effective One-Body Constraints, 1-RDM Polytope Boundaries, and Wavefunction Sparsity",
     overview: "Under the mentorship of Prof. David A. Mazziotti at the University of Chicago, we investigated the mathematical foundations of the generalized Pauli exclusion principle (Borland-Dennis and Klyachko constraints). We derived analytical conditions under which occupation numbers of the one-electron reduced density matrix (1-RDM) saturate boundary facets of the Pure N-representability polytope, proving that pinning enforces structural sparsity in CI wavefunctions and establishes spectral criteria for open quantum system dynamics.",
     keyContributions: [

@@ -26,7 +26,7 @@ export default function Research({ onSelectDomain }) {
     <section id="research" className="section-wrapper">
       <div className="academic-container">
         <div className="section-header">
-          <h2 className="section-title">Research Programs</h2>
+          <h2 className="section-title">Research Program</h2>
           <p className="section-subtitle">
             Theoretical Formulations, Kinetic Transport Solvers, and Materials Simulations
           </p>
