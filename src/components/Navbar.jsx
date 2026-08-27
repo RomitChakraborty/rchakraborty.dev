@@ -6,9 +6,6 @@ export default function Navbar({ onOpenCV }) {
       <div className="academic-container navbar-inner">
         <div className="nav-brand">
           <a href="#about" className="brand-title">Romit Chakraborty</a>
-          <a href="https://www.pointreyessound.com" target="_blank" rel="noopener noreferrer" className="brand-subtitle">
-            Point Reyes Sound, Inc.
-          </a>
         </div>
 
         <div className="nav-menu-group">
