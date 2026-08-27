@@ -11,15 +11,12 @@ export default function Navbar({ onOpenCV }) {
           </a>
         </div>
 
-        <div className="nav-menu">
-          <a href="#about" className="nav-item">About</a>
-          <a href="#research" className="nav-item">Research</a>
-          <a href="#publications" className="nav-item">Publications</a>
-        </div>
-
-        <div className="nav-actions">
+        <div className="nav-menu-group">
+          <a href="#about" className="nav-tab">About</a>
+          <a href="#research" className="nav-tab">Research</a>
+          <a href="#publications" className="nav-tab">Publications</a>
           <button 
-            className="nav-cv-btn"
+            className="nav-tab nav-tab-cv"
             onClick={onOpenCV}
           >
             Curriculum Vitae

@@ -77,22 +77,22 @@ a:hover {
   padding: 0 24px;
 }
 
-/* Navigation Bar */
+/* Navigation Bar: Solid Royal Blue Banner matching Curriculum Vitae styling */
 .academic-navbar {
   position: sticky;
   top: 0;
-  background: rgba(255, 255, 255, 0.96);
-  border-bottom: 1px solid var(--border-subtle);
+  background: var(--royal-blue);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   z-index: 1000;
-  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0, 71, 187, 0.18);
 }
 
 .navbar-inner {
-  height: 68px;
+  height: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
 }
 
 .nav-brand {
@@ -101,67 +101,73 @@ a:hover {
 }
 
 .brand-title {
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #ffffff !important;
   text-decoration: none;
   letter-spacing: -0.01em;
 }
 
-.brand-subtitle {
-  font-size: 0.95rem;
-  color: var(--royal-blue);
-  font-style: normal;
-  font-weight: 600;
+.brand-title:hover {
   text-decoration: none;
+  color: #ffffff;
 }
 
-.brand-subtitle:hover {
-  color: var(--royal-blue-hover);
-  text-decoration: underline;
-}
-
-.nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.nav-item {
-  font-family: var(--font-serif);
-  font-size: 1.05rem;
-  color: var(--text-secondary);
+.brand-subtitle {
+  font-size: 0.92rem;
+  color: #dce7fa;
+  font-style: normal;
   font-weight: 500;
   text-decoration: none;
 }
 
-.nav-item:hover {
-  color: var(--royal-blue);
-  text-decoration: none;
+.brand-subtitle:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
-.nav-actions {
+/* Nav Menu Group: Zero gap between contiguous tabs */
+.nav-menu-group {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  height: 64px;
+}
+
+.nav-tab {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: #ffffff !important;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 20px;
   display: flex;
   align-items: center;
-}
-
-.nav-cv-btn {
-  background: var(--royal-blue);
-  color: #ffffff !important;
-  font-family: var(--font-serif);
-  font-size: 0.95rem;
-  font-weight: 600;
-  padding: 6px 16px;
-  border-radius: 4px;
-  border: 1px solid var(--royal-blue);
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.22);
   cursor: pointer;
-  text-decoration: none;
+  height: 100%;
   transition: var(--transition);
 }
 
-.nav-cv-btn:hover {
+.nav-tab:last-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.nav-tab:hover {
   background: var(--royal-blue-hover);
-  border-color: var(--royal-blue-hover);
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.nav-tab-cv {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.nav-tab-cv:hover {
+  background: rgba(255, 255, 255, 0.28);
 }
 
 /* Hero Section */
