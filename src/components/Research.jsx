@@ -71,7 +71,7 @@ export default function Research() {
                       rel="noopener noreferrer"
                       className="paper-action-link"
                     >
-                      DOI: {paper.doi} ↗
+                      {paper.url.includes('arxiv.org') ? `arXiv:${paper.doi} ↗` : `DOI: ${paper.doi} ↗`}
                     </a>
 
                     <button 

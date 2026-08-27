@@ -13,6 +13,23 @@ export interface PublishedPaper {
 
 export const publishedPapers: PublishedPaper[] = [
   {
+    id: "qbe-scf-arxiv-2026",
+    title: "Quantum Boltzmann Equation Self-Consistent-Field Method for Entropic Regularization of Mean-Field Singularities near Conical Intersections",
+    authors: "Chakraborty, R.",
+    journal: "arXiv:2608.14979 [quant-ph / physics.chem-ph]",
+    year: 2026,
+    doi: "2608.14979",
+    url: "https://arxiv.org/abs/2608.14979",
+    summary: "Introduces a Quantum Boltzmann Equation self-consistent-field (QBE-SCF) framework that propagates the one-electron reduced density matrix via a Bhatnagar-Gross-Krook (BGK) collision operator to achieve natural entropic regularization across mean-field singularities.",
+    bibtex: `@article{chakraborty2026qbescf,
+  title={Quantum Boltzmann Equation Self-Consistent-Field Method for Entropic Regularization of Mean-Field Singularities near Conical Intersections},
+  author={Chakraborty, Romit},
+  journal={arXiv preprint arXiv:2608.14979},
+  year={2026},
+  url={https://arxiv.org/abs/2608.14979}
+}`
+  },
+  {
     id: "pccp-hot-2024",
     title: "Quantum Chemical Modeling of Hydrogen Binding in Metal–Organic Frameworks: Validation, Insight, Predictions and Challenges",
     authors: "Chakraborty, R., Talbot, J. J., Shen, H., Yabuuchi, Y., Jiang, H., Carsch, K.M., Furukawa, H., Long, J.R., Head-Gordon, M.",
