@@ -1,10 +1,23 @@
-import React, { useState } from 'react';
-import { publicationsData } from '../data/publications';
+import React, { useState, useEffect } from 'react';
+import { publishedPapers } from '../data/publishedPapers';
 
-export default function Publications() {
+export default function Publications({ selectedDomain, onDomainChange }) {
   const [filter, setFilter] = useState('all');
   const [copiedId, setCopiedId] = useState(null);
   const [openBibtexId, setOpenBibtexId] = useState(null);
+
+  useEffect(() => {
+    if (selectedDomain) {
+      setFilter(selectedDomain);
+    }
+  }, [selectedDomain]);
+
+  const handleFilterSelect = (newFilter) => {
+    setFilter(newFilter);
+    if (onDomainChange) {
+      onDomainChange(newFilter);
+    }
+  };
 
   const handleCopyBibtex = (item) => {
     navigator.clipboard.writeText(item.bibtex);
@@ -16,11 +29,11 @@ export default function Publications() {
     setOpenBibtexId(openBibtexId === id ? null : id);
   };
 
-  const filteredPubs = publicationsData.filter(pub => {
+  const filteredPubs = publishedPapers.filter(pub => {
     if (filter === 'all') return true;
-    if (filter === 'submitted') return pub.category === 'submitted';
-    if (filter === 'in-print') return pub.category === 'in-print';
-    if (filter === 'hot') return pub.isHotArticle;
+    if (filter === 'qbe') return pub.domain === 'qbe';
+    if (filter === 'mof') return pub.domain === 'mof';
+    if (filter === 'pauli') return pub.domain === 'pauli';
     return true;
   });
 
@@ -28,130 +41,112 @@ export default function Publications() {
     <section id="publications" className="section-wrapper">
       <div className="academic-container">
         <div className="section-header">
-          <div>
-            <h2 className="section-title">Publications & Manuscripts</h2>
-            <p className="section-subtitle">Peer-Reviewed Articles, Preprints, and Computational Methodologies</p>
-          </div>
+          <h2 className="section-title">Published Articles & Preprints</h2>
+          <p className="section-subtitle">
+            Peer-Reviewed Literature and Indexed Scholarly Works
+          </p>
         </div>
 
-        {/* Clean Filter Pills */}
-        <div className="pub-filters">
+        {/* Domain Filter Pills */}
+        <div className="pub-domain-filters">
           <button 
-            className={`pub-filter-btn ${filter === 'all' ? 'active' : ''}`}
-            onClick={() => setFilter('all')}
+            className={`pub-domain-btn ${filter === 'all' ? 'active' : ''}`}
+            onClick={() => handleFilterSelect('all')}
           >
-            All Publications ({publicationsData.length})
+            All Papers ({publishedPapers.length})
           </button>
           <button 
-            className={`pub-filter-btn ${filter === 'in-print' ? 'active' : ''}`}
-            onClick={() => setFilter('in-print')}
+            className={`pub-domain-btn ${filter === 'qbe' ? 'active' : ''}`}
+            onClick={() => handleFilterSelect('qbe')}
           >
-            In Print & Peer-Reviewed ({publicationsData.filter(p => p.category === 'in-print').length})
+            Quantum Boltzmann Solvers ({publishedPapers.filter(p => p.domain === 'qbe').length})
           </button>
           <button 
-            className={`pub-filter-btn ${filter === 'submitted' ? 'active' : ''}`}
-            onClick={() => setFilter('submitted')}
+            className={`pub-domain-btn ${filter === 'mof' ? 'active' : ''}`}
+            onClick={() => handleFilterSelect('mof')}
           >
-            In Preparation & Preprints ({publicationsData.filter(p => p.category === 'submitted').length})
+            MOF Chemistry & EDA ({publishedPapers.filter(p => p.domain === 'mof').length})
           </button>
           <button 
-            className={`pub-filter-btn ${filter === 'hot' ? 'active' : ''}`}
-            onClick={() => setFilter('hot')}
+            className={`pub-domain-btn ${filter === 'pauli' ? 'active' : ''}`}
+            onClick={() => handleFilterSelect('pauli')}
           >
-            🔥 PCCP Hot Article
+            Generalized Pauli Conditions ({publishedPapers.filter(p => p.domain === 'pauli').length})
           </button>
         </div>
 
-        {/* Publication Entries */}
-        <div className="pub-list">
-          {filteredPubs.map((pub) => {
-            const authorParts = pub.authors.split(/(Chakraborty,\s*R\.?|Chakraborty\s*R\.?)/g);
+        {/* Publications List */}
+        <div className="paper-list">
+          {filteredPubs.map((paper, index) => {
+            const authorParts = paper.authors.split(/(Chakraborty,\s*R\.?|Chakraborty\s*R\.?)/g);
 
             return (
-              <div key={pub.id} className="pub-item">
-                <div className="pub-meta">
-                  <span className={`pub-category-badge ${pub.isHotArticle ? 'pub-hot-badge' : ''}`}>
-                    {pub.isHotArticle ? '🔥 Hot Article' : (pub.category === 'submitted' ? 'Preprint / In Prep' : 'Peer-Reviewed')}
-                  </span>
-                  <span className="pub-year-tag">{pub.year}</span>
-                </div>
+              <article key={paper.id} className="paper-item">
+                <div className="paper-number">[{index + 1}]</div>
 
-                <h3 className="pub-title">
-                  {pub.doi ? (
-                    <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noopener noreferrer" className="pub-title-link">
-                      {pub.title} ↗
+                <div className="paper-body">
+                  <h3 className="paper-title">
+                    <a 
+                      href={paper.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="paper-link"
+                    >
+                      {paper.title} ↗
                     </a>
-                  ) : pub.arxiv ? (
-                    <a href={`https://arxiv.org/abs/${pub.arxiv}`} target="_blank" rel="noopener noreferrer" className="pub-title-link">
-                      {pub.title} ↗
-                    </a>
-                  ) : (
-                    pub.title
-                  )}
-                </h3>
+                  </h3>
 
-                <div className="pub-authors">
-                  {authorParts.map((part, i) => 
-                    part.includes('Chakraborty') ? (
-                      <span key={i} className="author-highlight">{part}</span>
-                    ) : (
-                      <span key={i}>{part}</span>
-                    )
-                  )}
-                </div>
+                  <div className="paper-authors">
+                    {authorParts.map((part, i) => 
+                      part.includes('Chakraborty') ? (
+                        <span key={i} className="author-highlight">{part}</span>
+                      ) : (
+                        <span key={i}>{part}</span>
+                      )
+                    )}
+                  </div>
 
-                <div className="pub-journal">{pub.journal}</div>
+                  <div className="paper-journal">
+                    <em>{paper.journal}</em> ({paper.year})
+                    {paper.isHotArticle && <span className="hot-tag">Hot Article</span>}
+                  </div>
 
-                {pub.abstract && (
-                  <p className="pub-abstract">
-                    {pub.abstract}
+                  <p className="paper-summary">
+                    {paper.summary}
                   </p>
-                )}
 
-                <div className="pub-actions">
-                  {pub.doi && (
+                  <div className="paper-actions">
                     <a 
-                      href={`https://doi.org/${pub.doi}`} 
+                      href={paper.url} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="pub-action-btn"
+                      className="paper-action-link"
                     >
-                      🔗 DOI: {pub.doi} ↗
+                      {paper.url.includes('arxiv.org') ? `arXiv:${paper.doi} ↗` : `DOI: ${paper.doi} ↗`}
                     </a>
-                  )}
 
-                  {pub.arxiv && (
-                    <a 
-                      href={`https://arxiv.org/abs/${pub.arxiv}`} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="pub-action-btn"
+                    <button 
+                      onClick={() => toggleBibtex(paper.id)}
+                      className="paper-action-btn"
                     >
-                      📄 arXiv:{pub.arxiv} ↗
-                    </a>
+                      {openBibtexId === paper.id ? 'Hide BibTeX' : 'BibTeX'}
+                    </button>
+
+                    <button 
+                      onClick={() => handleCopyBibtex(paper)}
+                      className="paper-action-btn"
+                    >
+                      {copiedId === paper.id ? '✓ Copied Citation' : 'Copy Citation'}
+                    </button>
+                  </div>
+
+                  {openBibtexId === paper.id && (
+                    <pre className="bibtex-drawer">
+                      <code>{paper.bibtex}</code>
+                    </pre>
                   )}
-
-                  <button 
-                    onClick={() => toggleBibtex(pub.id)}
-                    className="pub-action-btn"
-                  >
-                    {openBibtexId === pub.id ? '▲ Close BibTeX' : '▼ BibTeX'}
-                  </button>
-
-                  <button 
-                    onClick={() => handleCopyBibtex(pub)}
-                    className="pub-action-btn"
-                  >
-                    {copiedId === pub.id ? '✓ Copied!' : '📋 Copy Citation'}
-                  </button>
                 </div>
-
-                {openBibtexId === pub.id && (
-                  <pre className="bibtex-box">
-                    <code>{pub.bibtex}</code>
-                  </pre>
-                )}
-              </div>
+              </article>
             );
           })}
         </div>

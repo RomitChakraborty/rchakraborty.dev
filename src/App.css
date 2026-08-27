@@ -383,14 +383,14 @@ a:hover {
   color: var(--text-muted);
 }
 
-/* Research Section */
+/* Research Section: 4 Differentiated Programs */
 .section-wrapper {
   padding: 56px 0;
   border-bottom: 1px solid var(--border-subtle);
 }
 
 .section-header {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   border-bottom: 2px solid var(--royal-blue);
   padding-bottom: 12px;
 }
@@ -406,6 +406,287 @@ a:hover {
   font-size: 1.05rem;
   color: var(--text-muted);
   font-style: italic;
+}
+
+/* 4 Differentiated Pillar Navigation Tabs */
+.research-pillar-tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.pillar-tab-btn {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-top: 3px solid transparent;
+  border-radius: 4px;
+  padding: 14px 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pillar-tab-btn:hover {
+  background: #ffffff;
+  border-color: var(--border-medium);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.pillar-tab-btn.active {
+  background: #ffffff;
+  border-color: var(--border-medium);
+  border-top: 3px solid var(--royal-blue);
+  box-shadow: 0 4px 14px rgba(0, 71, 187, 0.08);
+}
+
+.pillar-tab-index {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--royal-blue);
+  font-weight: 700;
+}
+
+.pillar-tab-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+/* Active Pillar Detail Card */
+.pillar-detail-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-radius: 6px;
+  padding: 32px 36px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.pillar-header-group {
+  margin-bottom: 20px;
+}
+
+.pillar-badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--royal-blue);
+  background: var(--royal-blue-light);
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+}
+
+.pillar-main-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.pillar-sub-title {
+  font-size: 1.08rem;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.pillar-overview-text {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.pillar-math-box {
+  background: var(--bg-secondary);
+  border-left: 3px solid var(--royal-blue);
+  padding: 16px 20px;
+  margin-bottom: 26px;
+  border-radius: 0 4px 4px 0;
+  text-align: center;
+}
+
+.math-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.pillar-contributions {
+  margin-bottom: 28px;
+}
+
+.contributions-heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.contributions-ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contributions-ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 1.02rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.contributions-ul li::before {
+  content: "▪";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--royal-blue);
+  font-size: 1.1rem;
+}
+
+/* Materials & Curated Links Section */
+.pillar-materials-section {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 24px;
+  margin-top: 24px;
+}
+
+.materials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.materials-heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.filter-pubs-action-btn {
+  background: transparent;
+  border: 1px solid var(--royal-blue);
+  color: var(--royal-blue);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-pubs-action-btn:hover {
+  background: var(--royal-blue);
+  color: #ffffff;
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.material-link-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  padding: 12px 16px;
+  text-decoration: none;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.material-link-card:hover {
+  background: #ffffff;
+  border-color: var(--royal-blue);
+  box-shadow: 0 2px 10px rgba(0, 71, 187, 0.08);
+  text-decoration: none;
+}
+
+.material-link-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.material-badge {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--royal-blue);
+}
+
+.material-arrow {
+  font-size: 0.9rem;
+  color: var(--royal-blue);
+}
+
+.material-link-label {
+  font-family: var(--font-serif);
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.material-link-card:hover .material-link-label {
+  color: var(--royal-blue);
+}
+
+/* Publications Domain Filter Buttons */
+.pub-domain-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.pub-domain-btn {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.pub-domain-btn:hover {
+  border-color: var(--royal-blue);
+  color: var(--royal-blue);
+  background: #ffffff;
+}
+
+.pub-domain-btn.active {
+  background: var(--royal-blue);
+  color: #ffffff;
+  border-color: var(--royal-blue);
 }
 
 /* Paper List */
