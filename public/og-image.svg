@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
+      .title { font-family: 'EB Garamond', Georgia, serif; font-size: 56px; font-weight: 700; fill: #111827; }
+      .role { font-family: 'EB Garamond', Georgia, serif; font-size: 28px; font-weight: 600; fill: #0047bb; }
+      .provenance { font-family: 'EB Garamond', Georgia, serif; font-size: 20px; font-style: italic; fill: #4b5563; }
+      .pillar-tag { font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700; fill: #0047bb; letter-spacing: 0.05em; }
+      .pillar-title { font-family: 'EB Garamond', Georgia, serif; font-size: 20px; font-weight: 600; fill: #1f2937; }
+      .footer-brand { font-family: 'JetBrains Mono', monospace; font-size: 14px; fill: #6b7280; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#fbfbfa" />
+  
+  <!-- Outer Subtle Hairline Border -->
+  <rect x="24" y="24" width="1152" height="582" fill="none" stroke="#e5e7eb" stroke-width="1.5" rx="6" />
+
+  <!-- Top Solid Royal Blue Academic Banner -->
+  <path d="M24 30 Q24 24 30 24 L1170 24 Q1176 24 1176 30 L1176 72 L24 72 Z" fill="#0047bb" />
+  <text x="56" y="54" font-family="'EB Garamond', Georgia, serif" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="0.02em">Romit Chakraborty — Research &amp; Scholarly Works</text>
+  <text x="1144" y="53" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="500" fill="#bfdbfe">rchakraborty.dev</text>
+
+  <!-- Main Identity Block -->
+  <g transform="translate(64, 130)">
+    <!-- Continuous Vertical Royal Blue Accent Margin -->
+    <line x1="0" y1="0" x2="0" y2="180" stroke="#0047bb" stroke-width="4" stroke-linecap="round" />
+    
+    <g transform="translate(24, 0)">
+      <text x="0" y="38" class="title">Romit Chakraborty, Ph.D.</text>
+      <text x="0" y="80" class="role">Quantum Chemist &amp; AI Researcher · Point Reyes Sound, Inc.</text>
+      <text x="0" y="120" class="provenance">University of Chicago (Ph.D. '17) · UC Berkeley &amp; LBNL Postdoc ('23) · PsiQuantum (2025) · IIT Bombay ('12)</text>
+      <text x="0" y="156" font-family="'EB Garamond', Georgia, serif" font-size="18" fill="#4b5563">
+        Quantum Boltzmann Solvers, Reduced Density Matrix Theory, and Multimodal Agentic AI
+      </text>
+    </g>
+  </g>
+
+  <!-- 4 Differentiated Research Program Pillars -->
+  <g transform="translate(64, 350)">
+    <!-- Pillar 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="250" height="150" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" rx="4" />
+      <rect x="0" y="0" width="250" height="3" fill="#0047bb" rx="1" />
+      <text x="16" y="28" class="pillar-tag">01 · KINETIC SOLVERS</text>
+      <text x="16" y="60" class="pillar-title">Quantum Boltzmann</text>
+      <text x="16" y="84" class="pillar-title">Solvers (QBE-SCF)</text>
+      <text x="16" y="122" font-family="'EB Garamond', Georgia, serif" font-size="14" fill="#6b7280">arXiv:2608.14979</text>
+    </g>
+
+    <!-- Pillar 2 -->
+    <g transform="translate(274, 0)">
+      <rect width="250" height="150" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" rx="4" />
+      <rect x="0" y="0" width="250" height="3" fill="#0047bb" rx="1" />
+      <text x="16" y="28" class="pillar-tag">02 · AI &amp; LLMS</text>
+      <text x="16" y="60" class="pillar-title">Agentic AI for</text>
+      <text x="16" y="84" class="pillar-title">Orbital Recognition</text>
+      <text x="16" y="122" font-family="'EB Garamond', Georgia, serif" font-size="14" fill="#6b7280">LoRA / QM9 / Azure AFMR</text>
+    </g>
+
+    <!-- Pillar 3 -->
+    <g transform="translate(548, 0)">
+      <rect width="250" height="150" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" rx="4" />
+      <rect x="0" y="0" width="250" height="3" fill="#0047bb" rx="1" />
+      <text x="16" y="28" class="pillar-tag">03 · MATERIALS SIMULATION</text>
+      <text x="16" y="60" class="pillar-title">MOF Simulations &amp;</text>
+      <text x="16" y="84" class="pillar-title">Gas Storage (ALMO)</text>
+      <text x="16" y="122" font-family="'EB Garamond', Georgia, serif" font-size="14" fill="#6b7280">JACS · PCCP Hot · JPCL</text>
+    </g>
+
+    <!-- Pillar 4 -->
+    <g transform="translate(822, 0)">
+      <rect width="250" height="150" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" rx="4" />
+      <rect x="0" y="0" width="250" height="3" fill="#0047bb" rx="1" />
+      <text x="16" y="28" class="pillar-tag">04 · QUANTUM FOUNDATIONS</text>
+      <text x="16" y="60" class="pillar-title">Generalized Pauli</text>
+      <text x="16" y="84" class="pillar-title">Conditions (1-RDM)</text>
+      <text x="16" y="122" font-family="'EB Garamond', Georgia, serif" font-size="14" fill="#6b7280">Phys. Rev. A · JCP · Diss.</text>
+    </g>
+  </g>
+
+  <!-- Footer Info -->
+  <text x="64" y="565" class="footer-brand">https://www.rchakraborty.dev · pointreyessound.com · romit@pointreyessound.com</text>
+</svg>
