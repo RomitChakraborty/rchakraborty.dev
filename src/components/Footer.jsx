@@ -13,7 +13,7 @@ export default function Footer({ onOpenCV }) {
             </a>
           </div>
           <div className="footer-pedigree">
-            University of Chicago (Ph.D. '17) &bull; UC Berkeley & LBNL Postdoc ('23) &bull; IIT Bombay ('12)
+            University of Chicago (Ph.D. '17) &bull; UC Berkeley & LBNL Postdoc ('23) &bull; PsiQuantum (2025) &bull; IIT Bombay ('12)
           </div>
         </div>
 
