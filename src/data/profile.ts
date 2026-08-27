@@ -15,7 +15,7 @@ export const profileData = {
     prsWebsite: "https://www.pointreyessound.com",
     googleScholar: "https://scholar.google.com/citations?user=m4HlFRIAAAAJ&hl=en",
     orcid: "https://orcid.org/0000-0002-4638-6346",
-    linkedin: "https://www.linkedin.com/in/romit-chakraborty-ph-d-7419088/"
+    linkedin: "https://www.linkedin.com/in/chakrabortyromit/"
   },
   pedigree: [
     { institution: "University of Chicago", role: "MS & Ph.D. in Theoretical & Computational Quantum Chemistry", advisor: "Prof. David A. Mazziotti", years: "2012 – 2017" },
