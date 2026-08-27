@@ -43,9 +43,14 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* User Exact Text - Paragraph 1 */}
+          {/* Welcome Intro */}
           <p className="hero-bio">
-            Welcome to my humble internet abode! I leverage the basic tenets of quantum chemistry to conduct simulations of clean energy materials with a broad view toward developing efficient energy storage and conversion systems. Central to these pursuits are the core principles of quantum mechanics, whose application enables the prediction of the physical and chemical characteristics of materials needed for the realization of a sustainable energy infrastructure. My scholarly pursuits are informed by the foundations of Density Functional Theory (DFT) and Reduced Density Matrix (RDM) theory, both of which furnish succinct descriptions of the Hilbert Space for wave functions that convey information about the electronic and vibrational degrees of freedom. DFT, a workhorse for practical materials simulations, is an effective one-electron theory that elegantly side-steps the well-known N-representability problem that applies to the treatment of many electron quantum systems. For a formal and concise outline of effective one-body constraints that ensure Pure N-representability, which Generalise the well-known Pauli Conditions as they apply to some chemical and biological systems, please peruse my <a href="https://www.proquest.com/openview/4e94e4be5bd5b67d83add173091d5b31/1?pq-origsite=gscholar&cbl=18750" target="_blank" rel="noopener noreferrer">dissertation on this topic</a>.
+            Welcome to my humble internet abode!
+          </p>
+
+          {/* Scientific Foundation */}
+          <p className="hero-bio">
+            I leverage the basic tenets of quantum chemistry to conduct simulations of clean energy materials with a broad view toward developing efficient energy storage and conversion systems. Central to these pursuits are the core principles of quantum mechanics, whose application enables the prediction of the physical and chemical characteristics of materials needed for the realization of a sustainable energy infrastructure. My scholarly pursuits are informed by the foundations of Density Functional Theory (DFT) and Reduced Density Matrix (RDM) theory, both of which furnish succinct descriptions of the Hilbert Space for wave functions that convey information about the electronic and vibrational degrees of freedom. DFT, a workhorse for practical materials simulations, is an effective one-electron theory that elegantly side-steps the well-known N-representability problem that applies to the treatment of many electron quantum systems. For a formal and concise outline of effective one-body constraints that ensure Pure N-representability, which Generalise the well-known Pauli Conditions as they apply to some chemical and biological systems, please peruse my <a href="https://www.proquest.com/openview/4e94e4be5bd5b67d83add173091d5b31/1?pq-origsite=gscholar&cbl=18750" target="_blank" rel="noopener noreferrer">dissertation on this topic</a>.
           </p>
 
           {/* User Exact Text - Paragraph 2 */}
