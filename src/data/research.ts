@@ -30,7 +30,7 @@ export const researchPillars: ResearchPillar[] = [
     latexEq: "\\partial_t \\gamma(t) = -\\frac{i}{\\hbar}[\\mathbf{F}[\\gamma], \\gamma(t)] - \\frac{1}{\\tau}\\left(\\gamma(t) - \\gamma_{\\text{eq}}[\\mathbf{F}]\\right)",
     materials: [
       {
-        label: "arXiv:2608.14979 — QBE-SCF Lead Preprint",
+        label: "arXiv:2608.14979 — QBE-SCF Preprint",
         type: "preprint",
         url: "https://arxiv.org/abs/2608.14979",
         badge: "Preprint"
