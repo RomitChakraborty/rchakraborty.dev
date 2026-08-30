@@ -61,7 +61,7 @@ export default function Research({ onSelectDomain }) {
           {/* Mathematical Formulation */}
           {activePillar.latexEq && (
             <div className="pillar-math-box">
-              <div className="math-label">Governing Formulation:</div>
+              <div className="math-label">Governing Dynamics:</div>
               <BlockMath math={activePillar.latexEq} />
             </div>
           )}
