@@ -18,7 +18,7 @@ export const researchPillars: ResearchPillar[] = [
   {
     id: "qbe-scf",
     categoryKey: "qbe",
-    title: "Quantum Boltzmann Solvers",
+    title: "Quantum Boltzmann Solver",
     subtitle: "Kinetic Transport & Entropic Regularization of Mean-Field Singularities",
     overview: "Conventional mean-field electronic structure methods frequently break down near degeneracies, conical intersections, and strong correlation regimes due to singularities in the self-consistent field (SCF). Pioneered at Point Reyes Sound, Inc., Quantum Boltzmann Equation Self-Consistent-Field (QBE-SCF) propagates the one-electron reduced density matrix (1-RDM) in phase space via a Bhatnagar-Gross-Krook (BGK) collision operator, achieving natural monotonic entropic regularization across mean-field singularities without artificial symmetry breaking.",
     keyContributions: [
@@ -27,7 +27,7 @@ export const researchPillars: ResearchPillar[] = [
       "Introduces the Quantum Boltzmann Entrainment Tensor for Hessian-free multireference orbital optimization.",
       "Extends phase-space kinetic transport to periodic crystalline materials via Lattice Boltzmann k-space schemes."
     ],
-    latexEq: "\\partial_t \\gamma(t) = -\\frac{i}{\\hbar}[\\mathbf{F}[\\gamma], \\gamma(t)] - \\frac{1}{\\tau}\\left(\\gamma(t) - \\gamma_{\\text{eq}}[\\mathbf{F}]\\right)",
+    latexEq: "\\partial_t {^1P}(t) = -\\frac{i}{\\hbar}[\\mathbf{F}[{^1P}], {^1P}(t)] - \\frac{1}{\\tau}\\left({^1P}(t) - {^1P}_{\\text{eq}}[\\mathbf{F}]\\right)",
     materials: [
       {
         label: "arXiv:2608.14979 — QBE-SCF Preprint",
