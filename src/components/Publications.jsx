@@ -92,7 +92,7 @@ export default function Publications({ selectedDomain, onDomainChange }) {
                       rel="noopener noreferrer" 
                       className="paper-link"
                     >
-                      {paper.title} ↗
+                      {paper.title} <span className="ext-arrow">↗</span>
                     </a>
                   </h3>
 
@@ -122,7 +122,7 @@ export default function Publications({ selectedDomain, onDomainChange }) {
                       rel="noopener noreferrer"
                       className="paper-action-link"
                     >
-                      {paper.url.includes('arxiv.org') ? `arXiv:${paper.doi} ↗` : `DOI: ${paper.doi} ↗`}
+                      {paper.url.includes('arxiv.org') ? `arXiv:${paper.doi}` : `DOI: ${paper.doi}`} <span className="ext-arrow">↗</span>
                     </a>
 
                     <button 

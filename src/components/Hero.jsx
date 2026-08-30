@@ -17,19 +17,19 @@ export default function Hero() {
 
           <div className="hero-text-links">
             <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer" className="minimal-text-link">
-              Point Reyes Sound ↗
+              Point Reyes Sound <span className="ext-arrow">↗</span>
             </a>
             <a href="https://scholar.google.com/citations?user=m4HlFRIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="minimal-text-link">
-              Google Scholar ↗
+              Google Scholar <span className="ext-arrow">↗</span>
             </a>
             <a href={profileData.links.personalGithub} target="_blank" rel="noopener noreferrer" className="minimal-text-link">
-              GitHub ↗
+              GitHub <span className="ext-arrow">↗</span>
             </a>
             <a href={profileData.links.orcid} target="_blank" rel="noopener noreferrer" className="minimal-text-link">
-              ORCID ↗
+              ORCID <span className="ext-arrow">↗</span>
             </a>
             <a href={profileData.links.linkedin} target="_blank" rel="noopener noreferrer" className="minimal-text-link">
-              LinkedIn ↗
+              LinkedIn <span className="ext-arrow">↗</span>
             </a>
           </div>
         </div>

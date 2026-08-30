@@ -226,6 +226,27 @@ a:hover {
   text-decoration: underline;
 }
 
+.ext-arrow {
+  display: inline-block;
+  font-size: 0.72em;
+  line-height: 1;
+  vertical-align: 0.14em;
+  margin-left: 2.5px;
+  opacity: 0.75;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.minimal-text-link:hover .ext-arrow,
+.paper-link:hover .ext-arrow,
+.paper-action-link:hover .ext-arrow,
+.footer-links a:hover .ext-arrow,
+a:hover .ext-arrow {
+  transform: translate(1px, -1px);
+  opacity: 1;
+}
+
 .hero-content-col {
   display: flex;
   flex-direction: column;
@@ -664,8 +685,17 @@ a:hover {
 }
 
 .material-arrow {
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   color: var(--royal-blue);
+  opacity: 0.8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.material-link-card:hover .material-arrow {
+  transform: translate(1px, -1px);
+  opacity: 1;
 }
 
 .material-link-label {

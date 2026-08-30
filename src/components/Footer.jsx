@@ -19,11 +19,11 @@ export default function Footer({ onOpenCV }) {
 
         <div className="footer-right">
           <div className="footer-links">
-            <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer">Point Reyes Sound ↗</a>
-            <a href={profileData.links.googleScholar} target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
-            <a href={profileData.links.personalGithub} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-            <a href={profileData.links.orcid} target="_blank" rel="noopener noreferrer">ORCID ↗</a>
-            <a href={profileData.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer">Point Reyes Sound <span className="ext-arrow">↗</span></a>
+            <a href={profileData.links.googleScholar} target="_blank" rel="noopener noreferrer">Google Scholar <span className="ext-arrow">↗</span></a>
+            <a href={profileData.links.personalGithub} target="_blank" rel="noopener noreferrer">GitHub <span className="ext-arrow">↗</span></a>
+            <a href={profileData.links.orcid} target="_blank" rel="noopener noreferrer">ORCID <span className="ext-arrow">↗</span></a>
+            <a href={profileData.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn <span className="ext-arrow">↗</span></a>
             <button onClick={onOpenCV} className="footer-cv-btn">Curriculum Vitae</button>
           </div>
           <div className="footer-copy">
