@@ -27,7 +27,7 @@ export const researchPillars: ResearchPillar[] = [
       "Introduces the Quantum Boltzmann Entrainment Tensor for Hessian-free multireference orbital optimization.",
       "Extends phase-space kinetic transport to periodic crystalline materials via Lattice Boltzmann k-space schemes."
     ],
-    latexEq: "\\partial_t {^1P}(t) = -\\frac{i}{\\hbar}[\\mathbf{F}[{^1P}], {^1P}(t)] - \\frac{1}{\\tau}\\left({^1P}(t) - {^1P}_{\\text{eq}}[\\mathbf{F}]\\right)",
+    latexEq: "\\partial_t {^1\\mathbf{P}}(t) = -\\frac{i}{\\hbar}[\\mathbf{F}[{^1\\mathbf{P}}], {^1\\mathbf{P}}(t)] - \\frac{1}{\\tau}\\left({^1\\mathbf{P}}(t) - {^1\\mathbf{P}}_{\\text{eq}}[\\mathbf{F}]\\right)",
     materials: [
       {
         label: "arXiv:2608.14979 — QBE-SCF Preprint",
