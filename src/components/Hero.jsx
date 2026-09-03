@@ -92,20 +92,6 @@ export default function Hero({ onSelectPillar }) {
               As an AI optimist, I am enthused by the prospect of using transformer-based architectures to learn more about the physical world. I enjoy building extensions to solutions in the natural sciences by programming multimodal large language models. Please find below some examples of applications and services derived from programming multimodal large language models. These are relatively simple augmentations of the underlying LLMs (GPT-4o for instance) that i) employ low rank adaptations of a large model by fine-tuning it with the QM9 dataset, and ii) train a large vision model (GPT-4o) to recognize molecular orbitals via prompt engineering.
             </p>
 
-            {/* Ongoing Directions */}
-            <div className="ongoing-inner-group">
-              <div className="ongoing-work-title">Some examples of ongoing work include:</div>
-              <ul className="ongoing-work-list">
-                <li><strong>i)</strong> Agentic Workflows that partition the Hilbert Space into interacting and non-interacting subsystems,</li>
-                <li><strong>ii)</strong> LoRA fine tuning of Multimodal Large Language models for Orbital Recognition,</li>
-                <li><strong>iii)</strong> Models for competitive adsorption in MOFs with open metal sites, and</li>
-                <li><strong>iv)</strong> Accurate Depictions for Anharmonicity in Small Molecule Binding to Open Metal sites in MOFs.</li>
-              </ul>
-              <p className="ongoing-work-note">
-                The first two of the above were carried out under the auspices of the Accelerate Foundation Models Research Grant generously provided by Microsoft Azure during my stint as a staff researcher at UChicago from 2023–2024. The last two are unpublished yet promising projects I undertook at UC Berkeley. Find out more info about peer reviewed and archived articles on my <a href="https://scholar.google.com/citations?user=m4HlFRIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>.
-              </p>
-            </div>
-
             {/* Opportunities & PsiQuantum */}
             <p className="hero-bio" style={{ marginBottom: 0 }}>
               I seek research and development opportunities that lie at the intersection of quantum chemistry, materials science, quantum and classical information theory, and that can leverage my skills in programming multimodal large language models. Please peruse my résumé. Please note that none of the code that are due to my affiliations with PsiQuantum are available for public consumption and neither have they been at any stage.
