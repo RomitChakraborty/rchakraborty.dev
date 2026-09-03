@@ -3,8 +3,14 @@ import { researchPillars } from '../data/research';
 import 'katex/dist/katex.min.css';
 import { BlockMath } from 'react-katex';
 
-export default function Research({ onSelectDomain }) {
+export default function Research({ selectedPillarId, onSelectDomain }) {
   const [activePillarId, setActivePillarId] = useState(researchPillars[0].id);
+
+  React.useEffect(() => {
+    if (selectedPillarId) {
+      setActivePillarId(selectedPillarId);
+    }
+  }, [selectedPillarId]);
 
   const activePillar = researchPillars.find(p => p.id === activePillarId) || researchPillars[0];
 

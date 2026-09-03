@@ -1,7 +1,17 @@
 import React from 'react';
 import { profileData } from '../data/profile';
 
-export default function Hero() {
+export default function Hero({ onSelectPillar }) {
+  const handleMofClick = (e) => {
+    if (onSelectPillar) {
+      onSelectPillar('mof-simulations');
+    }
+    const target = document.getElementById('research');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="about" className="hero-section">
       <div className="academic-container hero-grid">
@@ -65,12 +75,16 @@ export default function Hero() {
 
             {/* Scientific Foundation */}
             <p className="hero-bio">
-              I use the tenets of quantum chemistry to conduct simulations of clean energy materials with a broad view toward developing efficient energy storage and conversion systems. My pursuits are informed by the foundations of Density Functional Theory (DFT) and Reduced Density Matrix (RDM) theory, both of which provide compressed descriptions of the Hilbert Space. DFT, a workhorse for practical materials simulations, is an effective one-electron theory that elegantly side-steps the well-known N-representability problem that applies to the treatment of many electron quantum systems. For a concise outline of effective one-body constraints that are necessary Pure N-representability of the one-electron reduced density matrix (1-RDM) as well as their applications to chemical and biological systems, peruse my <a href="https://www.proquest.com/openview/4e94e4be5bd5b67d83add173091d5b31/1?pq-origsite=gscholar&cbl=18750" target="_blank" rel="noopener noreferrer">dissertation on this topic</a>.
+              I use the tenets of quantum chemistry to conduct simulations of clean energy materials with a broad view toward developing efficient energy storage and conversion systems. My pursuits are informed by the foundations of Density Functional Theory (DFT) and Reduced Density Matrix (RDM) theory, both of which provide compressed descriptions of the Hilbert space.
+            </p>
+
+            <p className="hero-bio">
+              DFT, a workhorse for practical materials simulations, is an effective one-electron theory that elegantly side-steps the well-known N-representability problem that applies to the treatment of many electron quantum systems. For a concise outline of effective one-body constraints that are necessary Pure N-representability of the one-electron reduced density matrix (1-RDM) as well as their applications to chemical and biological systems, peruse my <a href="https://www.proquest.com/openview/4e94e4be5bd5b67d83add173091d5b31/1?pq-origsite=gscholar&cbl=18750" target="_blank" rel="noopener noreferrer">dissertation on this topic</a>.
             </p>
 
             {/* Practical Electronic Structure & Head-Gordon */}
             <p className="hero-bio">
-              Following this journey of abstractions that many would consider tangential to formal electronic structure theory, I worked with Prof. Martin Head-Gordon at Berkeley where I assisted in the rational design efforts for clean energy materials: metal-organic frameworks for gas storage and separations.
+              Following this journey of abstractions that many would consider tangential to formal electronic structure theory, I worked with Prof. Martin Head-Gordon at Berkeley where I assisted in the rational design efforts for clean energy materials: <a href="#research" onClick={handleMofClick}>metal-organic frameworks for gas storage and separations</a>.
             </p>
 
             <p className="hero-bio">
