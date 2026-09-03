@@ -87,10 +87,6 @@ export default function Hero({ onSelectPillar }) {
               Following this journey of abstractions that many would consider tangential to formal electronic structure theory, I worked with Prof. Martin Head-Gordon at Berkeley where I assisted in the rational design efforts for clean energy materials: <a href="#research" onClick={handleMofClick}>metal-organic frameworks for gas storage and separations</a>.
             </p>
 
-            <p className="hero-bio">
-              This gave me a broad perspective on practical electronic structure theory and simulations. Despite improvements, the computational complexity of the CI (Configuration Interaction) and CC (Coupled Cluster) Hamiltonians entails that only a handful of electrons, about ten on your laptop, and about twenty if you have the luxury of high-performance compute, can be treated accurately in molecular systems. This barrier is not likely to be overcome by quantum hardware of any architecture: superconducting qubits, trapped ions, atoms, or silicon photonics in the next two years. Density Matrix Renormalization Group (DMRG) remains the best CI solver, and Density Functional Theory (DFT) remains the workhorse for practical computations for material systems, and is likely to remain so in the foreseeable future.
-            </p>
-
             {/* AI & Multimodal LLMs */}
             <p className="hero-bio">
               As an AI optimist, I am enthused by the prospect of using transformer-based architectures to learn more about the physical world. I enjoy building extensions to solutions in the natural sciences by programming multimodal large language models. Please find below some examples of applications and services derived from programming multimodal large language models. These are relatively simple augmentations of the underlying LLMs (GPT-4o for instance) that i) employ low rank adaptations of a large model by fine-tuning it with the QM9 dataset, and ii) train a large vision model (GPT-4o) to recognize molecular orbitals via prompt engineering.
