@@ -88,13 +88,8 @@ export default function Hero({ onSelectPillar }) {
             </p>
 
             {/* AI & Multimodal LLMs */}
-            <p className="hero-bio">
-              As an AI optimist, I am enthused by the prospect of using transformer-based architectures to learn more about the physical world. I enjoy building extensions to solutions in the natural sciences by programming multimodal large language models.
-            </p>
-
-            {/* Opportunities & PsiQuantum */}
             <p className="hero-bio" style={{ marginBottom: 0 }}>
-              I seek research and development opportunities that lie at the intersection of quantum chemistry, materials science, quantum and classical information theory, and that can leverage my skills in programming multimodal large language models. Please peruse my résumé. Please note that none of the code that are due to my affiliations with PsiQuantum are available for public consumption and neither have they been at any stage.
+              As an AI optimist, I am enthused by the prospect of using transformer-based architectures to learn more about the physical world. I enjoy building extensions to solutions in the natural sciences by programming multimodal large language models.
             </p>
           </div>
 
