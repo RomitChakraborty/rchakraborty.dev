@@ -89,7 +89,7 @@ export default function Hero({ onSelectPillar }) {
 
             {/* AI & Multimodal LLMs */}
             <p className="hero-bio">
-              As an AI optimist, I am enthused by the prospect of using transformer-based architectures to learn more about the physical world. I enjoy building extensions to solutions in the natural sciences by programming multimodal large language models. Please find below some examples of applications and services derived from programming multimodal large language models. These are relatively simple augmentations of the underlying LLMs (GPT-4o for instance) that i) employ low rank adaptations of a large model by fine-tuning it with the QM9 dataset, and ii) train a large vision model (GPT-4o) to recognize molecular orbitals via prompt engineering.
+              As an AI optimist, I am enthused by the prospect of using transformer-based architectures to learn more about the physical world. I enjoy building extensions to solutions in the natural sciences by programming multimodal large language models.
             </p>
 
             {/* Opportunities & PsiQuantum */}
