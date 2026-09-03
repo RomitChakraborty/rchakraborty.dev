@@ -13,22 +13,21 @@
   --text-secondary: #4a4a4a;
   --text-muted: #6b7280;
   
-  /* Royal Blue Accent Palette */
-  --royal-blue: #0047bb;
-  --royal-blue-hover: #00338d;
-  --royal-blue-light: #eef3fc;
+  /* Official UC Berkeley Blue & California Gold Palette */
+  --royal-blue: #003262;       /* Berkeley Blue */
+  --royal-blue-hover: #002144; /* Deep Berkeley Navy */
+  --royal-blue-light: #eef3f9; /* Subtle Berkeley Blue tint */
 
-  /* Editorial Gold & Champagne Accent Palette */
-  --gold-primary: #b89047;
-  --gold-accent: #c5a059;
-  --gold-dark: #97732a;
-  --gold-light: #faeed4;
-  --gold-btn-bg: linear-gradient(135deg, #faeed4 0%, #f3dfb2 100%);
-  --gold-btn-bg-hover: linear-gradient(135deg, #f7e6bd 0%, #ebd090 100%);
-  --gold-btn-border: #d4b472;
-  --gold-border: rgba(184, 144, 71, 0.45);
-  --gold-border-hover: rgba(184, 144, 71, 0.85);
-  --gold-glow: rgba(197, 160, 89, 0.28);
+  --gold-primary: #FDB515;     /* California Gold */
+  --gold-accent: #C4820E;      /* Berkeley Medalist */
+  --gold-dark: #9B6204;
+  --gold-light: #FFF8E7;
+  --gold-btn-bg: linear-gradient(135deg, #FDB515 0%, #F5A800 100%);
+  --gold-btn-bg-hover: linear-gradient(135deg, #FFC72C 0%, #FDB515 100%);
+  --gold-btn-border: #C4820E;
+  --gold-border: #C4820E;
+  --gold-border-hover: #9B6204;
+  --gold-glow: rgba(253, 181, 21, 0.38);
   
   --border-subtle: #e5e7eb;
   --border-medium: #d1d5db;
@@ -341,15 +340,15 @@ a:hover {
 }
 
 .minimal-text-link {
-  color: #2b1f07;
+  color: #003262;
   font-family: var(--font-sans);
   font-size: 0.88rem;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   background: var(--gold-btn-bg);
-  border: 1px solid var(--gold-btn-border);
-  box-shadow: 0 1px 4px rgba(184, 144, 71, 0.16);
-  padding: 7px 14px;
+  border: 1.5px solid var(--gold-btn-border);
+  box-shadow: 0 2px 6px rgba(253, 181, 21, 0.28);
+  padding: 8px 14px;
   border-radius: 5px;
   display: inline-flex;
   align-items: center;
@@ -363,8 +362,8 @@ a:hover {
 .minimal-text-link:hover {
   background: var(--gold-btn-bg-hover);
   border-color: var(--gold-dark);
-  color: var(--royal-blue);
-  box-shadow: 0 3px 12px var(--gold-glow);
+  color: #001f3f;
+  box-shadow: 0 4px 14px rgba(253, 181, 21, 0.45);
   text-decoration: none;
   transform: translateY(-1px);
 }
@@ -407,8 +406,8 @@ a:hover {
 
 .minimal-text-link .ext-arrow {
   margin-left: auto;
-  color: var(--gold-primary);
-  opacity: 0.85;
+  color: #003262;
+  opacity: 0.9;
 }
 
 .ext-arrow {
@@ -903,25 +902,25 @@ a:hover .ext-arrow {
   padding: 8px 18px;
   font-family: var(--font-serif);
   font-size: 0.95rem;
-  font-weight: 600;
-  color: #2b1f07;
+  font-weight: 700;
+  color: #003262;
   cursor: pointer;
   transition: var(--transition);
-  box-shadow: 0 1px 4px rgba(184, 144, 71, 0.14);
+  box-shadow: 0 2px 6px rgba(253, 181, 21, 0.22);
 }
 
 .pub-domain-btn:hover {
   border-color: var(--gold-dark);
-  color: var(--royal-blue);
+  color: #001f3f;
   background: var(--gold-btn-bg-hover);
-  box-shadow: 0 2px 10px rgba(184, 144, 71, 0.24);
+  box-shadow: 0 3px 12px rgba(253, 181, 21, 0.38);
 }
 
 .pub-domain-btn.active {
   background: var(--royal-blue);
-  color: #ffffff;
-  border-color: var(--gold-accent);
-  box-shadow: 0 2px 10px rgba(0, 71, 187, 0.25), 0 0 0 1px var(--gold-accent);
+  color: #FDB515;
+  border-color: #FDB515;
+  box-shadow: 0 2px 10px rgba(0, 50, 98, 0.35), 0 0 0 1.5px #FDB515;
 }
 
 /* Paper List */
@@ -1019,21 +1018,22 @@ a:hover .ext-arrow {
 .paper-action-link {
   font-family: var(--font-sans);
   font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--royal-blue);
+  font-weight: 700;
+  color: #003262;
   text-decoration: none;
   background: var(--gold-btn-bg);
   border: 1px solid var(--gold-btn-border);
   padding: 5px 12px;
   border-radius: 4px;
   transition: var(--transition);
-  box-shadow: 0 1px 3px rgba(184, 144, 71, 0.12);
+  box-shadow: 0 1px 4px rgba(253, 181, 21, 0.25);
 }
 
 .paper-action-link:hover {
   background: var(--gold-btn-bg-hover);
   border-color: var(--gold-dark);
-  box-shadow: 0 2px 8px var(--gold-glow);
+  color: #001f3f;
+  box-shadow: 0 3px 10px rgba(253, 181, 21, 0.4);
   text-decoration: none;
 }
 
@@ -1044,17 +1044,18 @@ a:hover .ext-arrow {
   padding: 5px 12px;
   font-family: var(--font-sans);
   font-size: 0.8rem;
-  font-weight: 600;
-  color: #2b1f07;
+  font-weight: 700;
+  color: #003262;
   cursor: pointer;
   transition: var(--transition);
-  box-shadow: 0 1px 3px rgba(184, 144, 71, 0.12);
+  box-shadow: 0 1px 4px rgba(253, 181, 21, 0.25);
 }
 
 .paper-action-btn:hover {
   background: var(--gold-btn-bg-hover);
   border-color: var(--gold-dark);
-  color: var(--royal-blue);
+  color: #001f3f;
+  box-shadow: 0 3px 10px rgba(253, 181, 21, 0.4);
 }
 
 .bibtex-drawer {
@@ -1119,20 +1120,21 @@ a:hover .ext-arrow {
 .footer-cv-btn {
   background: var(--gold-btn-bg);
   border: 1px solid var(--gold-btn-border);
-  color: #1a3875;
+  color: #003262;
   cursor: pointer;
   padding: 4px 12px;
   border-radius: 4px;
   font-family: var(--font-serif);
   font-size: 0.92rem;
-  font-weight: 600;
+  font-weight: 700;
   transition: var(--transition);
-  box-shadow: 0 1px 3px rgba(184, 144, 71, 0.12);
+  box-shadow: 0 1px 4px rgba(253, 181, 21, 0.25);
 }
 
 .footer-cv-btn:hover {
   background: var(--gold-btn-bg-hover);
   border-color: var(--gold-dark);
+  color: #001f3f;
   text-decoration: none;
   box-shadow: 0 2px 8px var(--gold-glow);
 }
@@ -1197,22 +1199,24 @@ a:hover .ext-arrow {
 }
 
 .cv-download-btn {
-  background: linear-gradient(135deg, var(--royal-blue) 0%, #00338d 100%);
-  border: 1px solid rgba(223, 185, 105, 0.55);
-  color: #ffffff !important;
+  background: linear-gradient(135deg, var(--royal-blue) 0%, #002144 100%);
+  border: 1.5px solid #FDB515;
+  color: #FDB515 !important;
   font-family: var(--font-sans);
   font-size: 0.82rem;
-  font-weight: 600;
+  font-weight: 700;
   padding: 6px 14px;
   border-radius: 4px;
   text-decoration: none;
-  box-shadow: 0 2px 6px rgba(0, 71, 187, 0.25);
+  box-shadow: 0 2px 6px rgba(0, 50, 98, 0.35);
   transition: var(--transition);
 }
 
 .cv-download-btn:hover {
-  border-color: var(--gold-accent);
-  box-shadow: 0 2px 12px rgba(197, 160, 89, 0.4);
+  background: #002144;
+  border-color: #FFC72C;
+  color: #ffffff !important;
+  box-shadow: 0 2px 12px rgba(253, 181, 21, 0.45);
   text-decoration: none;
 }
 
@@ -1224,16 +1228,16 @@ a:hover .ext-arrow {
   cursor: pointer;
   font-size: 0.82rem;
   font-family: var(--font-sans);
-  font-weight: 600;
-  color: #2b1f07;
+  font-weight: 700;
+  color: #003262;
   transition: var(--transition);
-  box-shadow: 0 1px 3px rgba(184, 144, 71, 0.12);
+  box-shadow: 0 1px 4px rgba(253, 181, 21, 0.25);
 }
 
 .cv-close-btn:hover {
   background: var(--gold-btn-bg-hover);
   border-color: var(--gold-dark);
-  color: var(--royal-blue);
+  color: #001f3f;
 }
 
 .cv-modal-body {
@@ -1372,15 +1376,15 @@ a:hover .ext-arrow {
     max-width: none;
     font-size: 0.84rem;
     background: var(--gold-btn-bg);
-    border: 1px solid var(--gold-btn-border);
-    color: #2b1f07;
-    box-shadow: 0 1px 4px rgba(184, 144, 71, 0.14);
+    border: 1.5px solid var(--gold-btn-border);
+    color: #003262;
+    box-shadow: 0 2px 5px rgba(253, 181, 21, 0.28);
     padding: 7px 12px;
     border-radius: 5px;
     display: inline-flex;
     align-items: center;
     gap: 7px;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .hero-name {
