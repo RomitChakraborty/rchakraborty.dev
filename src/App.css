@@ -1302,7 +1302,7 @@ a:hover .ext-arrow {
 @media (max-width: 768px) {
   /* Container Padding */
   .academic-container {
-    padding: 0 18px;
+    padding: 0 clamp(16px, 4.5vw, 24px);
   }
 
   /* Navbar Responsive */
@@ -1312,6 +1312,8 @@ a:hover .ext-arrow {
 
   .nav-mobile-toggle {
     display: flex !important;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .mobile-nav-dropdown.active {
@@ -1319,7 +1321,7 @@ a:hover .ext-arrow {
   }
 
   .navbar-inner {
-    height: 58px;
+    height: 60px;
     padding: 0 16px;
   }
 
@@ -1328,25 +1330,26 @@ a:hover .ext-arrow {
     white-space: nowrap;
   }
 
-  /* Hero Section */
+  /* Hero Section Mobile Ergonomics */
   .hero-section {
-    padding: 30px 0 24px;
+    padding: 24px 0 28px;
   }
 
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 18px;
+    gap: 20px;
   }
 
   .hero-portrait-col {
     align-items: center;
-    margin-bottom: 2px;
+    margin-bottom: 6px;
   }
 
   .portrait-frame {
-    width: 160px;
-    height: 190px;
-    margin-bottom: 12px;
+    width: 165px;
+    height: 195px;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
   }
 
   .hero-text-links {
@@ -1355,88 +1358,93 @@ a:hover .ext-arrow {
     justify-content: center;
     gap: 8px 10px;
     width: 100%;
-    max-width: 370px;
+    max-width: 420px;
   }
 
   .minimal-text-link {
     width: auto;
     max-width: none;
-    font-size: 0.84rem;
-    background: linear-gradient(135deg, #ffffff 0%, var(--gold-light) 100%);
-    border: 1px solid var(--gold-border);
-    box-shadow: 0 1px 3px rgba(184, 144, 71, 0.12);
-    padding: 6px 11px;
-    border-radius: 5px;
+    font-size: 0.86rem;
+    min-height: 42px;
+    padding: 8px 14px;
+    border-radius: 6px;
     display: inline-flex;
     align-items: center;
-    gap: 7px;
+    gap: 8px;
     font-weight: 600;
+    transition: var(--transition);
+  }
+
+  .minimal-text-link:active {
+    transform: scale(0.97);
   }
 
   .hero-name {
-    font-size: clamp(2.1rem, 7.5vw, 2.6rem);
+    font-size: clamp(2.1rem, 7.8vw, 2.7rem);
     text-align: center;
-    margin-top: 4px;
+    margin-top: 6px;
     line-height: 1.18;
+    letter-spacing: -0.015em;
   }
 
   .hero-subtitle {
     font-size: 1.12rem;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 
   .about-manuscript-container {
-    padding: 16px 16px;
-    margin: 14px 0 20px;
-    border-left-width: 3px;
+    padding: 18px clamp(16px, 4vw, 22px);
+    margin: 16px 0 22px;
+    border-left: 3.5px solid var(--royal-blue);
+    background: linear-gradient(180deg, #ffffff 0%, rgba(248, 249, 250, 0.5) 100%);
+    border-radius: 0 6px 6px 0;
   }
 
   .about-manuscript-container .hero-bio {
-    font-size: 1rem;
+    font-size: 1.02rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+  }
+
+  .prs-spotlight-box {
+    padding: 18px clamp(16px, 4vw, 22px);
+    margin: 22px 0;
+    border-radius: 6px;
+  }
+
+  .prs-spotlight-title {
+    font-size: 1.18rem;
+    margin-bottom: 8px;
+  }
+
+  .prs-spotlight-desc {
+    font-size: 0.98rem;
     line-height: 1.62;
     margin-bottom: 14px;
   }
 
-  .ongoing-inner-group {
-    padding: 12px 14px;
-    margin: 16px 0;
-  }
-
-  .ongoing-work-title {
-    font-size: 0.98rem;
-  }
-
-  .ongoing-work-list li {
-    font-size: 0.92rem;
-    margin-bottom: 8px;
-  }
-
-  .prs-spotlight-box {
-    padding: 16px 16px;
-    margin: 20px 0;
-  }
-
-  .prs-spotlight-title {
-    font-size: 1.15rem;
-  }
-
-  .prs-spotlight-desc {
-    font-size: 0.96rem;
-    line-height: 1.55;
+  .prs-explore-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 8px 16px;
+    font-size: 0.94rem;
+    font-weight: 600;
   }
 
   .hero-contact-row {
     flex-direction: column;
     align-items: flex-start;
-    gap: 6px;
-    padding-top: 12px;
+    gap: 8px;
+    padding-top: 14px;
   }
 
   .contact-emails-group {
     flex-direction: column;
     align-items: flex-start;
-    gap: 4px;
+    gap: 6px;
     width: 100%;
   }
 
@@ -1445,11 +1453,14 @@ a:hover .ext-arrow {
   }
 
   .contact-email {
-    font-size: 0.88rem;
+    font-size: 0.94rem;
     word-break: break-all;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
   }
 
-  /* Research Section */
+  /* Research Section Touch & Layout Improvements */
   .section-wrapper {
     padding: 38px 0;
   }
@@ -1459,196 +1470,241 @@ a:hover .ext-arrow {
   }
 
   .section-title {
-    font-size: 1.7rem;
+    font-size: 1.75rem;
     line-height: 1.2;
+    letter-spacing: -0.01em;
   }
 
   .section-subtitle {
-    font-size: 0.95rem;
-    line-height: 1.4;
+    font-size: 0.98rem;
+    line-height: 1.45;
+    margin-top: 4px;
   }
 
+  /* Horizontally Scrollable / Swipeable Research Pillar Navigation */
   .research-pillar-tabs {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 1fr;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
     gap: 10px;
+    padding-bottom: 8px;
     margin-bottom: 20px;
+    scrollbar-width: thin;
   }
 
   .pillar-tab-btn {
-    min-height: 76px;
-    padding: 12px 12px;
-    height: 100%;
+    flex: 0 0 clamp(240px, 72vw, 300px);
+    scroll-snap-align: start;
+    min-height: 78px;
+    padding: 14px 14px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 4px;
+    border-radius: 6px;
+    touch-action: manipulation;
   }
 
-  .pillar-tab-btn:nth-child(4) {
-    grid-column: auto;
+  .pillar-tab-btn:active {
+    transform: scale(0.98);
   }
 
   .pillar-tab-index {
-    font-size: 0.72rem;
+    font-size: 0.76rem;
   }
 
   .pillar-tab-title {
-    font-size: 0.92rem;
-    line-height: 1.25;
+    font-size: 0.96rem;
+    line-height: 1.3;
   }
 
   .pillar-detail-card {
-    padding: 18px 16px;
+    padding: 20px clamp(16px, 4vw, 24px);
+    border-radius: 6px;
   }
 
   .pillar-main-title {
-    font-size: 1.42rem;
+    font-size: 1.45rem;
     line-height: 1.25;
+    margin-bottom: 6px;
   }
 
   .pillar-sub-title {
-    font-size: 0.96rem;
+    font-size: 0.98rem;
+    line-height: 1.4;
+    margin-bottom: 12px;
   }
 
   .pillar-overview-text {
-    font-size: 0.98rem;
-    line-height: 1.6;
-    margin-bottom: 18px;
+    font-size: 1rem;
+    line-height: 1.68;
+    margin-bottom: 20px;
   }
 
   .pillar-math-box {
-    padding: 12px 12px;
-    margin-bottom: 20px;
+    padding: 14px 14px;
+    margin-bottom: 22px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     max-width: 100%;
+    position: relative;
+    border-radius: 0 4px 4px 0;
   }
 
   .katex-display {
     overflow-x: auto;
     overflow-y: hidden;
     max-width: 100%;
-    padding: 4px 0;
+    padding: 6px 2px;
     margin: 0.4em 0;
+    -webkit-overflow-scrolling: touch;
   }
 
   .contributions-heading {
-    font-size: 1.05rem;
+    font-size: 1.08rem;
+    margin-bottom: 10px;
   }
 
   .contributions-ul li {
-    font-size: 0.94rem;
-    line-height: 1.5;
+    font-size: 0.98rem;
+    line-height: 1.58;
+    margin-bottom: 10px;
   }
 
   .materials-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 12px;
   }
 
   .materials-heading {
-    font-size: 1.05rem;
+    font-size: 1.08rem;
   }
 
   .filter-pubs-action-btn {
     width: 100%;
     text-align: center;
-    padding: 8px 12px;
+    min-height: 44px;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    font-weight: 600;
   }
 
   .materials-grid {
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 10px;
   }
 
-  /* Publications Section */
+  .material-link-card {
+    min-height: 52px;
+    padding: 12px 14px;
+  }
+
+  /* Publications Section Responsive Flow */
   .pub-domain-filters {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 8px;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
     gap: 8px;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     scrollbar-width: thin;
   }
 
   .pub-domain-btn {
     flex-shrink: 0;
-    font-size: 0.86rem;
-    padding: 7px 12px;
+    scroll-snap-align: start;
+    font-size: 0.88rem;
+    min-height: 44px;
+    padding: 10px 16px;
     white-space: nowrap;
+    border-radius: 5px;
+    touch-action: manipulation;
   }
 
   .paper-list {
-    gap: 22px;
+    gap: 24px;
   }
 
   .paper-item {
     grid-template-columns: 1fr;
-    gap: 6px;
+    gap: 8px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border-subtle);
   }
 
   .paper-number {
     font-size: 0.82rem;
     background: var(--royal-blue-light);
     color: var(--royal-blue);
-    padding: 2px 8px;
-    border-radius: 3px;
+    padding: 3px 9px;
+    border-radius: 4px;
     display: inline-block;
     width: fit-content;
     margin-bottom: 2px;
   }
 
   .paper-title {
-    font-size: 1.15rem;
-    line-height: 1.35;
+    font-size: 1.2rem;
+    line-height: 1.38;
   }
 
   .paper-authors {
-    font-size: 0.92rem;
-    line-height: 1.4;
+    font-size: 0.96rem;
+    line-height: 1.48;
   }
 
   .paper-journal {
-    font-size: 0.88rem;
-    margin-bottom: 8px;
-  }
-
-  .paper-summary {
-    font-size: 0.92rem;
-    padding: 10px 12px;
-    line-height: 1.5;
+    font-size: 0.9rem;
     margin-bottom: 10px;
   }
 
+  .paper-summary {
+    font-size: 0.95rem;
+    padding: 12px 14px;
+    line-height: 1.58;
+    margin-bottom: 12px;
+  }
+
   .paper-actions {
-    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .paper-action-link,
   .paper-action-btn {
-    font-size: 0.8rem;
-    padding: 6px 11px;
+    font-size: 0.84rem;
+    min-height: 44px;
+    padding: 8px 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    touch-action: manipulation;
   }
 
   .bibtex-drawer {
-    font-size: 0.72rem;
-    padding: 10px;
+    font-size: 0.74rem;
+    padding: 12px;
     word-break: break-all;
     max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   /* Footer Section */
   .academic-footer {
-    padding: 32px 0 24px;
+    padding: 34px 0 26px;
   }
 
   .footer-inner {
     flex-direction: column;
-    gap: 18px;
+    gap: 20px;
   }
 
   .footer-right {
@@ -1657,51 +1713,63 @@ a:hover .ext-arrow {
   }
 
   .footer-links {
-    gap: 10px 16px;
-    font-size: 0.88rem;
+    gap: 12px 18px;
+    font-size: 0.9rem;
   }
 
-  /* CV Modal Mobile */
+  .footer-link,
+  .footer-cv-btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* CV Modal Touch & Sheet Ergonomics */
   .cv-modal-backdrop {
-    padding: 10px;
+    padding: 8px;
   }
 
   .cv-modal-window {
     max-height: 94vh;
-    border-radius: 4px;
+    border-radius: 6px;
   }
 
   .cv-modal-header {
-    padding: 12px 14px;
+    padding: 14px 16px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 12px;
   }
 
   .cv-modal-title {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
   }
 
   .cv-modal-controls {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 8px;
+    gap: 10px;
   }
 
   .cv-download-btn,
   .cv-close-btn {
-    font-size: 0.78rem;
-    padding: 6px 12px;
+    font-size: 0.84rem;
+    min-height: 44px;
+    padding: 8px 16px;
     text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .cv-modal-body {
-    padding: 18px 14px;
+    padding: 20px 16px;
+    -webkit-overflow-scrolling: touch;
   }
 
   .cv-paper-header h1 {
-    font-size: 1.55rem;
+    font-size: 1.6rem;
   }
 
   .cv-item-top {
@@ -1724,31 +1792,42 @@ a:hover .ext-arrow {
   }
 
   .hero-name {
-    font-size: 2.1rem;
+    font-size: clamp(1.95rem, 8.4vw, 2.3rem);
   }
 
   .portrait-frame {
-    width: 150px;
-    height: 180px;
+    width: 145px;
+    height: 175px;
   }
 
   .section-title {
-    font-size: 1.5rem;
+    font-size: 1.55rem;
+  }
+
+  .pillar-tab-btn {
+    flex: 0 0 85vw;
   }
 
   .pillar-main-title {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
   }
 
   .pillar-detail-card {
-    padding: 16px 12px;
+    padding: 16px 14px;
   }
 
   .cv-modal-backdrop {
-    padding: 4px;
+    padding: 0;
+  }
+
+  .cv-modal-window {
+    height: 100dvh;
+    max-height: 100dvh;
+    border-radius: 0;
   }
 
   .cv-modal-body {
-    padding: 14px 10px;
+    padding: 16px 12px;
   }
 }
+
