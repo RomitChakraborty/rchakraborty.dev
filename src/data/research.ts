@@ -3,6 +3,8 @@ export interface ResearchPillar {
   categoryKey: string;
   title: string;
   subtitle: string;
+  statusTag: string;
+  statusType: "preprint" | "grant" | "peer-reviewed";
   overview: string;
   keyContributions: string[];
   latexEq: string;
@@ -20,6 +22,8 @@ export const researchPillars: ResearchPillar[] = [
     categoryKey: "qbe",
     title: "Quantum Boltzmann Solver",
     subtitle: "Kinetic Transport & Entropic Regularization of Mean-Field Singularities",
+    statusTag: "● Active Preprint (arXiv:2608.14979)",
+    statusType: "preprint",
     overview: "Conventional mean-field electronic structure methods frequently break down near degeneracies, conical intersections, and strong correlation regimes due to singularities in the self-consistent field (SCF). Pioneered at Point Reyes Sound, Inc., Quantum Boltzmann Equation Self-Consistent-Field (QBE-SCF) propagates the one-electron reduced density matrix (1-RDM) in phase space via a Bhatnagar-Gross-Krook (BGK) collision operator, achieving natural monotonic entropic regularization across mean-field singularities without artificial symmetry breaking.",
     keyContributions: [
       "Propagates the one-electron reduced density matrix directly in phase space via non-equilibrium BGK relaxation.",
@@ -54,6 +58,8 @@ export const researchPillars: ResearchPillar[] = [
     categoryKey: "ai",
     title: "Agentic AI",
     subtitle: "Multimodal Foundation Models, LoRA Adaptations & Automated Orbital Recognition",
+    statusTag: "● Research Grant (Microsoft Azure)",
+    statusType: "grant",
     overview: "Leveraging transformer architectures and multimodal large language models to accelerate scientific discovery in quantum chemistry. We build agentic systems that automate complex electronic structure workflows—partitioning the many-electron Hilbert space into interacting and non-interacting subspaces, fine-tuning multimodal models (such as GPT-4o) using the QM9 dataset via Low-Rank Adaptation (LoRA), and engineering vision models to identify and categorize molecular orbitals directly from 3D iso-surfaces.",
     keyContributions: [
       "Agentic workflows that autonomously partition the Hilbert space into strongly interacting and spectator subspaces.",
@@ -88,6 +94,8 @@ export const researchPillars: ResearchPillar[] = [
     categoryKey: "mof",
     title: "Quantum Chemical Simulations of Metal-Organic Frameworks",
     subtitle: "Clean Energy Materials, Gas Storage, and ALMO Energy Decomposition Analysis",
+    statusTag: "● Peer-Reviewed (JACS / PCCP)",
+    statusType: "peer-reviewed",
     overview: "In collaboration with Prof. Martin Head-Gordon and Prof. Jeffrey R. Long at UC Berkeley and Lawrence Berkeley National Laboratory, we developed rigorous first-principles methodologies to investigate clean energy materials. Our work focuses on rational design of metal-organic frameworks (MOFs) for high-capacity dihydrogen (H2) storage and selective gas separations (O2/N2, CO2), deploying Absolutely Localized Molecular Orbital Energy Decomposition Analysis (ALMO-EDA) to dissect electrostatic, polarization, and charge-transfer contributions at open metal sites.",
     keyContributions: [
       "Validated binding energetics and orbital back-bonding for ambient-temperature hydrogen storage in vanadium(II) MOFs.",
@@ -146,6 +154,8 @@ export const researchPillars: ResearchPillar[] = [
     categoryKey: "pauli",
     title: "Generalized Pauli Conditions",
     subtitle: "Effective One-Body Constraints, 1-RDM Polytope Boundaries, and Wavefunction Sparsity",
+    statusTag: "● Peer-Reviewed (Phys. Rev. A / JCP)",
+    statusType: "peer-reviewed",
     overview: "Under the mentorship of Prof. David A. Mazziotti at the University of Chicago, we investigated the mathematical foundations of the generalized Pauli exclusion principle (Borland-Dennis and Klyachko constraints). We derived analytical conditions under which occupation numbers of the one-electron reduced density matrix (1-RDM) saturate boundary facets of the Pure N-representability polytope, proving that pinning enforces structural sparsity in CI wavefunctions and establishes spectral criteria for open quantum system dynamics.",
     keyContributions: [
       "Characterized Generalized Pauli polytope pinning conditions for atomic and molecular one-electron spectra.",
