@@ -108,7 +108,10 @@ export default function Publications({ selectedDomain, onDomainChange }) {
 
                   <div className="paper-journal">
                     <em>{paper.journal}</em> ({paper.year})
-                    {paper.isHotArticle && <span className="hot-tag">Hot Article</span>}
+                    {paper.isHotArticle && <span className="hot-tag">★ Hot Article</span>}
+                    {paper.domain === 'qbe' && <span className="domain-tag qbe-tag">Quantum Boltzmann</span>}
+                    {paper.domain === 'mof' && <span className="domain-tag mof-tag">MOF & ALMO-EDA</span>}
+                    {paper.domain === 'pauli' && <span className="domain-tag pauli-tag">Pauli Constraints</span>}
                   </div>
 
                   <p className="paper-summary">
@@ -119,7 +122,7 @@ export default function Publications({ selectedDomain, onDomainChange }) {
                     <a 
                       href={paper.url} 
                       target="_blank" 
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer" 
                       className="paper-action-link"
                     >
                       {paper.url.includes('arxiv.org') ? `arXiv:${paper.doi}` : `DOI: ${paper.doi}`} <span className="ext-arrow">↗</span>
@@ -127,16 +130,25 @@ export default function Publications({ selectedDomain, onDomainChange }) {
 
                     <button 
                       onClick={() => toggleBibtex(paper.id)}
-                      className="paper-action-btn"
+                      className={`paper-action-btn ${openBibtexId === paper.id ? 'active' : ''}`}
                     >
                       {openBibtexId === paper.id ? 'Hide BibTeX' : 'BibTeX'}
                     </button>
 
                     <button 
                       onClick={() => handleCopyBibtex(paper)}
-                      className="paper-action-btn"
+                      className={`paper-action-btn copy-btn ${copiedId === paper.id ? 'copied' : ''}`}
                     >
-                      {copiedId === paper.id ? '✓ Copied Citation' : 'Copy Citation'}
+                      {copiedId === paper.id ? (
+                        <span className="copied-label">
+                          <svg className="action-check-icon" viewBox="0 0 16 16" fill="currentColor" width="13" height="13">
+                            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                          </svg>
+                          Copied Citation
+                        </span>
+                      ) : (
+                        'Copy Citation'
+                      )}
                     </button>
                   </div>
 
