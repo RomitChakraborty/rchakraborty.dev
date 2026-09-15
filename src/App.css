@@ -746,12 +746,27 @@ a:hover .ext-arrow {
   font-family: var(--font-mono);
   font-size: 0.74rem;
   font-weight: 600;
-  color: #0b6b33;
-  background: #ebf7ee;
-  border: 1px solid rgba(11, 107, 51, 0.2);
   padding: 3px 9px;
   border-radius: 4px;
   letter-spacing: 0.02em;
+}
+
+.pillar-status-chip.status-preprint {
+  color: var(--royal-blue);
+  background: var(--royal-blue-light);
+  border: 1px solid rgba(0, 71, 187, 0.28);
+}
+
+.pillar-status-chip.status-grant {
+  color: #8c5305;
+  background: #fdf5ea;
+  border: 1px solid rgba(184, 144, 71, 0.35);
+}
+
+.pillar-status-chip.status-peer-reviewed {
+  color: #0b6b33;
+  background: #ebf7ee;
+  border: 1px solid rgba(11, 107, 51, 0.22);
 }
 
 .pillar-main-title {

@@ -108,7 +108,9 @@ export default function Research({ selectedPillarId, onSelectDomain }) {
                 {getPillarGlyph(activePillar.id)}
                 <span>Program 0{researchPillars.findIndex(p => p.id === activePillar.id) + 1}</span>
               </span>
-              <span className="pillar-status-chip">● Peer-Reviewed & Active</span>
+                <span className={`pillar-status-chip status-${activePillar.statusType || 'default'}`}>
+                  {activePillar.statusTag || '● Active Research Program'}
+                </span>
             </div>
             <h3 className="pillar-main-title">{activePillar.title}</h3>
             <div className="pillar-sub-title">{activePillar.subtitle}</div>
