@@ -84,7 +84,7 @@ export default function Hero({ onSelectPillar }) {
 
             {/* Practical Electronic Structure & Head-Gordon */}
             <p className="hero-bio">
-              Following this journey of abstractions that many would consider tangential to formal electronic structure theory, I worked with Prof. Martin Head-Gordon at Berkeley where I assisted in the rational design efforts for clean energy materials: <a href="#research" onClick={handleMofClick}>metal-organic frameworks for gas storage and separations</a>.
+              Following this journey of abstractions, I worked with Prof. Martin Head-Gordon at Berkeley where I assisted in the rational design efforts for clean energy materials: <a href="#research" onClick={handleMofClick}>metal-organic frameworks for gas storage and separations</a>.
             </p>
 
             {/* AI & Multimodal LLMs */}
