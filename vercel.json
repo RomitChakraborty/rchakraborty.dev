@@ -3,17 +3,6 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.rchakraborty.dev"
-        }
-      ],
-      "destination": "https://rchakraborty.dev/:path*",
-      "permanent": true
-    },
-    {
       "source": "/cv",
       "destination": "/cv.pdf",
       "permanent": false
