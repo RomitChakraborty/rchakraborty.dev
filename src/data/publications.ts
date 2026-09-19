@@ -23,11 +23,13 @@ export const publicationsData: Publication[] = [
     year: 2026,
     category: "submitted",
     arxiv: "2608.14979",
+    doi: "10.48550/arXiv.2608.14979",
     bibtex: `@article{chakraborty2026qbescf,
   title={Quantum Boltzmann Equation Self-Consistent-Field Method for Entropic Regularization of Mean-Field Singularities near Conical Intersections},
   author={Chakraborty, Romit},
   journal={arXiv preprint arXiv:2608.14979},
-  year={2026}
+  year={2026},
+  doi={10.48550/arXiv.2608.14979}
 }`,
     abstract: "We introduce a Quantum Boltzmann Equation self-consistent-field (QBE-SCF) framework that propagates the one-electron reduced density matrix via a Bhatnagar-Gross-Krook (BGK) collision operator. QBE-SCF achieves entropic regularization across mean-field singularities near electronic degeneracies."
   },
