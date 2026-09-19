@@ -118,7 +118,7 @@ export default function Publications({ selectedDomain, onDomainChange }) {
 
                   <div className="paper-journal">
                     <em>{paper.journal}</em> ({paper.year})
-                    {paper.isHotArticle && <span className="hot-tag">★ Hot Article</span>}
+                    {paper.isHotArticle && <span className="hot-tag">Hot Article</span>}
                     {paper.domain === 'qbe' && <span className="domain-tag qbe-tag">Quantum Boltzmann</span>}
                     {paper.domain === 'mof' && <span className="domain-tag mof-tag">MOF & ALMO-EDA</span>}
                     {paper.domain === 'pauli' && <span className="domain-tag pauli-tag">Pauli Constraints</span>}
@@ -158,7 +158,6 @@ export default function Publications({ selectedDomain, onDomainChange }) {
                         className="paper-action-link scite-badge-link"
                         title="View Smart Citations on scite.ai"
                       >
-                        <span style={{ color: '#0284c7', fontWeight: 'bold', marginRight: '3px' }}>✦</span>
                         scite Smart Citations <span className="ext-arrow">↗</span>
                       </a>
                     )}

@@ -63,7 +63,7 @@ export default function Navbar({ onOpenCV }) {
             className="mobile-nav-link mobile-nav-cv"
             onClick={handleCVClick}
           >
-            Curriculum Vitae 📄
+            Curriculum Vitae
           </button>
         </div>
       </div>

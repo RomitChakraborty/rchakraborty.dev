@@ -45,7 +45,7 @@ export default function ResearchPillars() {
                     rel="noopener noreferrer"
                     className="pub-action-btn"
                   >
-                    💻 Code Repository &rarr;
+                    Code Repository &rarr;
                   </a>
                 )}
               </div>
