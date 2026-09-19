@@ -42,8 +42,20 @@ export const researchPillars: ResearchPillar[] = [
       {
         label: "Point Reyes Sound, Inc. — Research Pod Portal",
         type: "pod",
-        url: "https://www.pointreyessound.com",
+        url: "https://pointreyessound.com",
         badge: "Pod"
+      },
+      {
+        label: "Point Reyes Sound — Seed Diligence Portal",
+        type: "pod",
+        url: "https://pointreyessound.com#investors",
+        badge: "Diligence"
+      },
+      {
+        label: "Executive Overview Deck (16:9 Presentation)",
+        type: "paper",
+        url: "https://pointreyessound.com/public-deck",
+        badge: "Deck"
       },
       {
         label: "Point Reyes Sound — Open Research GitHub",

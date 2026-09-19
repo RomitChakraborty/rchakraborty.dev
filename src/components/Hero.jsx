@@ -42,6 +42,12 @@ export default function Hero({ onSelectPillar }) {
               </svg>
               <span>GitHub</span> <span className="ext-arrow">↗</span>
             </a>
+            <a href={profileData.links.prsGithub} target="_blank" rel="noopener noreferrer" className="minimal-text-link">
+              <svg className="brand-icon github-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+              <span>PRS GitHub</span> <span className="ext-arrow">↗</span>
+            </a>
             <a href={profileData.links.orcid} target="_blank" rel="noopener noreferrer" className="minimal-text-link">
               <svg className="brand-icon orcid-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.306v7.444h2.244c2.612 0 3.816-1.575 3.816-3.722 0-2.016-1.125-3.722-3.75-3.722h-2.31z" />
@@ -95,13 +101,29 @@ export default function Hero({ onSelectPillar }) {
 
           {/* Concise Point Reyes Sound, Inc. Section */}
           <div className="prs-spotlight-box">
-            <h3 className="prs-spotlight-title">Point Reyes Sound, Inc.</h3>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: "8px", marginBottom: "8px" }}>
+              <h3 className="prs-spotlight-title" style={{ margin: 0 }}>Point Reyes Sound, Inc.</h3>
+              <span style={{ fontSize: "0.78rem", fontFamily: "var(--font-mono, monospace)", color: "#10b981", background: "rgba(16, 185, 129, 0.1)", padding: "2px 8px", borderRadius: "4px", border: "1px solid rgba(16, 185, 129, 0.25)" }}>
+                Seed Round Diligence
+              </span>
+            </div>
             <p className="prs-spotlight-desc">
-              <strong>Point Reyes Sound, Inc.</strong> is a privately held theoretical and computational research pod specializing in building first-principles <strong>Quantum Boltzmann Solvers (QBE-SCF)</strong>, non-equilibrium electronic structure methods, and phase-space kinetic transport frameworks for molecules and functional materials.
+              <strong>Point Reyes Sound, Inc.</strong> is a privately held theoretical and computational research pod pioneering <strong>Quantum Boltzmann Solvers (QBE-SCF)</strong>, non-equilibrium electronic structure methods, and phase-space kinetic transport frameworks for molecules and functional materials.
             </p>
-            <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer" className="prs-explore-link">
-              Explore Point Reyes Sound, Inc. &rarr;
-            </a>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "12px" }}>
+              <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer" className="prs-explore-link" style={{ textDecoration: "none" }}>
+                Visit Research Pod &rarr;
+              </a>
+              <a href={profileData.links.prsDiligence} target="_blank" rel="noopener noreferrer" className="prs-explore-link" style={{ textDecoration: "none", color: "#3b82f6", borderColor: "rgba(59, 130, 246, 0.4)" }}>
+                Seed Diligence Portal ↗
+              </a>
+              <a href={profileData.links.prsDeck} target="_blank" rel="noopener noreferrer" className="prs-explore-link" style={{ textDecoration: "none", color: "#8b5cf6", borderColor: "rgba(139, 92, 246, 0.4)" }}>
+                Executive Deck (16:9) ↗
+              </a>
+              <a href={profileData.links.prsExecutivePdf} target="_blank" rel="noopener noreferrer" className="prs-explore-link" style={{ textDecoration: "none", color: "#10b981", borderColor: "rgba(16, 185, 129, 0.4)" }}>
+                Executive Overview (PDF) ↓
+              </a>
+            </div>
           </div>
 
           {/* Contact Section with Requested Emails */}

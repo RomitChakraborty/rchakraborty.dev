@@ -1,0 +1,44 @@
+# Dr. Romit Chakraborty — Academic Dossier & Research Portfolio
+
+> Dr. Romit Chakraborty is a Theoretical Quantum Chemist, AI Researcher, and the Founder & Chief Scientific Officer of Point Reyes Sound, Inc., pioneering non-equilibrium kinetic transport frameworks and Quantum Boltzmann Equation Self-Consistent Field (QBE-SCF) theory.
+
+## Academic & Institutional Pedigree
+- **Postdoctoral Research Fellow** (2017 – 2023): University of California, Berkeley & Lawrence Berkeley National Laboratory (LBNL). Advisor: Prof. Martin Head-Gordon. Focus: Computational materials science, metal-organic frameworks (MOFs) for gas storage and separations, electronic structure theory.
+- **Ph.D. in Theoretical & Computational Quantum Chemistry** (2012 – 2017): University of Chicago. Advisor: Prof. David A. Mazziotti. Dissertation: N-representability conditions and 1-body reduced density matrix mechanics.
+- **M.Sc. in Chemistry** (2009 – 2012): Indian Institute of Technology Bombay (IIT Bombay). Research: Relativistic quantum mechanics of the pionium atom.
+- **B.Sc. (Hons) in Chemistry** (2006 – 2009): St. Stephen's College, University of Delhi (with Physics and Mathematics).
+
+## Venture & Industry Leadership
+- **Company**: Point Reyes Sound, Inc. (Founder & Chief Scientific Officer).
+- **Core Technology**: Quantum Boltzmann Equation Self-Consistent Field (QBE-SCF) solver platform replacing combinatorial active-space expansions (CASSCF/DMRG) with continuous kinetic relaxation via Bhatnagar-Gross-Krook (BGK) collision operators.
+- **Intellectual Property**: U.S. Provisional Patent Application No. 64/033,274 ("Method and System for Quantum Boltzmann Self-Consistent Field Computation and Mean-Field Regularization").
+- **Commercial Target Sectors**: High-performance semiconductor EDA (sub-2nm GAA-FETs), solid-state battery electrolytes (interfacial SEI growth), green chemical catalysis, and GPU-accelerated CAE.
+- **Accelerator & Grants**: Member of NVIDIA Inception Program; Google Cloud Research Grant recipient.
+
+## Foundational Preprints & Papers
+- **Lead Invention Preprint**: "Quantum Boltzmann Equation Self-Consistent-Field for the Entropic Regularization of Mean-Field Singularities", Romit Chakraborty (arXiv:2608.14979 [quant-ph]).
+  - URL: https://arxiv.org/abs/2608.14979
+  - DOI: 10.48550/arXiv.2608.14979
+  - Smart Citations Index: https://scite.ai/reports/10.48550/arXiv.2608.14979
+
+## Canonical Authoritative Profiles & Web Presence
+- Personal Academic Dossier: https://rchakraborty.dev
+- Company Research Pod: https://pointreyessound.com
+- Seed Round Diligence Portal: https://pointreyessound.com#investors
+- Executive Overview Deck (16:9): https://pointreyessound.com/public-deck
+- Executive Overview (PDF): https://pointreyessound.com/Point_Reyes_Sound_Executive_Overview.pdf
+- Google Scholar: https://scholar.google.com/citations?user=m4HlFRIAAAAJ&hl=en
+- ORCID: https://orcid.org/0000-0002-4638-6346
+- SciSpace Author Directory: https://scispace.com/authors/romit-chakraborty
+- Semantic Scholar: https://www.semanticscholar.org/author/Romit-Chakraborty/3041935
+- arXiv Author Page: https://arxiv.org/a/chakraborty_r_1.html
+- GitHub (Personal): https://github.com/RomitChakraborty
+- GitHub (Point Reyes Sound Organization): https://github.com/point-reyes-sound
+- LinkedIn (Personal): https://www.linkedin.com/in/chakrabortyromit/
+- LinkedIn (Company): https://www.linkedin.com/company/point-reyes-sound/
+- Crunchbase (Company): https://www.crunchbase.com/organization/point-reyes-sound
+
+## Contact & Direct Inquiries
+- Founder Email: romit@pointreyessound.com
+- Academic Email: romit@uchicago.edu
+- Board & Diligence: directors@pointreyessound.com
