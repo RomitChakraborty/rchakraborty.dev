@@ -37,26 +37,36 @@
     <!-- Scite Badge Integration for Verified DOI & Smart Citations -->
     <script async type="application/javascript" src="https://cdn.scite.ai/badge/scite-badge-latest.min.js"></script>
 
-    <!-- Ecosystem Linked-Data JSON-LD Schema (rchakraborty.dev <-> pointreyessound.com) -->
+    <!-- Ecosystem Authoritative Linked-Data JSON-LD Knowledge Graph -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "Person",
-          "@id": "https://rchakraborty.dev",
+          "@id": "https://rchakraborty.dev#person",
           "name": "Dr. Romit Chakraborty",
+          "honorificPrefix": "Dr.",
+          "honorificSuffix": "Ph.D.",
+          "jobTitle": "Founder & Chief Scientific Officer",
           "url": "https://rchakraborty.dev",
+          "email": "romit@pointreyessound.com",
+          "worksFor": {
+            "@type": "ResearchOrganization",
+            "@id": "https://pointreyessound.com/#organization",
+            "name": "Point Reyes Sound, Inc.",
+            "url": "https://pointreyessound.com"
+          },
           "alumniOf": [
             { "@type": "EducationalOrganization", "name": "University of Chicago", "url": "https://chemistry.uchicago.edu" },
             { "@type": "EducationalOrganization", "name": "Indian Institute of Technology Bombay", "url": "https://www.iitb.ac.in" },
             { "@type": "EducationalOrganization", "name": "St. Stephen's College, Delhi", "url": "https://www.ststephens.edu" }
           ],
           "affiliation": [
+            { "@type": "Organization", "name": "Point Reyes Sound, Inc.", "url": "https://pointreyessound.com" },
             { "@type": "ResearchOrganization", "name": "University of California, Berkeley", "url": "https://berkeley.edu" },
             { "@type": "ResearchOrganization", "name": "Lawrence Berkeley National Laboratory", "url": "https://www.lbl.gov" },
-            { "@type": "Organization", "name": "PsiQuantum", "url": "https://www.psiquantum.com" },
-            { "@type": "Organization", "name": "Point Reyes Sound, Inc.", "url": "https://pointreyessound.com" }
+            { "@type": "Organization", "name": "PsiQuantum", "url": "https://www.psiquantum.com" }
           ],
           "knowsAbout": [
             "Theoretical Quantum Chemistry",
@@ -64,15 +74,32 @@
             "Kinetic Transport Modeling",
             "Fault-Tolerant Quantum Algorithm Resource Compilation",
             "Electronic Structure Theory",
-            "Q-Chem Quantum Chemistry Software Package"
+            "Q-Chem Quantum Chemistry Software Package",
+            "Reduced Density Matrix Mechanics"
+          ],
+          "sameAs": [
+            "https://rchakraborty.dev",
+            "https://scispace.com/authors/romit-chakraborty",
+            "https://scholar.google.com/citations?hl=en&user=m4HlFRIAAAAJ",
+            "https://orcid.org/0000-0002-4638-6346",
+            "https://arxiv.org/a/chakraborty_r_1.html",
+            "https://www.semanticscholar.org/author/Romit-Chakraborty/3041935",
+            "https://github.com/RomitChakraborty",
+            "https://github.com/point-reyes-sound",
+            "https://www.linkedin.com/in/chakrabortyromit/",
+            "https://www.linkedin.com/company/point-reyes-sound/",
+            "https://www.crunchbase.com/organization/point-reyes-sound",
+            "https://pointreyessound.com"
           ]
         },
         {
-          "@type": "Organization",
-          "@id": "https://pointreyessound.com",
+          "@type": "ResearchOrganization",
+          "@id": "https://pointreyessound.com/#organization",
           "name": "Point Reyes Sound, Inc.",
           "url": "https://pointreyessound.com",
-          "founder": "https://rchakraborty.dev",
+          "founder": {
+            "@id": "https://rchakraborty.dev#person"
+          },
           "foundingDate": "2026",
           "knowsAbout": [
             "Quantum Chemistry",
@@ -84,59 +111,6 @@
           ],
           "publishingPrinciples": "https://doi.org"
         }
-      ]
-    }
-    </script>
-
-    <!-- Schema.org JSON-LD (Person) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Romit Chakraborty",
-      "honorificPrefix": "Dr.",
-      "honorificSuffix": "Ph.D.",
-      "jobTitle": "Founder & Chief Scientific Officer",
-      "worksFor": {
-        "@type": "ResearchOrganization",
-        "name": "Point Reyes Sound, Inc.",
-        "url": "https://pointreyessound.com"
-      },
-      "alumniOf": [
-        {
-          "@type": "EducationalOrganization",
-          "name": "University of Chicago"
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "University of California, Berkeley"
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "Lawrence Berkeley National Laboratory"
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "IIT Bombay"
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "St. Stephen's College, Delhi"
-        }
-      ],
-      "url": "https://rchakraborty.dev",
-      "sameAs": [
-        "https://scispace.com/authors/romit-chakraborty",
-        "https://scholar.google.com/citations?hl=en&user=m4HlFRIAAAAJ",
-        "https://orcid.org/0000-0002-4638-6346",
-        "https://arxiv.org/a/chakraborty_r_1.html",
-        "https://www.semanticscholar.org/author/Romit-Chakraborty/3041935",
-        "https://github.com/RomitChakraborty",
-        "https://github.com/point-reyes-sound",
-        "https://www.linkedin.com/in/chakrabortyromit/",
-        "https://www.linkedin.com/company/point-reyes-sound/",
-        "https://www.crunchbase.com/organization/point-reyes-sound",
-        "https://pointreyessound.com"
       ]
     }
     </script>
