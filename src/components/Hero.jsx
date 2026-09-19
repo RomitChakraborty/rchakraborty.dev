@@ -95,7 +95,7 @@ export default function Hero({ onSelectPillar }) {
 
             {/* AI & Multimodal LLMs */}
             <p className="hero-bio" style={{ marginBottom: 0 }}>
-              As an AI optimist, I am enthused by the prospect of using transformer-based architectures to learn more about the physical world. I enjoy building extensions to solutions in the natural sciences by programming multimodal large language models.
+              I enjoy building extensions to solutions in the natural sciences by programming <a href={profileData.links.prsInteractive} target="_blank" rel="noopener noreferrer">multimodal large language models</a>.
             </p>
           </div>
 
