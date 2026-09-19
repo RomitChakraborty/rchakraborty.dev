@@ -537,18 +537,30 @@ a:hover .ext-arrow {
   margin-bottom: 12px;
 }
 
-.prs-explore-link {
+.prs-deck-btn {
   font-family: var(--font-sans);
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 600;
-  color: var(--royal-blue);
+  color: #ffffff;
+  background: var(--royal-blue);
+  border: 1px solid var(--royal-blue);
+  border-radius: 4px;
+  padding: 8px 18px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+  box-shadow: 0 1px 3px rgba(0, 71, 187, 0.16);
 }
 
-.prs-explore-link:hover {
-  text-decoration: underline;
+.prs-deck-btn:hover {
+  background: var(--royal-blue-hover);
+  border-color: var(--royal-blue-hover);
+  color: #ffffff;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 71, 187, 0.22);
 }
 
 .hero-contact-row {

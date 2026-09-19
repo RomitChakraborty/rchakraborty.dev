@@ -101,27 +101,18 @@ export default function Hero({ onSelectPillar }) {
 
           {/* Concise Point Reyes Sound, Inc. Section */}
           <div className="prs-spotlight-box">
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: "8px", marginBottom: "8px" }}>
-              <h3 className="prs-spotlight-title" style={{ margin: 0 }}>Point Reyes Sound, Inc.</h3>
-              <span style={{ fontSize: "0.78rem", fontFamily: "var(--font-mono, monospace)", color: "#10b981", background: "rgba(16, 185, 129, 0.1)", padding: "2px 8px", borderRadius: "4px", border: "1px solid rgba(16, 185, 129, 0.25)" }}>
-                Seed Round Diligence
-              </span>
-            </div>
+            <h3 className="prs-spotlight-title" style={{ margin: "0 0 10px 0" }}>Point Reyes Sound, Inc.</h3>
             <p className="prs-spotlight-desc">
               <strong>Point Reyes Sound, Inc.</strong> is a privately held theoretical and computational research pod pioneering <strong>Quantum Boltzmann Solvers (QBE-SCF)</strong>, non-equilibrium electronic structure methods, and phase-space kinetic transport frameworks for molecules and functional materials.
             </p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "12px" }}>
-              <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer" className="prs-explore-link" style={{ textDecoration: "none" }}>
-                Visit Research Pod &rarr;
-              </a>
-              <a href={profileData.links.prsDiligence} target="_blank" rel="noopener noreferrer" className="prs-explore-link" style={{ textDecoration: "none", color: "#3b82f6", borderColor: "rgba(59, 130, 246, 0.4)" }}>
-                Seed Diligence Portal ↗
-              </a>
-              <a href={profileData.links.prsDeck} target="_blank" rel="noopener noreferrer" className="prs-explore-link" style={{ textDecoration: "none", color: "#8b5cf6", borderColor: "rgba(139, 92, 246, 0.4)" }}>
-                Executive Deck (16:9) ↗
-              </a>
-              <a href={profileData.links.prsExecutivePdf} target="_blank" rel="noopener noreferrer" className="prs-explore-link" style={{ textDecoration: "none", color: "#10b981", borderColor: "rgba(16, 185, 129, 0.4)" }}>
-                Executive Overview (PDF) ↓
+            <div style={{ marginTop: "14px" }}>
+              <a 
+                href={profileData.links.prsDeck} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="prs-deck-btn"
+              >
+                View Seed Deck &rarr;
               </a>
             </div>
           </div>
