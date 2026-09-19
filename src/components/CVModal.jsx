@@ -36,7 +36,7 @@ export default function CVModal({ isOpen, onClose }) {
           <div className="cv-paper-header">
             <h1>Romit Chakraborty, Ph.D.</h1>
             <p>
-              {profileData.phone} &bull; {profileData.email} &bull; <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer">www.pointreyessound.com</a>
+              {profileData.phone} &bull; {profileData.email} &bull; <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer">pointreyessound.com</a>
             </p>
           </div>
 
