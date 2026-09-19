@@ -3,7 +3,9 @@
 > Dr. Romit Chakraborty is a Theoretical Quantum Chemist, AI Researcher, and the Founder & Chief Scientific Officer of Point Reyes Sound, Inc., pioneering non-equilibrium kinetic transport frameworks and Quantum Boltzmann Equation Self-Consistent Field (QBE-SCF) theory.
 
 ## Academic & Institutional Pedigree
-- **Postdoctoral Research Fellow** (2017 – 2023): University of California, Berkeley & Lawrence Berkeley National Laboratory (LBNL). Advisor: Prof. Martin Head-Gordon. Focus: Computational materials science, metal-organic frameworks (MOFs) for gas storage and separations, electronic structure theory.
+- **Senior Computational Scientist, AI & Quantum Solutions** (2024 – 2025): PsiQuantum (Palo Alto, CA). Focus: Fault-tolerant quantum algorithms, Hamiltonian resource compilation under photonic quantum error correction constraints, and scalable distributed simulation pipelines.
+- **Staff Researcher in Quantum AI & Generative Modeling** (2023 – 2024): University of Chicago (Gagliardi Group). Microsoft Azure Accelerate Foundation Models Research grant recipient.
+- **Postdoctoral Research Fellow** (2017 – 2023): University of California, Berkeley & Lawrence Berkeley National Laboratory (LBNL). Advisor: Prof. Martin Head-Gordon. Focus: Computational materials science, metal-organic frameworks (MOFs) for gas storage and separations, electronic structure theory, and co-author of the Q-Chem 5 package.
 - **Ph.D. in Theoretical & Computational Quantum Chemistry** (2012 – 2017): University of Chicago. Advisor: Prof. David A. Mazziotti. Dissertation: N-representability conditions and 1-body reduced density matrix mechanics.
 - **M.Sc. in Chemistry** (2009 – 2012): Indian Institute of Technology Bombay (IIT Bombay). Research: Relativistic quantum mechanics of the pionium atom.
 - **B.Sc. (Hons) in Chemistry** (2006 – 2009): St. Stephen's College, University of Delhi (with Physics and Mathematics).
@@ -20,6 +22,9 @@
   - URL: https://arxiv.org/abs/2608.14979
   - DOI: 10.48550/arXiv.2608.14979
   - Smart Citations Index: https://scite.ai/reports/10.48550/arXiv.2608.14979
+- **Fault-Tolerant Quantum Compilation Brief**: "Hardware Resource Compilation for Active-Space Driven Fault-Tolerant Quantum Simulation", Romit Chakraborty (Technical Brief / In Preparation for PRX Quantum). Demonstrates a 1,747× reduction in Toffoli gate complexity (1.66 × 10⁹ T-gates, 168 logical qubits on Cr₂) by pre-relaxing active spaces via classical kinetic transport before quantum execution.
+- **Q-Chem 5 Software Package Overview**: "Software for the frontiers of quantum chemistry: An overview of developments in the Q-Chem 5 package", E. Epifanovsky, ..., R. Chakraborty, ..., M. Head-Gordon, J.M. Herbert, A.I. Krylov, *The Journal of Chemical Physics* 155 (8), 084801 (2021). DOI: [10.1063/5.0055522](https://doi.org/10.1063/5.0055522).
+- **PCCP Hot Article (MOF Hydrogen Storage)**: "Quantum Chemical Modeling of Hydrogen Binding in Metal-Organic Frameworks: Validation, Insight, Predictions and Challenges", R. Chakraborty, J.J. Talbot, H. Shen, Y. Yabuuchi, H. Jiang, K.M. Carsch, H. Furukawa, J.R. Long, M. Head-Gordon, *Phys. Chem. Chem. Phys.* 26 (8), 6490–6511 (2024). DOI: [10.1039/D3CP05540J](https://doi.org/10.1039/D3CP05540J).
 
 ## Canonical Authoritative Profiles & Web Presence
 - Personal Academic Dossier: https://rchakraborty.dev
