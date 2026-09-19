@@ -15,6 +15,7 @@ export const profileData = {
     prsWebsite: "https://pointreyessound.com",
     prsDiligence: "https://pointreyessound.com#investors",
     prsDeck: "https://pointreyessound.com/public-deck",
+    prsInteractive: "https://pointreyessound.com/interactive",
     prsExecutivePdf: "https://pointreyessound.com/Point_Reyes_Sound_Executive_Overview.pdf",
     prsLinkedin: "https://www.linkedin.com/company/point-reyes-sound/",
     prsCrunchbase: "https://www.crunchbase.com/organization/point-reyes-sound",
