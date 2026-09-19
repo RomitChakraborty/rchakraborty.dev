@@ -12,6 +12,16 @@ export default function Publications({ selectedDomain, onDomainChange }) {
     }
   }, [selectedDomain]);
 
+  useEffect(() => {
+    try {
+      if (typeof window !== 'undefined' && window.__scite && typeof window.__scite.insertBadges === 'function') {
+        window.__scite.insertBadges();
+      }
+    } catch {
+      // Graceful fallback if scite is offline or blocked
+    }
+  }, [filter]);
+
   const handleFilterSelect = (newFilter) => {
     setFilter(newFilter);
     if (onDomainChange) {
@@ -125,8 +135,41 @@ export default function Publications({ selectedDomain, onDomainChange }) {
                       rel="noopener noreferrer" 
                       className="paper-action-link"
                     >
-                      {paper.url.includes('arxiv.org') ? `arXiv:${paper.doi}` : `DOI: ${paper.doi}`} <span className="ext-arrow">↗</span>
+                      {paper.url.includes('arxiv.org') ? 'arXiv:2608.14979' : `DOI: ${paper.doi}`} <span className="ext-arrow">↗</span>
                     </a>
+
+                    {paper.url.includes('arxiv.org') && (
+                      <a 
+                        href={`https://doi.org/${paper.doi}`} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="paper-action-link doi-badge-link"
+                        title="Official Registered DOI via DataCite/arXiv"
+                      >
+                        DOI: {paper.doi} <span className="ext-arrow">↗</span>
+                      </a>
+                    )}
+
+                    {paper.doi && (
+                      <a 
+                        href={`https://scite.ai/reports/${paper.doi}`} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="paper-action-link scite-badge-link"
+                        title="View Smart Citations on scite.ai"
+                      >
+                        <span style={{ color: '#0284c7', fontWeight: 'bold', marginRight: '3px' }}>✦</span>
+                        scite Smart Citations <span className="ext-arrow">↗</span>
+                      </a>
+                    )}
+
+                    <div 
+                      className="scite-badge" 
+                      data-doi={paper.doi} 
+                      data-layout="horizontal" 
+                      data-show-zero="false" 
+                      data-small="true"
+                    />
 
                     <button 
                       onClick={() => toggleBibtex(paper.id)}

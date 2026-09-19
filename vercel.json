@@ -1,0 +1,111 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/cv",
+      "destination": "/cv.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/resume",
+      "destination": "/cv.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/research",
+      "destination": "/#research",
+      "permanent": false
+    },
+    {
+      "source": "/publications",
+      "destination": "/#publications",
+      "permanent": false
+    },
+    {
+      "source": "/papers",
+      "destination": "/#publications",
+      "permanent": false
+    },
+    {
+      "source": "/experience",
+      "destination": "/#experience",
+      "permanent": false
+    },
+    {
+      "source": "/awards",
+      "destination": "/#awards",
+      "permanent": false
+    },
+    {
+      "source": "/media",
+      "destination": "/#media",
+      "permanent": false
+    },
+    {
+      "source": "/about",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/bio",
+      "destination": "/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!.*\\..*).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=3600"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=3600"
+        }
+      ]
+    }
+  ]
+}
