@@ -1,5 +1,38 @@
-# https://www.rchakraborty.dev robots.txt
+# robots.txt for Romit Chakraborty, Ph.D.
+# https://rchakraborty.dev
+
 User-agent: *
 Allow: /
+Allow: /llms.txt
+Allow: /cv.pdf
 
-Sitemap: https://www.rchakraborty.dev/sitemap.xml
+# Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI Search Engine & LLM Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://rchakraborty.dev/sitemap.xml
