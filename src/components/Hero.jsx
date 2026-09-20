@@ -112,7 +112,7 @@ export default function Hero({ onSelectPillar }) {
                 rel="noopener noreferrer" 
                 className="prs-deck-btn"
               >
-                View Seed Deck &rarr;
+                Deck
               </a>
             </div>
           </div>
