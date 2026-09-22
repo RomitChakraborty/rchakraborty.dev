@@ -18,7 +18,7 @@ export const profileData = {
     prsInteractive: "https://pointreyessound.com/interactive",
     prsExecutivePdf: "https://pointreyessound.com/Point_Reyes_Sound_Executive_Overview.pdf",
     prsLinkedin: "https://www.linkedin.com/company/point-reyes-sound/",
-    prsCrunchbase: "https://www.crunchbase.com/organization/point-reyes-sound",
+    prsCrunchbase: "https://www.crunchbase.com/organization/point-reyes-sound-inc-4399",
     googleScholar: "https://scholar.google.com/citations?user=m4HlFRIAAAAJ&hl=en",
     orcid: "https://orcid.org/0000-0002-4638-6346",
     linkedin: "https://www.linkedin.com/in/chakrabortyromit/"
