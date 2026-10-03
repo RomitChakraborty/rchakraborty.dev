@@ -14,7 +14,7 @@ export default function CVModal({ isOpen, onClose }) {
         <div className="cv-modal-header">
           <div>
             <h3 className="cv-modal-title">Curriculum Vitae — Romit Chakraborty</h3>
-            <span className="cv-modal-subtitle">Updated August 2026</span>
+            <span className="cv-modal-subtitle">Updated October 2026</span>
           </div>
 
           <div className="cv-modal-controls">
@@ -36,7 +36,7 @@ export default function CVModal({ isOpen, onClose }) {
           <div className="cv-paper-header">
             <h1>Romit Chakraborty, Ph.D.</h1>
             <p>
-              {profileData.phone} &bull; {profileData.email} &bull; <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer">pointreyessound.com</a>
+              {profileData.phone} &bull; <a href="mailto:romit@pointreyessound.com">romit@pointreyessound.com</a> &bull; <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer">www.pointreyessound.com</a>
             </p>
           </div>
 
