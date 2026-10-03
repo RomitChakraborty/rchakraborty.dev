@@ -80,7 +80,7 @@ export default function Hero({ onSelectPillar }) {
             </p>
 
             <p className="hero-bio">
-              DFT, a workhorse for practical materials simulations, is an effective one-electron theory that elegantly side-steps the well-known N-representability problem that applies to the treatment of many electron quantum systems. For a concise outline of effective one-body constraints that are necessary Pure N-representability of the one-electron reduced density matrix (1-RDM) as well as their applications to chemical and biological systems, peruse my <a href="https://www.proquest.com/openview/4e94e4be5bd5b67d83add173091d5b31/1?pq-origsite=gscholar&cbl=18750" target="_blank" rel="noopener noreferrer">dissertation on this topic</a>.
+              For a concise outline of effective one-body constraints that are necessary Pure N-representability of the one-electron reduced density matrix (1-RDM) as well as their applications to chemical and biological systems, peruse my <a href="https://www.proquest.com/openview/4e94e4be5bd5b67d83add173091d5b31/1?pq-origsite=gscholar&cbl=18750" target="_blank" rel="noopener noreferrer">dissertation on this topic</a>.
             </p>
 
             {/* Practical Electronic Structure & Head-Gordon */}
