@@ -6,8 +6,10 @@ export default function Footer({ onOpenCV }) {
     <footer className="academic-footer">
       <div className="academic-container footer-inner">
         <div className="footer-left">
+          <div className="footer-accent-bar" aria-hidden="true" />
           <div className="footer-name">Romit Chakraborty</div>
           <div className="footer-affiliation">
+            Founder and CEO,{' '}
             <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer">
               Point Reyes Sound, Inc.
             </a>

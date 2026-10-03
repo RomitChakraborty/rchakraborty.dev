@@ -1260,16 +1260,35 @@ a:hover .ext-arrow {
   gap: 28px;
 }
 
+.footer-accent-bar {
+  width: 44px;
+  height: 3.5px;
+  background: var(--royal-blue);
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
 .footer-name {
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 2px;
 }
 
+.footer-affiliation {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-top: 3px;
+}
+
 .footer-affiliation a {
   color: var(--royal-blue);
   font-weight: 600;
   font-size: 1rem;
+  text-decoration: none;
+}
+
+.footer-affiliation a:hover {
+  text-decoration: underline;
 }
 
 .footer-pedigree {
