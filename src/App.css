@@ -398,6 +398,39 @@ a:hover {
   color: #0a66c2; /* Official LinkedIn Blue */
 }
 
+.deck-icon {
+  color: #ffffff;
+}
+
+/* Solid Royal Blue Deck Button under LinkedIn */
+.minimal-text-link.hero-deck-btn {
+  background: var(--royal-blue);
+  border: 1px solid var(--royal-blue);
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(0, 71, 187, 0.28);
+}
+
+.minimal-text-link.hero-deck-btn:hover {
+  background: var(--royal-blue-hover);
+  border-color: var(--royal-blue-hover);
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(0, 71, 187, 0.42);
+  transform: translateY(-1px);
+}
+
+.minimal-text-link.hero-deck-btn .brand-icon.deck-icon {
+  color: #ffffff;
+}
+
+.minimal-text-link.hero-deck-btn .ext-arrow {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.minimal-text-link.hero-deck-btn:hover .ext-arrow {
+  color: #ffffff;
+  opacity: 1;
+}
+
 .minimal-text-link:hover .brand-icon {
   transform: scale(1.08);
 }
