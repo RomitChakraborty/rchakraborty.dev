@@ -1245,13 +1245,23 @@ a:hover .ext-arrow {
   overflow-x: auto;
 }
 
-/* Footer: Symmetric Royal Blue Bottom Banner */
+/* Footer: Sandwiched Blue Banners around White Middle Band with Blue Text */
 .academic-footer {
+  background: transparent;
+  padding: 0;
+  margin-top: 60px;
+}
+
+.footer-top-band {
   background: var(--royal-blue);
-  color: #ffffff;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0 -2px 12px rgba(0, 71, 187, 0.18);
-  padding: 42px 0 0;
+  height: 52px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 71, 187, 0.12);
+}
+
+.footer-middle-band {
+  background: #ffffff;
+  padding: 40px 0 36px;
 }
 
 .footer-inner {
@@ -1263,36 +1273,37 @@ a:hover .ext-arrow {
 }
 
 .footer-name {
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--royal-blue);
   letter-spacing: -0.01em;
   margin-bottom: 4px;
 }
 
 .footer-affiliation {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--royal-blue);
   margin-top: 2px;
+  font-weight: 500;
 }
 
 .footer-affiliation a {
-  color: #ffffff;
-  font-weight: 600;
+  color: var(--royal-blue);
+  font-weight: 700;
   font-size: 1rem;
   text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.45);
+  text-decoration-color: rgba(0, 71, 187, 0.45);
   text-underline-offset: 3px;
   transition: text-decoration-color 0.15s ease;
 }
 
 .footer-affiliation a:hover {
-  text-decoration-color: #ffffff;
+  text-decoration-color: var(--royal-blue);
 }
 
 .footer-pedigree {
   font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 71, 187, 0.82);
   margin-top: 8px;
   line-height: 1.5;
 }
@@ -1308,12 +1319,12 @@ a:hover .ext-arrow {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  font-size: 0.92rem;
+  font-size: 0.94rem;
   align-items: center;
 }
 
 .footer-links a {
-  color: #ffffff;
+  color: var(--royal-blue);
   text-decoration: none;
   font-family: var(--font-serif);
   font-weight: 600;
@@ -1321,18 +1332,18 @@ a:hover .ext-arrow {
 }
 
 .footer-links a:hover {
-  color: #ffffff;
+  color: var(--royal-blue);
   text-decoration: underline;
 }
 
 .footer-links .ext-arrow {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--royal-blue);
 }
 
 .footer-cv-btn {
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(223, 185, 105, 0.65);
-  color: #ffffff;
+  background: var(--gold-light);
+  border: 1px solid var(--gold-border);
+  color: var(--royal-blue);
   cursor: pointer;
   padding: 4px 12px;
   border-radius: 4px;
@@ -1340,24 +1351,22 @@ a:hover .ext-arrow {
   font-size: 0.92rem;
   font-weight: 600;
   transition: var(--transition);
-  position: relative;
 }
 
 .footer-cv-btn:hover {
-  background: rgba(223, 185, 105, 0.25);
-  border-color: rgba(223, 185, 105, 0.95);
-  color: #ffffff;
+  background: #f7eedb;
+  border-color: var(--gold-primary);
+  color: var(--royal-blue);
   text-decoration: none;
-  box-shadow: 0 0 12px rgba(223, 185, 105, 0.35);
+  box-shadow: 0 2px 6px var(--gold-glow);
 }
 
-/* Symmetric Sub-Bar inside Bottom Banner */
+/* Lower Blue Band with Contact Info and Copyright */
 .footer-bottom-bar {
-  background: rgba(0, 50, 140, 0.35);
+  background: var(--royal-blue);
   color: #ffffff;
-  margin-top: 36px;
   padding: 16px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 -2px 8px rgba(0, 71, 187, 0.12);
 }
 
 .footer-bottom-inner {
@@ -1376,7 +1385,7 @@ a:hover .ext-arrow {
 }
 
 .footer-bottom-bar .contact-label {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.88);
   font-weight: 600;
 }
 
@@ -1401,7 +1410,7 @@ a:hover .ext-arrow {
 }
 
 .footer-bottom-bar .footer-copy {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.88);
   font-size: 0.84rem;
 }
 
