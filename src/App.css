@@ -1317,6 +1317,24 @@ a:hover .ext-arrow {
   color: var(--text-muted);
 }
 
+.footer-bottom-bar {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
 /* CV Modal */
 .cv-modal-backdrop {
   position: fixed;
@@ -1903,6 +1921,12 @@ a:hover .ext-arrow {
     min-height: 44px;
     display: inline-flex;
     align-items: center;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
   }
 
   /* CV Modal Touch & Sheet Ergonomics */

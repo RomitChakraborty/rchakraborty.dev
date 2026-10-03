@@ -99,20 +99,6 @@ export default function Hero({ onSelectPillar }) {
               I enjoy building extensions to solutions in the natural sciences by programming <a href={profileData.links.prsInteractive} target="_blank" rel="noopener noreferrer">multimodal large language models</a>.
             </p>
           </div>
-
-          {/* Contact Section with Requested Emails */}
-          <div className="hero-contact-row">
-            <span className="contact-label">Contact:</span>
-            <div className="contact-emails-group">
-              <a href="mailto:romit@pointreyessound.com" className="contact-email">
-                romit@pointreyessound.com
-              </a>
-              <span className="email-sep">&bull;</span>
-              <a href="mailto:romit@uchicago.edu" className="contact-email">
-                romit@uchicago.edu
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>

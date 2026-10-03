@@ -26,9 +26,24 @@ export default function Footer({ onOpenCV }) {
             <a href={profileData.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn <span className="ext-arrow">↗</span></a>
             <button onClick={onOpenCV} className="footer-cv-btn">Curriculum Vitae</button>
           </div>
-          <div className="footer-copy">
-            &copy; {new Date().getFullYear()} Romit Chakraborty. All rights reserved.
+        </div>
+      </div>
+
+      <div className="academic-container footer-bottom-bar">
+        <div className="footer-contact-row">
+          <span className="contact-label">Contact:</span>
+          <div className="contact-emails-group">
+            <a href="mailto:romit@pointreyessound.com" className="contact-email">
+              romit@pointreyessound.com
+            </a>
+            <span className="email-sep">&bull;</span>
+            <a href="mailto:romit@uchicago.edu" className="contact-email">
+              romit@uchicago.edu
+            </a>
           </div>
+        </div>
+        <div className="footer-copy">
+          &copy; {new Date().getFullYear()} Romit Chakraborty. All rights reserved.
         </div>
       </div>
     </footer>
