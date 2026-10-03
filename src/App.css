@@ -1249,7 +1249,7 @@ a:hover .ext-arrow {
 .academic-footer {
   background: #ffffff;
   border-top: 1px solid var(--border-subtle);
-  padding: 44px 0 32px;
+  padding: 44px 0 0;
 }
 
 .footer-inner {
@@ -1312,15 +1312,16 @@ a:hover .ext-arrow {
   box-shadow: 0 2px 6px var(--gold-glow);
 }
 
-.footer-copy {
-  font-size: 0.82rem;
-  color: var(--text-muted);
+/* Royal Blue Final Block to Round Up the Site */
+.footer-bottom-bar {
+  background: var(--royal-blue);
+  color: #ffffff;
+  margin-top: 36px;
+  padding: 16px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-.footer-bottom-bar {
-  margin-top: 28px;
-  padding-top: 20px;
-  border-top: 1px solid var(--border-subtle);
+.footer-bottom-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1333,6 +1334,36 @@ a:hover .ext-arrow {
   align-items: center;
   gap: 10px;
   font-size: 0.95rem;
+}
+
+.footer-bottom-bar .contact-label {
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 600;
+}
+
+.footer-bottom-bar .contact-email {
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.45);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease, opacity 0.15s ease;
+}
+
+.footer-bottom-bar .contact-email:hover {
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+  opacity: 0.95;
+}
+
+.footer-bottom-bar .email-sep {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.footer-bottom-bar .footer-copy {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.84rem;
 }
 
 /* CV Modal */
@@ -1898,7 +1929,7 @@ a:hover .ext-arrow {
 
   /* Footer Section */
   .academic-footer {
-    padding: 34px 0 26px;
+    padding: 34px 0 0;
   }
 
   .footer-inner {
@@ -1924,6 +1955,11 @@ a:hover .ext-arrow {
   }
 
   .footer-bottom-bar {
+    padding: 16px 0;
+    margin-top: 28px;
+  }
+
+  .footer-bottom-inner {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
