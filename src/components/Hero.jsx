@@ -74,9 +74,9 @@ export default function Hero({ onSelectPillar }) {
 
           {/* Unified About Me Container with Continuous Royal Blue Left Margin */}
           <div className="about-manuscript-container">
-            {/* Scientific Foundation */}
+            {/* Quantum Kinetic Boltzmann Solvers & Technical Report */}
             <p className="hero-bio">
-              I use the tenets of quantum chemistry to conduct simulations of clean energy materials with a broad view toward developing efficient energy storage and conversion systems.
+              I develop Quantum Kinetic Boltzmann solvers that resolve correlated electrons sans factorial bottlenecks, as detailed in our <a href="https://arxiv.org/abs/2608.14979" target="_blank" rel="noopener noreferrer">technical report</a>.
             </p>
 
             <p className="hero-bio">
