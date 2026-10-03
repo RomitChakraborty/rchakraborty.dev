@@ -76,7 +76,7 @@ export default function Hero({ onSelectPillar }) {
           <div className="about-manuscript-container">
             {/* Scientific Foundation */}
             <p className="hero-bio">
-              I use the tenets of quantum chemistry to conduct simulations of clean energy materials with a broad view toward developing efficient energy storage and conversion systems. My pursuits are informed by the foundations of Density Functional Theory (DFT) and Reduced Density Matrix (RDM) theory, both of which provide compressed descriptions of the Hilbert space.
+              I use the tenets of quantum chemistry to conduct simulations of clean energy materials with a broad view toward developing efficient energy storage and conversion systems.
             </p>
 
             <p className="hero-bio">
