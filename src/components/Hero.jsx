@@ -60,6 +60,12 @@ export default function Hero({ onSelectPillar }) {
               </svg>
               <span>LinkedIn</span> <span className="ext-arrow">↗</span>
             </a>
+            <a href={profileData.links.prsDeck} target="_blank" rel="noopener noreferrer" className="minimal-text-link hero-deck-btn">
+              <svg className="brand-icon deck-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h6v2H8v2h8v-2h-3v-2h6c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 10H5V5h14v8z" />
+              </svg>
+              <span>Deck</span> <span className="ext-arrow">↗</span>
+            </a>
           </div>
         </div>
 
@@ -92,24 +98,6 @@ export default function Hero({ onSelectPillar }) {
             <p className="hero-bio" style={{ marginBottom: 0 }}>
               I enjoy building extensions to solutions in the natural sciences by programming <a href={profileData.links.prsInteractive} target="_blank" rel="noopener noreferrer">multimodal large language models</a>.
             </p>
-          </div>
-
-          {/* Concise Point Reyes Sound, Inc. Section */}
-          <div className="prs-spotlight-box">
-            <h3 className="prs-spotlight-title" style={{ margin: "0 0 10px 0" }}>Point Reyes Sound, Inc.</h3>
-            <p className="prs-spotlight-desc">
-              <strong>Point Reyes Sound, Inc.</strong> is a privately held theoretical and computational research pod pioneering <strong>Quantum Boltzmann Solvers (QBE-SCF)</strong>, non-equilibrium electronic structure methods, and phase-space kinetic transport frameworks for molecules and functional materials.
-            </p>
-            <div style={{ marginTop: "14px" }}>
-              <a 
-                href={profileData.links.prsDeck} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="prs-deck-btn"
-              >
-                Deck
-              </a>
-            </div>
           </div>
 
           {/* Contact Section with Requested Emails */}
