@@ -1,8 +1,8 @@
 export const profileData = {
   name: "Romit Chakraborty",
   title: "Quantum Chemist & AI Researcher",
-  currentRole: "Point Reyes Sound, Inc.",
-  shortBio: "Quantum Chemist and AI Researcher leveraging the basic tenets of quantum chemistry to conduct simulations of clean energy materials with a broad view toward developing efficient energy storage and conversion systems.",
+  currentRole: "Founder & CEO, Point Reyes Sound, Inc.",
+  shortBio: "Quantum chemist and architect of phase-space electronic structure theory, uniting quantum mechanics with kinetic transport to develop Quantum Boltzmann Equation (QBE) solvers that autonomously regularize mean-field singularities and ameliorate the exponential scaling walls of strongly correlated quantum matter.",
   emails: [
     "romit@pointreyessound.com",
     "romit@uchicago.edu"
@@ -24,9 +24,9 @@ export const profileData = {
     linkedin: "https://www.linkedin.com/in/chakrabortyromit/"
   },
   pedigree: [
-    { institution: "University of Chicago", role: "MS & Ph.D. in Theoretical & Computational Quantum Chemistry", advisor: "Prof. David A. Mazziotti", years: "2012 – 2017" },
-    { institution: "UC Berkeley & Lawrence Berkeley National Lab", role: "Postdoctoral Fellow in Computational Materials Science", advisor: "Prof. Martin Head-Gordon", years: "2017 – 2023" },
-    { institution: "IIT Bombay", role: "M.Sc. in Chemistry (Relativistic Quantum Mechanics of Pionium Atom)", years: "2009 – 2012" },
-    { institution: "St. Stephen's College, Delhi", role: "B.Sc. (Hons) in Chemistry, with Physics and Mathematics", years: "2006 – 2009" }
+    { institution: "University of California, Berkeley & Lawrence Berkeley National Laboratory", role: "Postdoctoral Research Fellow in Computational Materials Science", advisor: "Prof. Martin Head-Gordon", years: "2017 – 2023" },
+    { institution: "University of Chicago", role: "MS, Ph.D. in Theoretical and Computational Quantum Chemistry", advisor: "Prof. David A. Mazziotti", years: "2012 – 2017" },
+    { institution: "IIT Bombay", role: "Master of Science (Thesis: Relativistic Quantum Mechanics of the Pionium Atom in Uniform Magnetic Fields)", years: "2009 – 2012" },
+    { institution: "St. Stephen's College, Delhi", role: "B.Sc (Hons) in Chemistry, with Physics and Mathematics", years: "2006 – 2009" }
   ]
 };
