@@ -36,38 +36,14 @@ export default function Footer({ onOpenCV }) {
         </div>
       </div>
 
-      {/* Lower Blue Band with Contact Info and Copyright */}
+      {/* Lower Blue Band with Single Contact Email and Copyright */}
       <div className="footer-bottom-bar">
         <div className="academic-container footer-bottom-inner">
           <div className="footer-contact-row">
             <span className="contact-label">Contact:</span>
-            <div className="contact-emails-group">
-              <a href="mailto:romit@pointreyessound.com" className="contact-email">
-                romit@pointreyessound.com
-              </a>
-              <span className="email-sep">&bull;</span>
-              <a href="mailto:romit@uchicago.edu" className="contact-email">
-                romit@uchicago.edu
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Royal Blue Final Block to Round Up the Site */}
-      <div className="footer-bottom-bar">
-        <div className="academic-container footer-bottom-inner">
-          <div className="footer-contact-row">
-            <span className="contact-label">Contact:</span>
-            <div className="contact-emails-group">
-              <a href="mailto:romit@pointreyessound.com" className="contact-email">
-                romit@pointreyessound.com
-              </a>
-              <span className="email-sep">&bull;</span>
-              <a href="mailto:romit@uchicago.edu" className="contact-email">
-                romit@uchicago.edu
-              </a>
-            </div>
+            <a href="mailto:romit@pointreyessound.com" className="contact-email">
+              romit@pointreyessound.com
+            </a>
           </div>
           <div className="footer-copy">
             &copy; {new Date().getFullYear()} Romit Chakraborty. All rights reserved.
