@@ -16,15 +16,17 @@
     <meta property="og:site_name" content="Romit Chakraborty" />
     <meta property="og:title" content="Romit Chakraborty — Quantum Chemist & AI Researcher" />
     <meta property="og:description" content="Simulations of clean energy materials, Density Functional Theory (DFT), Reduced Density Matrix (RDM) theory, Quantum Boltzmann Solvers (QBE-SCF), and Multimodal Agentic AI." />
-    <meta property="og:image" content="https://rchakraborty.dev/og-image.svg" />
+    <meta property="og:image" content="https://rchakraborty.dev/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Romit Chakraborty — Research Portfolio, Academic Dossier, and Curriculum Vitae" />
 
     <!-- Twitter / X Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Romit Chakraborty — Quantum Chemist & AI Researcher" />
     <meta name="twitter:description" content="Simulations of clean energy materials, DFT, RDM Theory, Quantum Boltzmann Solvers (QBE-SCF), and Multimodal Agentic AI." />
-    <meta name="twitter:image" content="https://rchakraborty.dev/og-image.svg" />
+    <meta name="twitter:image" content="https://rchakraborty.dev/og-image.png" />
 
     <!-- Google Fonts: EB Garamond (Editorial Primary), JetBrains Mono, Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,6 +56,13 @@
             "@id": "https://pointreyessound.com/#organization",
             "name": "Point Reyes Sound, Inc.",
             "url": "https://pointreyessound.com"
+          },
+          "subjectOf": {
+            "@type": "DigitalDocument",
+            "@id": "https://rchakraborty.dev/cv.pdf",
+            "name": "Curriculum Vitae — Romit Chakraborty",
+            "encodingFormat": "application/pdf",
+            "url": "https://rchakraborty.dev/cv.pdf"
           },
           "alumniOf": [
             { "@type": "EducationalOrganization", "name": "University of Chicago", "url": "https://chemistry.uchicago.edu" },
@@ -99,6 +108,14 @@
             "@id": "https://rchakraborty.dev#person"
           },
           "foundingDate": "2026",
+          "sameAs": [
+            "https://pointreyessound.com",
+            "https://www.linkedin.com/company/point-reyes-sound/",
+            "https://github.com/point-reyes-sound",
+            "https://www.crunchbase.com/organization/point-reyes-sound-inc-4399",
+            "https://arxiv.org/abs/2608.14979",
+            "https://doi.org/10.48550/arXiv.2608.14979"
+          ],
           "knowsAbout": [
             "Quantum Chemistry",
             "Artificial Intelligence",
@@ -114,7 +131,33 @@
     </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <noscript>
+        <header>
+          <h1>Romit Chakraborty</h1>
+          <p>Quantum Chemist &amp; AI Researcher · Founder &amp; Chief Scientific Officer at <a href="https://pointreyessound.com">Point Reyes Sound, Inc.</a></p>
+          <nav>
+            <a href="https://rchakraborty.dev/cv.pdf">Download Curriculum Vitae (PDF)</a> &bull;
+            <a href="https://pointreyessound.com">Point Reyes Sound</a> &bull;
+            <a href="https://www.linkedin.com/in/chakrabortyromit/">Personal LinkedIn</a> &bull;
+            <a href="https://www.linkedin.com/company/point-reyes-sound/">Point Reyes Sound LinkedIn</a> &bull;
+            <a href="https://scholar.google.com/citations?user=m4HlFRIAAAAJ">Google Scholar</a> &bull;
+            <a href="https://arxiv.org/abs/2608.14979">Lead Preprint (arXiv:2608.14979)</a> &bull;
+            <a href="https://github.com/RomitChakraborty">GitHub</a>
+          </nav>
+        </header>
+        <main>
+          <section>
+            <h2>Academic &amp; Institutional Pedigree</h2>
+            <p>Doctoral Research in Theoretical Quantum Chemistry (University of Chicago, Prof. David A. Mazziotti) &bull; Postdoctoral Research Fellow in Computational Materials Science (UC Berkeley &amp; LBNL, Prof. Martin Head-Gordon) &bull; Former Senior Computational Scientist at PsiQuantum &bull; Master of Science (IIT Bombay) &bull; B.Sc. Hons (St. Stephen's College).</p>
+          </section>
+          <section>
+            <h2>Core Research &amp; Technology</h2>
+            <p>Pioneering phase-space electronic structure theory and Quantum Boltzmann Equation Self-Consistent Field (QBE-SCF) solvers that eliminate factorial active-space bottlenecks and entropically regularize mean-field singularities.</p>
+          </section>
+        </main>
+      </noscript>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

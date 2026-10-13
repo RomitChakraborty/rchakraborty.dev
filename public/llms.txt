@@ -28,6 +28,7 @@
 
 ## Canonical Authoritative Profiles & Web Presence
 - Personal Academic Dossier: https://rchakraborty.dev
+- Curriculum Vitae (PDF): https://rchakraborty.dev/cv.pdf
 - Company Research Pod: https://pointreyessound.com
 - Seed Round Diligence Portal: https://pointreyessound.com#investors
 - Executive Overview Deck (16:9): https://pointreyessound.com/public-deck
