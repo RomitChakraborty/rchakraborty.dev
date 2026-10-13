@@ -1,12 +1,12 @@
-# Dr. Romit Chakraborty — Academic Dossier & Research Portfolio
+# Romit Chakraborty — Academic Dossier & Research Portfolio
 
-> Dr. Romit Chakraborty is a Theoretical Quantum Chemist, AI Researcher, and the Founder & Chief Scientific Officer of Point Reyes Sound, Inc., pioneering non-equilibrium kinetic transport frameworks and Quantum Boltzmann Equation Self-Consistent Field (QBE-SCF) theory.
+> Romit Chakraborty is a Theoretical Quantum Chemist, AI Researcher, and the Founder & Chief Scientific Officer of Point Reyes Sound, Inc., pioneering non-equilibrium kinetic transport frameworks and Quantum Boltzmann Equation Self-Consistent Field (QBE-SCF) theory.
 
 ## Academic & Institutional Pedigree
 - **Senior Computational Scientist, AI & Quantum Solutions** (2024 – 2025): PsiQuantum (Palo Alto, CA). Focus: Fault-tolerant quantum algorithms, Hamiltonian resource compilation under photonic quantum error correction constraints, and scalable distributed simulation pipelines.
 - **Staff Researcher in Quantum AI & Generative Modeling** (2023 – 2024): University of Chicago (Gagliardi Group). Microsoft Azure Accelerate Foundation Models Research grant recipient.
 - **Postdoctoral Research Fellow** (2017 – 2023): University of California, Berkeley & Lawrence Berkeley National Laboratory (LBNL). Advisor: Prof. Martin Head-Gordon. Focus: Computational materials science, metal-organic frameworks (MOFs) for gas storage and separations, electronic structure theory, and co-author of the Q-Chem 5 package.
-- **Ph.D. in Theoretical & Computational Quantum Chemistry** (2012 – 2017): University of Chicago. Advisor: Prof. David A. Mazziotti. Dissertation: N-representability conditions and 1-body reduced density matrix mechanics.
+- **Theoretical & Computational Quantum Chemistry (Doctoral Research)** (2012 – 2017): University of Chicago. Advisor: Prof. David A. Mazziotti. Dissertation: N-representability conditions and 1-body reduced density matrix mechanics.
 - **M.Sc. in Chemistry** (2009 – 2012): Indian Institute of Technology Bombay (IIT Bombay). Research: Relativistic quantum mechanics of the pionium atom.
 - **B.Sc. (Hons) in Chemistry** (2006 – 2009): St. Stephen's College, University of Delhi (with Physics and Mathematics).
 

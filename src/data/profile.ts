@@ -25,7 +25,7 @@ export const profileData = {
   },
   pedigree: [
     { institution: "University of California, Berkeley & Lawrence Berkeley National Laboratory", role: "Postdoctoral Research Fellow in Computational Materials Science", advisor: "Prof. Martin Head-Gordon", years: "2017 – 2023" },
-    { institution: "University of Chicago", role: "MS, Ph.D. in Theoretical and Computational Quantum Chemistry", advisor: "Prof. David A. Mazziotti", years: "2012 – 2017" },
+    { institution: "University of Chicago", role: "Doctoral Research in Theoretical and Computational Quantum Chemistry", advisor: "Prof. David A. Mazziotti", years: "2012 – 2017" },
     { institution: "IIT Bombay", role: "Master of Science (Thesis: Relativistic Quantum Mechanics of the Pionium Atom in Uniform Magnetic Fields)", years: "2009 – 2012" },
     { institution: "St. Stephen's College, Delhi", role: "B.Sc (Hons) in Chemistry, with Physics and Mathematics", years: "2006 – 2009" }
   ]

@@ -28,9 +28,9 @@
     <line x1="0" y1="0" x2="0" y2="180" stroke="#0047bb" stroke-width="4" stroke-linecap="round" />
     
     <g transform="translate(24, 0)">
-      <text x="0" y="38" class="title">Romit Chakraborty, Ph.D.</text>
+      <text x="0" y="38" class="title">Romit Chakraborty</text>
       <text x="0" y="80" class="role">Quantum Chemist &amp; AI Researcher · Point Reyes Sound, Inc.</text>
-      <text x="0" y="120" class="provenance">University of Chicago (Ph.D. '17) · UC Berkeley &amp; LBNL Postdoc ('23) · PsiQuantum (2025) · IIT Bombay ('12)</text>
+      <text x="0" y="120" class="provenance">University of Chicago ('17) · UC Berkeley &amp; LBNL Postdoc ('23) · PsiQuantum (2025) · IIT Bombay ('12)</text>
       <text x="0" y="156" font-family="'EB Garamond', Georgia, serif" font-size="18" fill="#4b5563">
         Quantum Boltzmann Solvers, Reduced Density Matrix Theory, and Multimodal Agentic AI
       </text>
