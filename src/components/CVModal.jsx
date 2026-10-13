@@ -26,7 +26,7 @@ export default function CVModal({ isOpen, onClose }) {
                 className={`cv-mode-btn ${viewMode === 'pdf' ? 'active' : ''}`}
                 onClick={() => setViewMode('pdf')}
               >
-                Vector PDF (3 Pages)
+                Vector PDF (4 Pages)
               </button>
               <button 
                 type="button"
