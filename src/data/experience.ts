@@ -64,17 +64,6 @@ export const experienceData: ExperienceItem[] = [
     ]
   },
   {
-    id: "newtonx",
-    role: "Scientific Computing Consultant",
-    organization: "NewtonX",
-    location: "Remote, part-time, USA",
-    period: "06/2022 – 08/2022",
-    type: "industry",
-    highlights: [
-      "Provided domain expertise and technical assessment on high-performance computing, quantum hardware roadmaps, and chemistry simulation software."
-    ]
-  },
-  {
     id: "qchem",
     role: "Scientific Software Developer",
     organization: "Q-Chem Inc.",
