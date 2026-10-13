@@ -18,6 +18,11 @@
   --royal-blue-hover: #00338d;
   --royal-blue-light: #eef3fc;
 
+  /* UChicago Maroon Accent Palette */
+  --uchicago-maroon: #800000;
+  --uchicago-maroon-hover: #630000;
+  --uchicago-maroon-light: #fbf0f0;
+
   /* Editorial Gold & Champagne Accent Palette */
   --gold-primary: #b89047;
   --gold-accent: #c5a059;
@@ -625,6 +630,15 @@ a:hover .ext-arrow {
   font-style: italic;
 }
 
+/* Articles Section Header: UChicago Maroon Accent */
+.articles-header {
+  border-bottom: 2px solid var(--uchicago-maroon) !important;
+}
+
+.articles-title {
+  color: var(--uchicago-maroon) !important;
+}
+
 /* 4 Differentiated Pillar Navigation Tabs */
 .research-pillar-tabs {
   display: grid;
@@ -1055,15 +1069,79 @@ a:hover .ext-arrow {
   text-decoration: underline;
 }
 
+.paper-link.paper-link-qbe {
+  color: var(--royal-blue) !important;
+  font-weight: 700;
+}
+
+.paper-link.paper-link-qbe:hover {
+  color: var(--royal-blue-hover) !important;
+  text-decoration: underline;
+}
+
+.paper-item.paper-item-qbe {
+  background: rgba(0, 71, 187, 0.02);
+  border-left: 3px solid var(--royal-blue);
+  border-radius: 0 6px 6px 0;
+  padding-left: 12px;
+}
+
+.paper-citation-block {
+  margin-bottom: 8px;
+}
+
 .paper-authors {
   font-size: 1rem;
   color: var(--text-secondary);
   margin-bottom: 4px;
+  line-height: 1.45;
 }
 
 .paper-authors .author-highlight {
   font-weight: 700;
   color: var(--royal-blue);
+}
+
+.paper-venue-row {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
+.paper-journal-name {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.paper-year-badge {
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.paper-doi-text {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.doi-inline-link {
+  color: var(--royal-blue);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  transition: color 0.15s ease;
+}
+
+.doi-inline-link:hover {
+  color: var(--royal-blue-hover);
+  text-decoration: underline;
 }
 
 .paper-journal {
@@ -1152,6 +1230,18 @@ a:hover .ext-arrow {
   border-color: var(--royal-blue);
   text-decoration: none;
   transform: translateY(-1px);
+}
+
+.paper-action-link.primary-article-link {
+  background: var(--royal-blue);
+  color: #ffffff;
+  border-color: var(--royal-blue);
+}
+
+.paper-action-link.primary-article-link:hover {
+  background: var(--royal-blue-hover);
+  border-color: var(--royal-blue-hover);
+  color: #ffffff;
 }
 
 .paper-action-btn {

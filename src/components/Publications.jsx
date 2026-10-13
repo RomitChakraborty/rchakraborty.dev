@@ -29,8 +29,13 @@ export default function Publications({ selectedDomain, onDomainChange }) {
     }
   };
 
-  const handleCopyBibtex = (item) => {
-    navigator.clipboard.writeText(item.bibtex);
+  const formatCitation = (paper) => {
+    return `${paper.authors}. "${paper.title}." ${paper.journal} (${paper.year}). https://doi.org/${paper.doi}`;
+  };
+
+  const handleCopyCitation = (item) => {
+    const citationText = formatCitation(item);
+    navigator.clipboard.writeText(citationText);
     setCopiedId(item.id);
     setTimeout(() => setCopiedId(null), 2500);
   };
@@ -50,11 +55,8 @@ export default function Publications({ selectedDomain, onDomainChange }) {
   return (
     <section id="publications" className="section-wrapper">
       <div className="academic-container">
-        <div className="section-header">
-          <h2 className="section-title">Published Articles & Preprints</h2>
-          <p className="section-subtitle">
-            Peer-Reviewed Literature and Indexed Scholarly Works
-          </p>
+        <div className="section-header articles-header">
+          <h2 className="section-title articles-title">Articles</h2>
         </div>
 
         {/* Domain Filter Pills */}
@@ -63,7 +65,7 @@ export default function Publications({ selectedDomain, onDomainChange }) {
             className={`pub-domain-btn ${filter === 'all' ? 'active' : ''}`}
             onClick={() => handleFilterSelect('all')}
           >
-            All Papers ({publishedPapers.length})
+            All Articles ({publishedPapers.length})
           </button>
           <button 
             className={`pub-domain-btn ${filter === 'qbe' ? 'active' : ''}`}
@@ -91,7 +93,7 @@ export default function Publications({ selectedDomain, onDomainChange }) {
             const authorParts = paper.authors.split(/(Chakraborty,\s*R\.?|Chakraborty\s*R\.?)/g);
 
             return (
-              <article key={paper.id} className="paper-item">
+              <article key={paper.id} className={`paper-item ${paper.domain === 'qbe' || paper.title.toLowerCase().includes('quantum boltzmann equation') ? 'paper-item-qbe' : ''}`}>
                 <div className="paper-number">[{index + 1}]</div>
 
                 <div className="paper-body">
@@ -100,28 +102,36 @@ export default function Publications({ selectedDomain, onDomainChange }) {
                       href={paper.url} 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="paper-link"
+                      className={`paper-link ${paper.domain === 'qbe' || paper.title.toLowerCase().includes('quantum boltzmann equation') ? 'paper-link-qbe' : ''}`}
                     >
                       {paper.title} <span className="ext-arrow">↗</span>
                     </a>
                   </h3>
 
-                  <div className="paper-authors">
-                    {authorParts.map((part, i) => 
-                      part.includes('Chakraborty') ? (
-                        <span key={i} className="author-highlight">{part}</span>
-                      ) : (
-                        <span key={i}>{part}</span>
-                      )
-                    )}
-                  </div>
+                  <div className="paper-citation-block">
+                    <div className="paper-authors">
+                      {authorParts.map((part, i) => 
+                        part.includes('Chakraborty') ? (
+                          <strong key={i} className="author-highlight">{part}</strong>
+                        ) : (
+                          <span key={i}>{part}</span>
+                        )
+                      )}
+                    </div>
 
-                  <div className="paper-journal">
-                    <em>{paper.journal}</em> ({paper.year})
-                    {paper.isHotArticle && <span className="hot-tag">Hot Article</span>}
-                    {paper.domain === 'qbe' && <span className="domain-tag qbe-tag">Quantum Boltzmann</span>}
-                    {paper.domain === 'mof' && <span className="domain-tag mof-tag">MOF & ALMO-EDA</span>}
-                    {paper.domain === 'pauli' && <span className="domain-tag pauli-tag">Pauli Constraints</span>}
+                    <div className="paper-venue-row">
+                      <span className="paper-journal-name"><em>{paper.journal}</em></span>
+                      <span className="paper-year-badge">({paper.year})</span>
+                      {paper.doi && (
+                        <span className="paper-doi-text">
+                          &bull; DOI: <a href={`https://doi.org/${paper.doi}`} target="_blank" rel="noopener noreferrer" className="doi-inline-link">{paper.doi}</a>
+                        </span>
+                      )}
+                      {paper.isHotArticle && <span className="hot-tag">Hot Article</span>}
+                      {paper.domain === 'qbe' && <span className="domain-tag qbe-tag">Quantum Boltzmann</span>}
+                      {paper.domain === 'mof' && <span className="domain-tag mof-tag">MOF & ALMO-EDA</span>}
+                      {paper.domain === 'pauli' && <span className="domain-tag pauli-tag">Pauli Constraints</span>}
+                    </div>
                   </div>
 
                   <p className="paper-summary">
@@ -133,32 +143,20 @@ export default function Publications({ selectedDomain, onDomainChange }) {
                       href={paper.url} 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="paper-action-link"
+                      className="paper-action-link primary-article-link"
                     >
-                      {paper.url.includes('arxiv.org') ? 'arXiv:2608.14979' : `DOI: ${paper.doi}`} <span className="ext-arrow">↗</span>
+                      {paper.url.includes('arxiv.org') ? 'arXiv Preprint' : 'View Article'} <span className="ext-arrow">↗</span>
                     </a>
 
-                    {paper.url.includes('arxiv.org') && (
+                    {paper.doi && (
                       <a 
                         href={`https://doi.org/${paper.doi}`} 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="paper-action-link doi-badge-link"
-                        title="Official Registered DOI via DataCite/arXiv"
+                        title="Official Registered DOI"
                       >
-                        DOI: {paper.doi} <span className="ext-arrow">↗</span>
-                      </a>
-                    )}
-
-                    {paper.doi && (
-                      <a 
-                        href={`https://scite.ai/reports/${paper.doi}`} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="paper-action-link scite-badge-link"
-                        title="View Smart Citations on scite.ai"
-                      >
-                        scite Smart Citations <span className="ext-arrow">↗</span>
+                        DOI <span className="ext-arrow">↗</span>
                       </a>
                     )}
 
@@ -178,8 +176,9 @@ export default function Publications({ selectedDomain, onDomainChange }) {
                     </button>
 
                     <button 
-                      onClick={() => handleCopyBibtex(paper)}
+                      onClick={() => handleCopyCitation(paper)}
                       className={`paper-action-btn copy-btn ${copiedId === paper.id ? 'copied' : ''}`}
+                      title="Copy formatted academic citation"
                     >
                       {copiedId === paper.id ? (
                         <span className="copied-label">

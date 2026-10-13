@@ -25,7 +25,7 @@ export default function Navbar({ onOpenCV }) {
         <div className="nav-menu-group desktop-only">
           <a href="#about" className="nav-tab">About</a>
           <a href="#research" className="nav-tab">Research</a>
-          <a href="#publications" className="nav-tab">Publications</a>
+          <a href="#publications" className="nav-tab">Articles</a>
           <button 
             className="nav-tab nav-tab-cv"
             onClick={onOpenCV}
@@ -57,7 +57,7 @@ export default function Navbar({ onOpenCV }) {
             Research
           </a>
           <a href="#publications" className="mobile-nav-link" onClick={handleNavClick}>
-            Publications
+            Articles
           </a>
           <button 
             className="mobile-nav-link mobile-nav-cv"
