@@ -5,6 +5,8 @@ import { publishedPapers } from '../data/publishedPapers';
 import { awardsData } from '../data/awards';
 
 export default function CVModal({ isOpen, onClose }) {
+  const [viewMode, setViewMode] = React.useState('pdf'); // 'pdf' | 'html'
+
   if (!isOpen) return null;
 
   return (
@@ -14,14 +16,32 @@ export default function CVModal({ isOpen, onClose }) {
         <div className="cv-modal-header">
           <div>
             <h3 className="cv-modal-title">Curriculum Vitae — Romit Chakraborty</h3>
-            <span className="cv-modal-subtitle">Updated October 2026</span>
+            <span className="cv-modal-subtitle">Official 3-Page XeLaTeX Vector Document (Updated October 2026)</span>
           </div>
 
           <div className="cv-modal-controls">
+            <div className="cv-mode-toggle">
+              <button 
+                type="button"
+                className={`cv-mode-btn ${viewMode === 'pdf' ? 'active' : ''}`}
+                onClick={() => setViewMode('pdf')}
+              >
+                Vector PDF (3 Pages)
+              </button>
+              <button 
+                type="button"
+                className={`cv-mode-btn ${viewMode === 'html' ? 'active' : ''}`}
+                onClick={() => setViewMode('html')}
+              >
+                HTML Overview
+              </button>
+            </div>
+
             <a 
               href="/cv.pdf" 
               download="Romit_Chakraborty_CV.pdf"
               className="cv-download-btn"
+              title="Download official 3-page PDF"
             >
               ⬇️ Download PDF
             </a>
@@ -30,17 +50,40 @@ export default function CVModal({ isOpen, onClose }) {
               target="_blank" 
               rel="noopener noreferrer"
               className="cv-open-btn"
+              title="Open PDF in new browser tab"
             >
               Open PDF ↗
             </a>
-            <button onClick={onClose} className="cv-close-btn">
+            <button onClick={onClose} className="cv-close-btn" aria-label="Close CV">
               ✕ Close
             </button>
           </div>
         </div>
 
         {/* Modal Content */}
-        <div className="cv-modal-body">
+        {viewMode === 'pdf' ? (
+          <div className="cv-modal-body cv-pdf-body">
+            <object 
+              data="/cv.pdf#toolbar=1&navpanes=1" 
+              type="application/pdf" 
+              className="cv-pdf-frame"
+            >
+              <iframe 
+                src="/cv.pdf#toolbar=1" 
+                title="Curriculum Vitae — Romit Chakraborty" 
+                className="cv-pdf-frame"
+              >
+                <div className="cv-pdf-fallback">
+                  <p>Your browser does not support inline PDF viewing.</p>
+                  <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="cv-download-btn">
+                    Open 3-Page CV (PDF) ↗
+                  </a>
+                </div>
+              </iframe>
+            </object>
+          </div>
+        ) : (
+          <div className="cv-modal-body">
           <div className="cv-paper-header">
             <h1>Romit Chakraborty</h1>
             <p>
@@ -107,6 +150,7 @@ export default function CVModal({ isOpen, onClose }) {
             </ul>
           </section>
         </div>
+      )}
       </div>
     </div>
   );

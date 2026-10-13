@@ -29,8 +29,15 @@ export default function Footer({ onOpenCV }) {
               <a href={profileData.links.googleScholar} target="_blank" rel="noopener noreferrer">Google Scholar <span className="ext-arrow">↗</span></a>
               <a href={profileData.links.personalGithub} target="_blank" rel="noopener noreferrer">GitHub <span className="ext-arrow">↗</span></a>
               <a href={profileData.links.orcid} target="_blank" rel="noopener noreferrer">ORCID <span className="ext-arrow">↗</span></a>
-              <a href={profileData.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn <span className="ext-arrow">↗</span></a>
-              <button onClick={onOpenCV} className="footer-cv-btn">Curriculum Vitae</button>
+              <a 
+                href="/cv.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="footer-cv-btn"
+                title="Open complete 3-page Curriculum Vitae (PDF)"
+              >
+                Curriculum Vitae <span className="ext-arrow">↗</span>
+              </a>
             </div>
           </div>
         </div>
