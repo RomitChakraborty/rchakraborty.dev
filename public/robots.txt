@@ -1,10 +1,12 @@
-# robots.txt for Romit Chakraborty, Ph.D.
+# robots.txt for Romit Chakraborty
 # https://rchakraborty.dev
 
 User-agent: *
+Disallow: /*.pdf$
+Disallow: /cv.pdf
+Disallow: /Resume_*.pdf
 Allow: /
 Allow: /llms.txt
-Allow: /cv.pdf
 
 # Search Engine Crawlers
 User-agent: Googlebot

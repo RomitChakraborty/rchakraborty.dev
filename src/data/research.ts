@@ -178,7 +178,7 @@ export const researchPillars: ResearchPillar[] = [
     latexEq: "D \\vec{\\lambda} \\le \\vec{d}, \\quad \\lambda_i \\in [0, 1], \\quad \\sum_{i} \\lambda_i = N",
     materials: [
       {
-        label: "Ph.D. Dissertation — Generalized Pauli Conditions & Pure N-Representability",
+        label: "Doctoral Dissertation — Generalized Pauli Conditions & Pure N-Representability",
         type: "dissertation",
         url: "https://www.proquest.com/openview/4e94e4be5bd5b67d83add173091d5b31/1?pq-origsite=gscholar&cbl=18750",
         badge: "UChicago Dissertation"

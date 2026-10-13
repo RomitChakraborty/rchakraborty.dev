@@ -34,7 +34,7 @@ export default function CVModal({ isOpen, onClose }) {
         {/* Modal Content */}
         <div className="cv-modal-body">
           <div className="cv-paper-header">
-            <h1>Romit Chakraborty, Ph.D.</h1>
+            <h1>Romit Chakraborty</h1>
             <p>
               {profileData.phone} &bull; <a href="mailto:romit@pointreyessound.com">romit@pointreyessound.com</a> &bull; <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer">www.pointreyessound.com</a>
             </p>
