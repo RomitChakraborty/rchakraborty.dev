@@ -60,18 +60,6 @@ export default function Hero({ onSelectPillar }) {
               </svg>
               <span>LinkedIn</span> <span className="ext-arrow">↗</span>
             </a>
-            <a href={profileData.links.prsDeck} target="_blank" rel="noopener noreferrer" className="minimal-text-link hero-deck-btn">
-              <svg className="brand-icon deck-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M19 3H5c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h6v2H8v2h8v-2h-3v-2h6c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 10H5V5h14v8z" />
-              </svg>
-              <span>Deck</span> <span className="ext-arrow">↗</span>
-            </a>
-            <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="minimal-text-link hero-cv-link" title="Curriculum Vitae (PDF)">
-              <svg className="brand-icon cv-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
-              </svg>
-              <span>Curriculum Vitae</span> <span className="ext-arrow">PDF ↗</span>
-            </a>
           </div>
         </div>
 
