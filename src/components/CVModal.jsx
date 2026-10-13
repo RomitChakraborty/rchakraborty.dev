@@ -25,6 +25,14 @@ export default function CVModal({ isOpen, onClose }) {
             >
               ⬇️ Download PDF
             </a>
+            <a 
+              href="/cv.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="cv-open-btn"
+            >
+              Open PDF ↗
+            </a>
             <button onClick={onClose} className="cv-close-btn">
               ✕ Close
             </button>

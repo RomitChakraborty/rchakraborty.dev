@@ -52,7 +52,7 @@ export const experienceData: ExperienceItem[] = [
   },
   {
     id: "ucberkeley-lbnl",
-    role: "Postdoctoral Research Fellow (Computational Science)",
+    role: "Postdoctoral Research Fellow",
     organization: "UC Berkeley & LBNL",
     location: "Berkeley, CA, USA",
     period: "2017 – 2023",
@@ -61,17 +61,6 @@ export const experienceData: ExperienceItem[] = [
       "Advisor: Prof. Martin Head-Gordon.",
       "Investigated non-equilibrium electronic structure, hydrogen storage mechanisms, and metal-organic frameworks (MOFs).",
       "Authored high-impact publications in JACS, J. Phys. Chem. Lett., and PCCP (Hot Article), predicting multimetallic coordination and selective gas adsorption."
-    ]
-  },
-  {
-    id: "qchem",
-    role: "Scientific Software Developer",
-    organization: "Q-Chem Inc.",
-    location: "CA, USA",
-    period: "2018 – 2020",
-    type: "industry",
-    highlights: [
-      "Contributed core electronic structure solvers, Energy Decomposition Analysis (ALMO-EDA), and quantum algorithms to the commercial Q-Chem 5 package."
     ]
   }
 ];

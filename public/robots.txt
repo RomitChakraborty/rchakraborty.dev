@@ -2,10 +2,9 @@
 # https://rchakraborty.dev
 
 User-agent: *
-Disallow: /*.pdf$
-Disallow: /cv.pdf
-Disallow: /Resume_*.pdf
 Allow: /
+Allow: /cv.pdf
+Allow: /Resume_Oct_1_2026.pdf
 Allow: /llms.txt
 
 # Search Engine Crawlers
