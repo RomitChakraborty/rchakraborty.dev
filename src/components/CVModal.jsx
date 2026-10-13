@@ -16,7 +16,7 @@ export default function CVModal({ isOpen, onClose }) {
         <div className="cv-modal-header">
           <div>
             <h3 className="cv-modal-title">Curriculum Vitae — Romit Chakraborty</h3>
-            <span className="cv-modal-subtitle">Official 3-Page XeLaTeX Vector Document (Updated October 2026)</span>
+            <span className="cv-modal-subtitle">Official 4-Page XeLaTeX Vector Document (Updated October 2026)</span>
           </div>
 
           <div className="cv-modal-controls">
@@ -41,7 +41,7 @@ export default function CVModal({ isOpen, onClose }) {
               href="/cv.pdf" 
               download="Romit_Chakraborty_CV.pdf"
               className="cv-download-btn"
-              title="Download official 3-page PDF"
+              title="Download official 4-page PDF"
             >
               ⬇️ Download PDF
             </a>
@@ -75,8 +75,8 @@ export default function CVModal({ isOpen, onClose }) {
               >
                 <div className="cv-pdf-fallback">
                   <p>Your browser does not support inline PDF viewing.</p>
-                  <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="cv-download-btn">
-                    Open 3-Page CV (PDF) ↗
+                  <a href="/cv.pdf" download="Romit_Chakraborty_CV.pdf" className="cv-download-btn">
+                    Download 4-Page CV (PDF) ⬇
                   </a>
                 </div>
               </iframe>

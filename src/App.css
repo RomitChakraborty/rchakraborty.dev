@@ -403,6 +403,10 @@ a:hover {
   color: #0a66c2; /* Official LinkedIn Blue */
 }
 
+.cv-icon {
+  color: var(--royal-blue);
+}
+
 .minimal-text-link:hover .brand-icon {
   transform: scale(1.08);
 }

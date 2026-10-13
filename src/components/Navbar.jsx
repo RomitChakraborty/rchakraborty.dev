@@ -31,7 +31,7 @@ export default function Navbar({ onOpenCV }) {
             target="_blank" 
             rel="noopener noreferrer" 
             className="nav-tab nav-tab-cv"
-            title="Open complete 3-page Curriculum Vitae (PDF)"
+            title="Curriculum Vitae (PDF)"
           >
             Curriculum Vitae <span className="ext-arrow">↗</span>
           </a>
@@ -68,7 +68,7 @@ export default function Navbar({ onOpenCV }) {
             rel="noopener noreferrer" 
             className="mobile-nav-link mobile-nav-cv"
             onClick={handleNavClick}
-            title="Open complete 3-page Curriculum Vitae (PDF)"
+            title="Curriculum Vitae (PDF)"
           >
             Curriculum Vitae (PDF ↗)
           </a>

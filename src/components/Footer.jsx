@@ -32,6 +32,14 @@ export default function Footer({ onOpenCV }) {
               <a href={profileData.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn <span className="ext-arrow">↗</span></a>
               <a 
                 href="/cv.pdf" 
+                download="Romit_Chakraborty_CV.pdf"
+                className="footer-cv-btn footer-cv-download-btn"
+                title="Download complete 4-page Curriculum Vitae (PDF)"
+              >
+                Download CV <span className="download-arrow">↓</span>
+              </a>
+              <a 
+                href="/cv.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="footer-cv-btn"
