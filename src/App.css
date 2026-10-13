@@ -431,6 +431,24 @@ a:hover {
   opacity: 1;
 }
 
+.cv-icon {
+  color: #b32d2e;
+}
+
+.minimal-text-link.hero-cv-link {
+  border-color: rgba(179, 45, 46, 0.25);
+}
+
+.minimal-text-link.hero-cv-link:hover {
+  border-color: #b32d2e;
+  box-shadow: 0 3px 10px rgba(179, 45, 46, 0.16);
+  color: #b32d2e;
+}
+
+.minimal-text-link.hero-cv-link:hover .ext-arrow {
+  color: #b32d2e;
+}
+
 .minimal-text-link:hover .brand-icon {
   transform: scale(1.08);
 }
@@ -1491,6 +1509,28 @@ a:hover .ext-arrow {
 .cv-download-btn:hover {
   border-color: var(--gold-accent);
   box-shadow: 0 2px 12px rgba(197, 160, 89, 0.4);
+  text-decoration: none;
+}
+
+.cv-open-btn {
+  background: #ffffff;
+  border: 1px solid rgba(184, 144, 71, 0.45);
+  color: var(--royal-blue) !important;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: var(--transition);
+}
+
+.cv-open-btn:hover {
+  background: var(--gold-light);
+  border-color: var(--gold-primary);
   text-decoration: none;
 }
 

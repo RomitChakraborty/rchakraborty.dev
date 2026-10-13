@@ -57,7 +57,7 @@ export interface MembershipItem {
 
 export const membershipsData: MembershipItem[] = [
   { organization: "American Physical Society (APS)", details: "Active Member (Division of Chemical Physics & Computational Physics)" },
-  { organization: "American Chemical Society (ACS)", details: "Councillor (alternate) at California Section (2023–2026); Program Book Coordinator at Western Regional Meeting (2025)" },
+  { organization: "American Chemical Society (ACS)", details: "Councillor (Alternate) at California Section (2023–2026); Program Book Coordinator at Western Regional Meeting (October 2025)" },
   { organization: "Project SEED", details: "Summer Opportunities for Economically Disadvantaged Students (2025–2026)" }
 ];
 

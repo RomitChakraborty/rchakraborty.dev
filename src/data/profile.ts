@@ -21,12 +21,14 @@ export const profileData = {
     prsCrunchbase: "https://www.crunchbase.com/organization/point-reyes-sound-inc-4399",
     googleScholar: "https://scholar.google.com/citations?user=m4HlFRIAAAAJ&hl=en",
     orcid: "https://orcid.org/0000-0002-4638-6346",
-    linkedin: "https://www.linkedin.com/in/chakrabortyromit/"
+    linkedin: "https://www.linkedin.com/in/chakrabortyromit/",
+    cvPdf: "/cv.pdf",
+    resumePdf: "/Resume_Oct_1_2026.pdf"
   },
   pedigree: [
     { institution: "University of California, Berkeley & Lawrence Berkeley National Laboratory", role: "Postdoctoral Research Fellow in Computational Materials Science", advisor: "Prof. Martin Head-Gordon", years: "2017 – 2023" },
     { institution: "University of Chicago", role: "Doctoral Research in Theoretical and Computational Quantum Chemistry", advisor: "Prof. David A. Mazziotti", years: "2012 – 2017" },
-    { institution: "IIT Bombay", role: "Master of Science (Thesis: Relativistic Quantum Mechanics of the Pionium Atom in Uniform Magnetic Fields)", years: "2009 – 2012" },
+    { institution: "IIT Bombay", role: "Master of Science", years: "2009 – 2012" },
     { institution: "St. Stephen's College, Delhi", role: "B.Sc (Hons) in Chemistry, with Physics and Mathematics", years: "2006 – 2009" }
   ]
 };
