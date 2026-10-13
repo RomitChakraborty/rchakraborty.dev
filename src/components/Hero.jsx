@@ -60,6 +60,17 @@ export default function Hero({ onSelectPillar }) {
               </svg>
               <span>LinkedIn</span> <span className="ext-arrow">↗</span>
             </a>
+            <a 
+              href="/cv.pdf" 
+              download="Romit_Chakraborty_CV.pdf" 
+              className="minimal-text-link cv-profile-link"
+              title="Download Curriculum Vitae (PDF)"
+            >
+              <svg className="brand-icon cv-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
+              </svg>
+              <span>Curriculum Vitae</span> <span className="ext-arrow">↓</span>
+            </a>
           </div>
         </div>
 

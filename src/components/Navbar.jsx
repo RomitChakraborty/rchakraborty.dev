@@ -26,12 +26,15 @@ export default function Navbar({ onOpenCV }) {
           <a href="#about" className="nav-tab">About</a>
           <a href="#research" className="nav-tab">Research</a>
           <a href="#publications" className="nav-tab">Articles</a>
-          <button 
+          <a 
+            href="/cv.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
             className="nav-tab nav-tab-cv"
-            onClick={onOpenCV}
+            title="Curriculum Vitae (PDF)"
           >
-            Curriculum Vitae
-          </button>
+            Curriculum Vitae <span className="ext-arrow">↗</span>
+          </a>
         </div>
 
         {/* Mobile Hamburger Toggle Button */}
@@ -59,12 +62,16 @@ export default function Navbar({ onOpenCV }) {
           <a href="#publications" className="mobile-nav-link" onClick={handleNavClick}>
             Articles
           </a>
-          <button 
+          <a 
+            href="/cv.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
             className="mobile-nav-link mobile-nav-cv"
-            onClick={handleCVClick}
+            onClick={handleNavClick}
+            title="Curriculum Vitae (PDF)"
           >
-            Curriculum Vitae
-          </button>
+            Curriculum Vitae (PDF ↗)
+          </a>
         </div>
       </div>
     </nav>

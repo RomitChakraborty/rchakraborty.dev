@@ -403,6 +403,10 @@ a:hover {
   color: #0a66c2; /* Official LinkedIn Blue */
 }
 
+.cv-icon {
+  color: var(--royal-blue);
+}
+
 .minimal-text-link:hover .brand-icon {
   transform: scale(1.08);
 }
@@ -1497,22 +1501,25 @@ a:hover .ext-arrow {
   background: #ffffff;
   color: #1a1a1a;
   width: 100%;
-  max-width: 880px;
-  max-height: 90vh;
-  border-radius: 6px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  max-width: 980px;
+  height: 92vh;
+  max-height: 92vh;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
 .cv-modal-header {
-  padding: 14px 24px;
+  padding: 12px 20px;
   border-bottom: 1px solid var(--border-subtle);
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #f8f9fa;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .cv-modal-title {
@@ -1528,7 +1535,62 @@ a:hover .ext-arrow {
 
 .cv-modal-controls {
   display: flex;
+  align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cv-mode-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border-medium);
+  border-radius: 4px;
+  overflow: hidden;
+  background: #eef2f6;
+}
+
+.cv-mode-btn {
+  border: none;
+  background: transparent;
+  padding: 5px 11px;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.cv-mode-btn.active {
+  background: var(--royal-blue);
+  color: #ffffff;
+}
+
+.cv-pdf-body {
+  padding: 0 !important;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #2b2b2b;
+  overflow: hidden !important;
+}
+
+.cv-pdf-frame {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  border: none;
+}
+
+.cv-pdf-fallback {
+  padding: 32px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  height: 100%;
 }
 
 .cv-download-btn {
@@ -1591,7 +1653,7 @@ a:hover .ext-arrow {
 }
 
 .cv-modal-body {
-  padding: 32px;
+  padding: 1.1in;
   overflow-y: auto;
   line-height: 1.6;
 }
