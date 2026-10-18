@@ -1,7 +1,7 @@
 import React from 'react';
 import { profileData } from '../data/profile';
 
-export default function Hero({ onSelectPillar }) {
+export default function Hero({ onSelectPillar, onOpenCV }) {
   const handleMofClick = (e) => {
     if (onSelectPillar) {
       onSelectPillar('mof-simulations');

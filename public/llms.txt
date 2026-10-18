@@ -1,21 +1,28 @@
 # Romit Chakraborty — Academic Dossier & Research Portfolio
 
-> Romit Chakraborty is a Theoretical Quantum Chemist, AI Researcher, and the Founder & Chief Scientific Officer of Point Reyes Sound, Inc., pioneering non-equilibrium kinetic transport frameworks and Quantum Boltzmann Equation Self-Consistent Field (QBE-SCF) theory.
+> Romit Chakraborty is a Theoretical Quantum Chemist, AI Researcher, and the Founder & CEO of Point Reyes Sound, Inc., pioneering non-equilibrium kinetic transport frameworks and Quantum Boltzmann Equation Self-Consistent Field (QBE-SCF) theory.
+
+## Core Technical Skills & Methodologies
+- **HPC (2012–now)**: Python, C++, MPI, Slurm, GPU Acceleration, Linux.
+- **Quantum Simulation (2012–now)**: FTQC, QEC, Quantum Boltzmann Equation (QBE).
+- **Data Pipelines (2022–now)**: Vector Databases, ChromaDB, Azure.
+- **ML Infrastructure (2023–now)**: PyTorch, JAX, LLMs, LoRA.
 
 ## Academic & Institutional Pedigree
-- **Senior Computational Scientist, AI & Quantum Solutions** (2024 – 2025): PsiQuantum (Palo Alto, CA). Focus: Fault-tolerant quantum algorithms, Hamiltonian resource compilation under photonic quantum error correction constraints, and scalable distributed simulation pipelines.
-- **Staff Researcher in Quantum AI & Generative Modeling** (2023 – 2024): University of Chicago (Gagliardi Group). Microsoft Azure Accelerate Foundation Models Research grant recipient.
-- **Postdoctoral Research Fellow** (2017 – 2023): University of California, Berkeley & Lawrence Berkeley National Laboratory (LBNL). Advisor: Prof. Martin Head-Gordon. Focus: Computational materials science, metal-organic frameworks (MOFs) for gas storage and separations, electronic structure theory, and co-author of the Q-Chem 5 package.
-- **Theoretical & Computational Quantum Chemistry (Doctoral Research)** (2012 – 2017): University of Chicago. Advisor: Prof. David A. Mazziotti. Dissertation: N-representability conditions and 1-body reduced density matrix mechanics.
+- **Founder & CEO** (June 2026 – Present): Point Reyes Sound, Inc. (San Francisco, CA). Formulated Hessian-free phase-space orbital optimization using the BGK collision operator; developed the Quantum Boltzmann Entrainment Tensor (QBET) coupling classical phase-space relaxation to an active-space quantum core; generalized phase-space transport to periodic solid-state crystalline systems across the Brillouin zone.
+- **Senior Quantum Solutions Chemist** (2024 – 2025): PsiQuantum, Corp. (Palo Alto, CA). Focus: Algorithmic compilation pipelines and active-space resource estimation frameworks for fault-tolerant photonic quantum hardware architectures.
+- **Staff Researcher in Quantum AI & Generative Modeling** (2023 – 2024): University of Chicago. Microsoft Azure Accelerate Foundation Models Research grant recipient. Developed equivariant generative frameworks with exact physical invariants (molecular geometry, charge/spin multiplicity, point-group symmetry).
+- **Postdoctoral Research Fellow** (2017 – 2023): University of California, Berkeley & Lawrence Berkeley National Laboratory (LBNL). Advisor: Prof. Martin Head-Gordon. Focus: MOF chemistry, ALMO-FEDA non-covalent free energy decomposition, and co-author of the open-source Q-Chem 5 package.
+- **Theoretical & Computational Quantum Chemistry (Doctoral Research)** (2012 – 2017): University of Chicago. Advisor: Prof. David A. Mazziotti. Dissertation: Pure N-representability conditions and 1-body reduced density matrix mechanics.
 - **M.Sc. in Chemistry** (2009 – 2012): Indian Institute of Technology Bombay (IIT Bombay). Research: Relativistic quantum mechanics of the pionium atom.
 - **B.Sc. (Hons) in Chemistry** (2006 – 2009): St. Stephen's College, University of Delhi (with Physics and Mathematics).
 
 ## Venture & Industry Leadership
-- **Company**: Point Reyes Sound, Inc. (Founder & Chief Scientific Officer).
+- **Company**: Point Reyes Sound, Inc. (Founder & CEO).
 - **Core Technology**: Quantum Boltzmann Equation Self-Consistent Field (QBE-SCF) solver platform replacing combinatorial active-space expansions (CASSCF/DMRG) with continuous kinetic relaxation via Bhatnagar-Gross-Krook (BGK) collision operators.
 - **Intellectual Property**: U.S. Provisional Patent Application No. 64/033,274 ("Method and System for Quantum Boltzmann Self-Consistent Field Computation and Mean-Field Regularization").
 - **Commercial Target Sectors**: High-performance semiconductor EDA (sub-2nm GAA-FETs), solid-state battery electrolytes (interfacial SEI growth), green chemical catalysis, and GPU-accelerated CAE.
-- **Accelerator & Grants**: Member of NVIDIA Inception Program; Google Cloud Research Grant recipient.
+- **Grants & Honors**: Microsoft Azure Accelerate Foundation Models Grant (Fall 2023); Berkeley Lab Inclusion Award (Summer 2023); University of Oxford EOI for Independent Early Career Fellowships (Summer 2023); University of Chicago Arts, Science and Culture Graduate Fellowship (Fall 2015); Lindau Nobel Laureate Meeting Graduate Fellowship (DFG, 2009).
 
 ## Foundational Preprints & Papers
 - **Lead Invention Preprint**: "Quantum Boltzmann Equation Self-Consistent-Field for the Entropic Regularization of Mean-Field Singularities", Romit Chakraborty (arXiv:2608.14979 [quant-ph]).
@@ -29,10 +36,8 @@
 ## Canonical Authoritative Profiles & Web Presence
 - Personal Academic Dossier: https://rchakraborty.dev
 - Curriculum Vitae (PDF): https://rchakraborty.dev/cv.pdf
+- Resume (October 2026 PDF): https://rchakraborty.dev/Resume_Oct_1_2026.pdf
 - Company Research Pod: https://pointreyessound.com
-- Seed Round Diligence Portal: https://pointreyessound.com#investors
-- Executive Overview Deck (16:9): https://pointreyessound.com/public-deck
-- Executive Overview (PDF): https://pointreyessound.com/Point_Reyes_Sound_Executive_Overview.pdf
 - Google Scholar: https://scholar.google.com/citations?user=m4HlFRIAAAAJ&hl=en
 - ORCID: https://orcid.org/0000-0002-4638-6346
 - SciSpace Author Directory: https://scispace.com/authors/romit-chakraborty

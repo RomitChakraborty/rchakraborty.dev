@@ -15,12 +15,12 @@ export const awardsData: AwardItem[] = [
   {
     year: "Summer 2023",
     title: "Award for Contributions to Inclusion in Science and Society",
-    organization: "Lawrence Berkeley National Laboratory (Postdoc Assoc.)",
+    organization: "Lawrence Berkeley National Laboratory",
     description: "Recognized for institutional and community contributions to equity, scientific outreach, and computational mentorship."
   },
   {
     year: "Summer 2023",
-    title: "Successful EOI for Independent Early Career Fellowships",
+    title: "EOI for Independent Early Career Fellowships",
     organization: "University of Oxford, UK",
     description: "Shortlisted and endorsed for independent research fellowships in computational quantum chemistry."
   },
@@ -57,7 +57,7 @@ export interface MembershipItem {
 
 export const membershipsData: MembershipItem[] = [
   { organization: "American Physical Society (APS)", details: "Active Member (Division of Chemical Physics & Computational Physics)" },
-  { organization: "American Chemical Society (ACS)", details: "Councillor (Alternate) at California Section (2023–2026); Program Book Coordinator at Western Regional Meeting (October 2025)" },
+  { organization: "California Section of the American Chemical Society (Cal ACS)", details: "Councillor (Alternate) (2023–2026); Program Book Coordinator at Western Regional Meeting (October 2025); Member at Large (2026–2027)" },
   { organization: "Project SEED", details: "Summer Opportunities for Economically Disadvantaged Students (2025–2026)" }
 ];
 
