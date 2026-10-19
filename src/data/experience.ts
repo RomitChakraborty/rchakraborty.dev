@@ -64,3 +64,32 @@ export const experienceData: ExperienceItem[] = [
     ]
   }
 ];
+
+export interface ConciseExperienceItem {
+  period: string;
+  role: string;
+  organization: string;
+}
+
+export const conciseExperienceData: ConciseExperienceItem[] = [
+  {
+    period: "June 2026",
+    role: "Founder & CEO",
+    organization: "Point Reyes Sound, Inc., San Francisco, CA"
+  },
+  {
+    period: "2024–2025",
+    role: "Senior Quantum Solutions Chemist",
+    organization: "PsiQuantum, Palo Alto, CA, USA"
+  },
+  {
+    period: "2023–2024",
+    role: "Staff Researcher in Quantum AI",
+    organization: "University of Chicago, Chicago, IL, USA"
+  },
+  {
+    period: "2017–2023",
+    role: "Postdoctoral Research Fellow",
+    organization: "UC Berkeley & LBNL, Berkeley, CA, USA"
+  }
+];

@@ -1,7 +1,7 @@
 import React from 'react';
 import { profileData } from '../data/profile';
 import { skillsData } from '../data/skills';
-import { experienceData } from '../data/experience';
+import { experienceData, conciseExperienceData } from '../data/experience';
 import { publishedPapers } from '../data/publishedPapers';
 import { awardsData, peerReviewData, membershipsData } from '../data/awards';
 
@@ -111,6 +111,19 @@ export default function CVModal({ isOpen, onClose }) {
             </section>
 
             <section className="cv-section">
+              <h2>Experience</h2>
+              <div className="cv-skills-table">
+                {conciseExperienceData.map((exp, idx) => (
+                  <div key={idx} className="cv-skill-row">
+                    <span className="cv-skill-years">{exp.period}</span>
+                    <span className="cv-skill-domain">{exp.role}</span>
+                    <span className="cv-skill-techs">{exp.organization}</span>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section className="cv-section">
               <h2>Education</h2>
               {profileData.pedigree.map((item, idx) => (
                 <div key={idx} className="cv-item">
@@ -126,7 +139,7 @@ export default function CVModal({ isOpen, onClose }) {
             </section>
 
             <section className="cv-section">
-              <h2>Research Experience</h2>
+              <h2>Appointments</h2>
               {experienceData.map((exp) => (
                 <div key={exp.id} className="cv-item">
                   <div className="cv-item-top">
