@@ -59,7 +59,6 @@ export const experienceData: ExperienceItem[] = [
     type: "academic",
     highlights: [
       "MOF Chemistry: Modeled dihydrogen binding and multi-ligand coordination at open metal sites (V(II), Cu(I)) in metal-organic frameworks under Prof. Martin Head-Gordon, validating predictions against experimental neutron scattering and adsorption isotherms (JACS, PCCP Hot Article).",
-      "Free Energy Decomposition: Formulated an Absolutely Localized Molecular Orbital Free Energy Decomposition Analysis (ALMO-FEDA) to resolve vibrational and entropic driving forces in non-covalent binding thermodynamics (J. Phys. Chem. Lett.).",
       "Quantum Chemistry Software: Co-developed modular quantum chemistry capabilities for open-shell and correlated electronic structure as a code contributor to the open-source Q-Chem 5 package (J. Chem. Phys.)."
     ]
   }
