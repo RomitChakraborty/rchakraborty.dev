@@ -6,6 +6,7 @@ Allow: /
 Allow: /cv.pdf
 Allow: /Resume_Oct_1_2026.pdf
 Allow: /llms.txt
+Allow: /llms-full.txt
 
 # Search Engine Crawlers
 User-agent: Googlebot

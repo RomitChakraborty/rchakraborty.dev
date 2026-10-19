@@ -59,8 +59,36 @@ export const experienceData: ExperienceItem[] = [
     type: "academic",
     highlights: [
       "MOF Chemistry: Modeled dihydrogen binding and multi-ligand coordination at open metal sites (V(II), Cu(I)) in metal-organic frameworks under Prof. Martin Head-Gordon, validating predictions against experimental neutron scattering and adsorption isotherms (JACS, PCCP Hot Article).",
-      "Free Energy Decomposition: Formulated an Absolutely Localized Molecular Orbital Free Energy Decomposition Analysis (ALMO-FEDA) to resolve vibrational and entropic driving forces in non-covalent binding thermodynamics (J. Phys. Chem. Lett.).",
       "Quantum Chemistry Software: Co-developed modular quantum chemistry capabilities for open-shell and correlated electronic structure as a code contributor to the open-source Q-Chem 5 package (J. Chem. Phys.)."
     ]
+  }
+];
+
+export interface ConciseExperienceItem {
+  period: string;
+  role: string;
+  organization: string;
+}
+
+export const conciseExperienceData: ConciseExperienceItem[] = [
+  {
+    period: "June 2026",
+    role: "Founder & CEO",
+    organization: "Point Reyes Sound, Inc., San Francisco, CA"
+  },
+  {
+    period: "2024–2025",
+    role: "Senior Quantum Solutions Chemist",
+    organization: "PsiQuantum, Palo Alto, CA, USA"
+  },
+  {
+    period: "2023–2024",
+    role: "Staff Researcher in Quantum AI",
+    organization: "University of Chicago, Chicago, IL, USA"
+  },
+  {
+    period: "2017–2023",
+    role: "Postdoctoral Research Fellow",
+    organization: "UC Berkeley & LBNL, Berkeley, CA, USA"
   }
 ];
