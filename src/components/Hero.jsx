@@ -1,26 +1,23 @@
 import React from 'react';
 import { profileData } from '../data/profile';
 
-export default function Hero({ onSelectPillar, onOpenCV }) {
-  const handleMofClick = (e) => {
-    if (onSelectPillar) {
-      onSelectPillar('mof-simulations');
-    }
-    const target = document.getElementById('research');
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
+export default function Hero({ onOpenCV }) {
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   return (
     <section id="about" className="hero-section">
       <div className="academic-container hero-grid">
-        {/* Left Column: Portrait & Minimal Links */}
+        {/* Left Column: Portrait & Sovereign Links */}
         <div className="hero-portrait-col">
           <div className="portrait-frame">
             <img 
               src="/rc_scholar_portrait.jpeg" 
-              alt="Romit Chakraborty" 
+              alt="Romit Chakraborty, Ph.D." 
               className="portrait-img" 
             />
           </div>
@@ -74,35 +71,64 @@ export default function Hero({ onSelectPillar, onOpenCV }) {
           </div>
         </div>
 
-        {/* Right Column: Complete About Me Section with Uniform Royal Blue Accent Margin */}
+        {/* Right Column: Executive Hero Content */}
         <div className="hero-content-col">
-          <h1 className="hero-name">Romit Chakraborty</h1>
-          <div className="hero-subtitle">
-            <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer" className="prs-affiliation-link">
-              Point Reyes Sound, Inc.
-            </a>
+          <div className="hero-kicker">FOUNDER &amp; CHIEF EXECUTIVE OFFICER &bull; POINT REYES SOUND, INC.</div>
+          
+          <h1 className="hero-name">Romit Chakraborty, Ph.D.</h1>
+          
+          <div className="hero-tagline-statement">
+            Engineering Electronic Structure for the Next Century
           </div>
 
-          {/* Unified About Me Container with Continuous Royal Blue Left Margin */}
+          <div className="hero-badges-stream">
+            <span className="hero-badge badge-primary">Founder &amp; CEO, Point Reyes Sound</span>
+            <span className="hero-badge badge-quantum">PsiQuantum</span>
+            <span className="hero-badge badge-lab">UC Berkeley &amp; LBNL (Q-Chem 5)</span>
+            <span className="hero-badge badge-lab">Ph.D. UChicago (Mazziotti Lab)</span>
+            <span className="hero-badge badge-tech">Alchemist Chicago &bull; Polsky Center</span>
+            <span className="hero-badge badge-tech">NVIDIA Inception</span>
+          </div>
+
+          {/* Executive Thesis Manifesto */}
           <div className="about-manuscript-container">
-            {/* Quantum Kinetic Boltzmann Solvers & Technical Report */}
-            <p className="hero-bio">
-              I develop Quantum Kinetic Boltzmann solvers that resolve correlated electrons sans factorial bottlenecks, as detailed in our <a href="https://arxiv.org/abs/2608.14979" target="_blank" rel="noopener noreferrer">technical report</a>.
+            <p className="hero-bio lead-manifesto">
+              Theoretical quantum chemist, computational physicist, and software architect pioneering continuous phase-space kinetic transport for strongly correlated electron dynamics. 
             </p>
 
             <p className="hero-bio">
-              For a concise outline of effective one-body constraints that are necessary Pure N-representability of the one-electron reduced density matrix (1-RDM) as well as their applications to chemical and biological systems, peruse my <a href="https://www.proquest.com/openview/4e94e4be5bd5b67d83add173091d5b31/1?pq-origsite=gscholar&cbl=18750" target="_blank" rel="noopener noreferrer">dissertation on this topic</a>.
+              As Founder &amp; CEO of <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer"><strong>Point Reyes Sound, Inc.</strong></a>, I lead the development of deterministic polynomial $\mathcal{O}(N^3)$ Quantum Boltzmann Equation Self-Consistent Field (QBE-SCF) solvers that replace factorial combinatorial active spaces with continuous thermodynamic density relaxation—unlocking predictive simulation for materials discovery, semiconductor electronic design automation (EDA), battery electrolytes, and fault-tolerant quantum algorithms.
             </p>
 
-            {/* Practical Electronic Structure & Head-Gordon */}
             <p className="hero-bio">
-              Following this journey of abstractions, I worked with Prof. Martin Head-Gordon at Berkeley where I assisted in the rational design efforts for clean energy materials: <a href="#research" onClick={handleMofClick}>metal-organic frameworks for gas storage and separations</a>.
+              Prior academic research at the University of Chicago established boundary saturation constraints on the eigenvalues of one-particle reduced density matrices (Generalized Pauli Conditions). At UC Berkeley and Lawrence Berkeley National Laboratory with Prof. Martin Head-Gordon, I co-developed open-shell modular methods in Q-Chem 5 and modeled metal-organic frameworks for ambient-temperature clean energy gas storage. At PsiQuantum, I translated complex correlated chemistry benchmarks into algorithmic compilation pipelines and active-space resource estimation frameworks for fault-tolerant photonic quantum hardware.
             </p>
+          </div>
 
-            {/* AI & Multimodal LLMs */}
-            <p className="hero-bio" style={{ marginBottom: 0 }}>
-              I enjoy building extensions to solutions in the natural sciences by programming <a href={profileData.links.prsInteractive} target="_blank" rel="noopener noreferrer">multimodal large language models</a>.
-            </p>
+          {/* Action CTAs */}
+          <div className="hero-actions-row">
+            <a 
+              href={profileData.links.prsWebsite} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hero-action-btn primary"
+            >
+              Point Reyes Sound Portal ↗
+            </a>
+            <button 
+              type="button" 
+              className="hero-action-btn secondary"
+              onClick={() => scrollToSection('manifestos')}
+            >
+              Read Executive Manifestos ↓
+            </button>
+            <button 
+              type="button" 
+              className="hero-action-btn outline"
+              onClick={() => scrollToSection('venture')}
+            >
+              Venture Architecture ↓
+            </button>
           </div>
         </div>
       </div>

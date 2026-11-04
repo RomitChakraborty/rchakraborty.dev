@@ -17,15 +17,19 @@ export default function Navbar({ onOpenCV }) {
       <div className="academic-container navbar-inner">
         <div className="nav-brand">
           <a href="#about" className="brand-title" onClick={handleNavClick}>
-            Romit Chakraborty
+            Romit Chakraborty, Ph.D.
           </a>
+          <span className="brand-badge-tag">Point Reyes Sound</span>
         </div>
 
         {/* Desktop Navigation Links */}
         <div className="nav-menu-group desktop-only">
           <a href="#about" className="nav-tab">About</a>
+          <a href="#venture" className="nav-tab highlight-venture">Venture</a>
+          <a href="#manifestos" className="nav-tab highlight-manifestos">Manifestos</a>
+          <a href="#lineage" className="nav-tab">Lineage</a>
           <a href="#research" className="nav-tab">Research</a>
-          <a href="#publications" className="nav-tab">Articles</a>
+          <a href="#publications" className="nav-tab">Publications</a>
           <button 
             type="button"
             onClick={handleCVClick}
@@ -55,19 +59,27 @@ export default function Navbar({ onOpenCV }) {
           <a href="#about" className="mobile-nav-link" onClick={handleNavClick}>
             About
           </a>
+          <a href="#venture" className="mobile-nav-link" onClick={handleNavClick}>
+            Venture (Point Reyes Sound)
+          </a>
+          <a href="#manifestos" className="mobile-nav-link" onClick={handleNavClick}>
+            Executive Manifestos
+          </a>
+          <a href="#lineage" className="mobile-nav-link" onClick={handleNavClick}>
+            Career Lineage
+          </a>
           <a href="#research" className="mobile-nav-link" onClick={handleNavClick}>
-            Research
+            Research Program
           </a>
           <a href="#publications" className="mobile-nav-link" onClick={handleNavClick}>
-            Articles
+            Publications
           </a>
           <button 
-            type="button" 
-            className="mobile-nav-link mobile-nav-cv"
+            type="button"
             onClick={handleCVClick}
-            title="Curriculum Vitae (PDF & Interactive)"
+            className="mobile-nav-link mobile-cv-btn"
           >
-            Curriculum Vitae (PDF &amp; Interactive ↗)
+            Curriculum Vitae ↗
           </button>
         </div>
       </div>

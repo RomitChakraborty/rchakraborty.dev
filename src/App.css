@@ -2346,3 +2346,828 @@ a:hover .ext-arrow {
   }
 }
 
+/* ==========================================================================
+   EXECUTIVE REBRAND & COMMERCIAL THEATER EXPANSION (CARO / PIERS SPEC)
+   ========================================================================== */
+
+/* Navbar Sovereign Accents */
+.brand-badge-tag {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav-tab.highlight-venture {
+  color: #38bdf8;
+  font-weight: 500;
+}
+
+.nav-tab.highlight-manifestos {
+  color: #34d399;
+  font-weight: 500;
+}
+
+/* Hero Sovereign Elements */
+.hero-kicker {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #34d399;
+  margin-bottom: 12px;
+}
+
+.hero-tagline-statement {
+  font-family: var(--font-serif, "EB Garamond", serif);
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.35;
+  color: #94a3b8;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.hero-badges-stream {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.hero-badge {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.74rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.hero-badge.badge-primary {
+  background: rgba(14, 165, 233, 0.12);
+  border: 1px solid rgba(14, 165, 233, 0.35);
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.hero-badge.badge-quantum {
+  background: rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  color: #c084fc;
+}
+
+.hero-badge.badge-lab {
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.28);
+  color: #93c5fd;
+}
+
+.hero-badge.badge-tech {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.28);
+  color: #6ee7b7;
+}
+
+.lead-manifesto {
+  font-size: 1.14rem;
+  font-weight: 500;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+.hero-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hero-action-btn {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-action-btn.primary {
+  background: #0284c7;
+  color: #ffffff;
+  border: 1px solid #38bdf8;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+}
+
+.hero-action-btn.primary:hover {
+  background: #0369a1;
+  transform: translateY(-1px);
+}
+
+.hero-action-btn.secondary {
+  background: rgba(16, 185, 129, 0.12);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+.hero-action-btn.secondary:hover {
+  background: rgba(16, 185, 129, 0.22);
+  transform: translateY(-1px);
+}
+
+.hero-action-btn.outline {
+  background: transparent;
+  color: #cbd5e1;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.hero-action-btn.outline:hover {
+  background: rgba(148, 163, 184, 0.08);
+  border-color: rgba(148, 163, 184, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Section Header Shared Kicker */
+.section-kicker {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #38bdf8;
+  margin-bottom: 8px;
+}
+
+/* ==========================================================================
+   EXECUTIVE VENTURE SHOWCASE (POINT REYES SOUND)
+   ========================================================================== */
+.venture-section {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.venture-card {
+  background: linear-gradient(145deg, rgba(8, 20, 36, 0.95) 0%, rgba(4, 12, 22, 0.98) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.32);
+  border-radius: 12px;
+  padding: 38px 42px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 35px rgba(14, 165, 233, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.venture-kicker-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.venture-kicker {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #38bdf8;
+}
+
+.venture-status-badge {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.74rem;
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.28);
+  padding: 3px 9px;
+  border-radius: 4px;
+}
+
+.venture-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+  margin-bottom: 32px;
+}
+
+.venture-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.venture-brand-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.venture-company-name {
+  font-family: var(--font-serif, "EB Garamond", serif);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.venture-company-slogan {
+  font-family: var(--font-sans, "Inter", sans-serif);
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin: 4px 0 0 0;
+}
+
+.venture-portal-btn {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #0284c7;
+  border: 1px solid #38bdf8;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.4);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.venture-portal-btn:hover {
+  background: #0369a1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(2, 132, 199, 0.55);
+}
+
+.venture-body-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 36px;
+}
+
+.venture-block-title {
+  font-family: var(--font-serif, "EB Garamond", serif);
+  font-size: 1.35rem;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+
+.venture-text {
+  font-size: 0.98rem;
+  line-height: 1.68;
+  color: #cbd5e1;
+  margin-bottom: 16px;
+}
+
+.venture-pillars-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.v-pillar {
+  display: flex;
+  gap: 14px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  padding: 14px 16px;
+  border-radius: 8px;
+}
+
+.v-pillar-num {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-top: 2px;
+}
+
+.v-pillar strong {
+  font-size: 0.94rem;
+  color: #f1f5f9;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.v-pillar p {
+  font-size: 0.86rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.venture-links-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.venture-action-card {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.venture-action-card:hover {
+  background: rgba(15, 23, 42, 0.95);
+  border-color: rgba(56, 189, 248, 0.45);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.vac-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.vac-badge {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #38bdf8;
+  letter-spacing: 0.08em;
+}
+
+.vac-arrow {
+  color: #38bdf8;
+  font-size: 0.95rem;
+}
+
+.vac-title {
+  font-family: var(--font-serif, "EB Garamond", serif);
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin: 0 0 6px 0;
+  line-height: 1.25;
+}
+
+.vac-desc {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.venture-validation-box {
+  margin-top: 20px;
+  padding: 14px 16px;
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 8px;
+}
+
+.vv-label {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.74rem;
+  color: #cbd5e1;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.vv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.vv-tag {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.7rem;
+  color: #93c5fd;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   MANIFESTOS THOUGHT-LEADERSHIP GRID
+   ========================================================================== */
+.manifestos-section {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.manifestos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.manifesto-card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 10px;
+  padding: 28px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.manifesto-card:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+}
+
+.manifesto-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.manifesto-num {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.manifesto-badge {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: #38bdf8;
+}
+
+.manifesto-read-time {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.7rem;
+  color: #64748b;
+  margin-left: auto;
+}
+
+.manifesto-title {
+  font-family: var(--font-serif, "EB Garamond", serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.3;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.015em;
+}
+
+.manifesto-subtitle {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+}
+
+.manifesto-hook-box {
+  background: rgba(30, 41, 59, 0.55);
+  border-left: 3px solid #38bdf8;
+  padding: 12px 14px;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 16px;
+}
+
+.manifesto-hook-text {
+  font-family: var(--font-serif, "EB Garamond", serif);
+  font-style: italic;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.manifesto-abstract {
+  font-size: 0.92rem;
+  line-height: 1.62;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.manifesto-expanded-content {
+  background: rgba(8, 15, 28, 0.7);
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-bottom: 20px;
+  animation: fadeIn 0.25s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.theses-title {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.78rem;
+  color: #38bdf8;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.theses-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.theses-list li {
+  display: flex;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.thesis-marker {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+.manifesto-audience {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+  padding-top: 10px;
+  line-height: 1.45;
+}
+
+.manifesto-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.manifesto-toggle-btn {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #34d399;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.15s ease;
+}
+
+.manifesto-toggle-btn:hover {
+  color: #6ee7b7;
+  text-decoration: underline;
+}
+
+.manifesto-ext-link {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.78rem;
+  color: #38bdf8;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.manifesto-ext-link:hover {
+  color: #7dd3fc;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   LINEAGE CAREER LEDGER
+   ========================================================================== */
+.lineage-section {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.lineage-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lineage-card {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 10px;
+  padding: 24px 28px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lineage-card:hover {
+  border-color: rgba(56, 189, 248, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.lineage-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.lineage-era-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.era-number {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.era-period {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.82rem;
+  color: #94a3b8;
+}
+
+.lineage-badge {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.72rem;
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.lineage-role {
+  font-family: var(--font-serif, "EB Garamond", serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.01em;
+}
+
+.lineage-org-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.lineage-org {
+  font-size: 0.94rem;
+  font-weight: 500;
+  color: #38bdf8;
+}
+
+.lineage-sep {
+  color: #64748b;
+  font-size: 0.75rem;
+}
+
+.lineage-loc {
+  font-size: 0.88rem;
+  color: #94a3b8;
+}
+
+.lineage-focus-box {
+  background: rgba(30, 41, 59, 0.4);
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+  display: flex;
+  gap: 8px;
+  font-size: 0.88rem;
+}
+
+.focus-label {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.74rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.focus-val {
+  color: #f1f5f9;
+  font-weight: 500;
+}
+
+.lineage-contributions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lineage-contributions li {
+  display: flex;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: #cbd5e1;
+  line-height: 1.55;
+}
+
+.lineage-bullet {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS FOR EXECUTIVE REBRAND
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .venture-body-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .manifestos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .venture-card {
+    padding: 24px 20px;
+  }
+
+  .venture-links-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .venture-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .venture-portal-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-actions-row {
+    flex-direction: column;
+  }
+
+  .hero-action-btn {
+    width: 100%;
+  }
+
+  .manifesto-card {
+    padding: 20px 18px;
+  }
+
+  .lineage-card {
+    padding: 20px 18px;
+  }
+}
+
+

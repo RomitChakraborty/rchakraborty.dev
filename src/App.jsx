@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import ExecutiveVenture from './components/ExecutiveVenture';
+import Manifestos from './components/Manifestos';
+import Lineage from './components/Lineage';
 import Research from './components/Research';
 import Publications from './components/Publications';
 import Footer from './components/Footer';
@@ -16,11 +19,22 @@ export default function App() {
       <Navbar onOpenCV={() => setIsCVOpen(true)} />
 
       <main>
-        <Hero onSelectPillar={(pillarId) => setSelectedPillarId(pillarId)} />
+        <Hero 
+          onOpenCV={() => setIsCVOpen(true)} 
+          onSelectPillar={(pillarId) => setSelectedPillarId(pillarId)} 
+        />
+        
+        <ExecutiveVenture />
+
+        <Manifestos />
+
+        <Lineage />
+
         <Research 
           selectedPillarId={selectedPillarId}
           onSelectDomain={(domain) => setSelectedDomain(domain)} 
         />
+
         <Publications 
           selectedDomain={selectedDomain} 
           onDomainChange={(domain) => setSelectedDomain(domain)} 

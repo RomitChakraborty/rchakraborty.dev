@@ -1,6 +1,7 @@
 export const profileData = {
   name: "Romit Chakraborty",
-  title: "Quantum Chemist & AI Researcher",
+  title: "Founder & CEO, Point Reyes Sound | Quantum Chemist & AI Architect",
+  tagline: "Engineering Electronic Structure for the Next Century",
   currentRole: "Founder & CEO, Point Reyes Sound, Inc.",
   shortBio: "Quantum chemist and architect of phase-space electronic structure theory. My research develops Quantum Boltzmann Equation (QBE) solvers that regularize mean-field singularities and scale the exponential walls of strongly correlated quantum matter. I direct Point Reyes Sound, Inc. where we build free energy optimizers for molecules and materials.",
   emails: [
