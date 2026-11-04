@@ -85,23 +85,12 @@ export default function Hero({ onSelectPillar, onOpenCV }) {
 
           {/* Unified About Me Container with Continuous Royal Blue Left Margin */}
           <div className="about-manuscript-container">
-            {/* Quantum Kinetic Boltzmann Solvers & Technical Report */}
             <p className="hero-bio">
-              I develop Quantum Kinetic Boltzmann solvers that resolve correlated electrons sans factorial bottlenecks, as detailed in our <a href="https://arxiv.org/abs/2608.14979" target="_blank" rel="noopener noreferrer">technical report</a>.
+              As Founder &amp; CEO of <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer"><strong>Point Reyes Sound, Inc.</strong></a>, I lead the development of deterministic polynomial 𝒪(N³) Quantum Boltzmann Equation Self-Consistent Field (QBE-SCF) solvers that replace factorial combinatorial active spaces with kinetic density relaxation—unlocking predictive simulation for materials discovery, semiconductor electronic design automation (EDA), battery electrolytes, and fault-tolerant quantum algorithms.
             </p>
 
-            <p className="hero-bio">
-              For a concise outline of effective one-body constraints that are necessary Pure N-representability of the one-electron reduced density matrix (1-RDM) as well as their applications to chemical and biological systems, peruse my <a href="https://www.proquest.com/openview/4e94e4be5bd5b67d83add173091d5b31/1?pq-origsite=gscholar&cbl=18750" target="_blank" rel="noopener noreferrer">dissertation on this topic</a>.
-            </p>
-
-            {/* Practical Electronic Structure & Head-Gordon */}
-            <p className="hero-bio">
-              Following this journey of abstractions, I worked with Prof. Martin Head-Gordon at Berkeley where I assisted in the rational design efforts for clean energy materials: <a href="#research" onClick={handleMofClick}>metal-organic frameworks for gas storage and separations</a>.
-            </p>
-
-            {/* AI & Multimodal LLMs */}
             <p className="hero-bio" style={{ marginBottom: 0 }}>
-              I enjoy building extensions to solutions in the natural sciences by programming <a href={profileData.links.prsInteractive} target="_blank" rel="noopener noreferrer">multimodal large language models</a>.
+              Prior academic research at the University of Chicago established boundary saturation constraints on the eigenvalues of one-particle reduced density matrices (<a href="https://www.proquest.com/openview/4e94e4be5bd5b67d83add173091d5b31/1?pq-origsite=gscholar&cbl=18750" target="_blank" rel="noopener noreferrer">Generalized Pauli Conditions</a>). At UC Berkeley and Lawrence Berkeley National Laboratory with Prof. Martin Head-Gordon, I co-developed modular methods in <a href="https://doi.org/10.1063/5.0055522" target="_blank" rel="noopener noreferrer">Q-Chem 5</a> and modeled <a href="#research" onClick={handleMofClick}>metal-organic frameworks for ambient-temperature clean energy gas storage</a>. At PsiQuantum, I translated complex correlated chemistry benchmarks into algorithmic pipelines.
             </p>
           </div>
         </div>
