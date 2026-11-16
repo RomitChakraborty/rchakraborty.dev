@@ -14,10 +14,29 @@ export interface PublishedPaper {
 
 export const publishedPapers: PublishedPaper[] = [
   {
-    id: "qbe-scf-arxiv-2026",
-    title: "Quantum Boltzmann Equation Self-Consistent-Field Method for Entropic Regularization of Mean-Field Singularities near Conical Intersections",
+    id: "qbeck-arxiv-2026",
+    title: "Quantum Boltzmann Equation for Static Correlation with Cumulant Kernel Closure",
     authors: "Chakraborty, R.",
-    journal: "arXiv:2608.14979 [quant-ph / physics.chem-ph]",
+    journal: "arXiv:2611.17245 [physics.chem-ph, quant-ph]",
+    year: 2026,
+    doi: "10.48550/arXiv.2611.17245",
+    domain: "qbe",
+    url: "https://arxiv.org/abs/2611.17245",
+    summary: "Maps the BBGKY hierarchy onto discrete atomic-orbital matrix mechanics to resolve strong static correlation at zero electronic temperature with O(N^3) runtime and O(N^2) working memory.",
+    bibtex: `@article{chakraborty2026qbeck,
+  title={Quantum Boltzmann Equation for Static Correlation with Cumulant Kernel Closure},
+  author={Chakraborty, Romit},
+  journal={arXiv preprint arXiv:2611.17245},
+  year={2026},
+  doi={10.48550/arXiv.2611.17245},
+  url={https://arxiv.org/abs/2611.17245}
+}`
+  },
+  {
+    id: "qbe-scf-arxiv-2026",
+    title: "Quantum Boltzmann Equation Self-Consistent-Field for the Entropic Regularization of Mean-Field Singularities",
+    authors: "Chakraborty, R.",
+    journal: "The Journal of Chemical Physics (Accepted, 2026) · arXiv:2608.14979",
     year: 2026,
     doi: "10.48550/arXiv.2608.14979",
     domain: "qbe",
