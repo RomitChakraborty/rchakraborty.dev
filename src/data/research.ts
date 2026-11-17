@@ -21,23 +21,29 @@ export const researchPillars: ResearchPillar[] = [
     id: "qbe-scf",
     categoryKey: "qbe",
     title: "Quantum Boltzmann Solver",
-    subtitle: "Kinetic Transport & Entropic Regularization of Mean-Field Singularities",
-    statusTag: "● Active Preprint (arXiv:2608.14979)",
-    statusType: "preprint",
-    overview: "Conventional mean-field electronic structure methods frequently break down near degeneracies, conical intersections, and strong correlation regimes due to singularities in the self-consistent field (SCF). Pioneered at Point Reyes Sound, Inc., Quantum Boltzmann Equation Self-Consistent-Field (QBE-SCF) propagates the one-electron reduced density matrix (1-RDM) in phase space via a Bhatnagar-Gross-Krook (BGK) collision operator, achieving natural monotonic entropic regularization across mean-field singularities without artificial symmetry breaking.",
+    subtitle: "Kinetic Transport, Entropic Regularization & Cumulant-Kernel Static Correlation",
+    statusTag: "● J. Chem. Phys. (Accepted) · arXiv:2611.17245",
+    statusType: "peer-reviewed",
+    overview: "Conventional mean-field electronic structure methods frequently break down near degeneracies, conical intersections, and strong static correlation regimes due to singularities in the self-consistent field (SCF) and exponential active-space bottlenecks. Pioneered at Point Reyes Sound, Inc., Quantum Boltzmann Equation Self-Consistent-Field (QBE-SCF, accepted in The Journal of Chemical Physics) propagates the one-electron reduced density matrix (1-RDM) in phase space via a Bhatnagar-Gross-Krook (BGK) collision operator, while Quantum Boltzmann Equation with Cumulant Kernel Closure (Q-BECK, arXiv:2611.17245) maps the BBGKY hierarchy onto discrete atomic-orbital matrix mechanics to resolve strong static correlation at zero electronic temperature with O(N³) runtime and O(N²) working memory.",
     keyContributions: [
-      "Propagates the one-electron reduced density matrix directly in phase space via non-equilibrium BGK relaxation.",
-      "Eliminates self-consistent field divergence and artificial symmetry breaking near conical intersections.",
+      "QBE-SCF (J. Chem. Phys., Accepted 2026): Propagates the 1-RDM in phase space via non-equilibrium BGK relaxation, eliminating SCF divergence and symmetry breaking near conical intersections.",
+      "Q-BECK (arXiv:2611.17245): Closes two-body cumulant scattering via unitary-invariant projection and a single Coulomb-exchange contraction, resolving bond dissociation and diradical isomers at zero temperature.",
       "Introduces the Quantum Boltzmann Entrainment Tensor for Hessian-free multireference orbital optimization.",
       "Extends phase-space kinetic transport to periodic crystalline materials via Lattice Boltzmann k-space schemes."
     ],
     latexEq: "\\partial_t {^1\\mathbf{P}}(t) = -\\frac{i}{\\hbar}[\\mathbf{F}[{^1\\mathbf{P}}], {^1\\mathbf{P}}(t)] - \\frac{1}{\\tau}\\left({^1\\mathbf{P}}(t) - {^1\\mathbf{P}}_{\\text{eq}}[\\mathbf{F}]\\right)",
     materials: [
       {
-        label: "arXiv:2608.14979 — QBE-SCF Preprint",
+        label: "arXiv:2611.17245 — Q-BECK Preprint (Static Correlation)",
         type: "preprint",
-        url: "https://arxiv.org/abs/2608.14979",
+        url: "https://arxiv.org/abs/2611.17245",
         badge: "Preprint"
+      },
+      {
+        label: "J. Chem. Phys. (Accepted, 2026) — QBE-SCF (arXiv:2608.14979)",
+        type: "paper",
+        url: "https://arxiv.org/abs/2608.14979",
+        badge: "J. Chem. Phys."
       },
       {
         label: "Point Reyes Sound, Inc. — Research Pod Portal",
