@@ -6,7 +6,7 @@
 - **HPC (2012–now)**: Python, C++, MPI, Slurm, GPU Acceleration, Linux.
 - **Quantum Simulation (2012–now)**: FTQC, QEC, Quantum Boltzmann Equation (QBE).
 - **Data Pipelines (2022–now)**: Vector Databases, ChromaDB, Azure.
-- **ML Infrastructure (2023–now)**: PyTorch, JAX, LLMs, LoRA.
+- **ML Infrastructure (2023–now)**: PyTorch, JAX.
 
 ## Academic & Institutional Pedigree
 - **Founder & CEO** (June 2026 – Present): Point Reyes Sound, Inc. (San Francisco, CA). Formulated Hessian-free phase-space orbital optimization using the BGK collision operator; developed the Quantum Boltzmann Entrainment Tensor (QBET) coupling classical phase-space relaxation to an active-space quantum core; generalized phase-space transport to periodic solid-state crystalline systems across the Brillouin zone.

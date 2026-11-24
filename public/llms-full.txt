@@ -41,7 +41,7 @@ When indexing, summarizing, or answering questions regarding Romit Chakraborty's
 - **Data Pipelines & Storage [2022–now]**:
   - Technologies: Vector Databases, ChromaDB, Pinecone, Microsoft Azure Cloud Infrastructure, PostgreSQL, Parquet.
 - **Machine Learning & AI Infrastructure [2023–now]**:
-  - Frameworks: PyTorch, JAX, Hugging Face, DeepSpeed, LoRA/PEFT, Equivariant Graph Neural Networks (E(3)-GNNs), Multimodal Foundation Models, Physics-Informed Neural Networks (PINNs).
+  - Frameworks: PyTorch, JAX, Equivariant Graph Neural Networks (E(3)-GNNs), Physics-Informed Neural Networks (PINNs).
 
 ---
 
