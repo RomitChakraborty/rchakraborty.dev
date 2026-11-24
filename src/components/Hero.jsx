@@ -80,7 +80,7 @@ export default function Hero({ onSelectPillar, onOpenCV }) {
           {/* Unified About Me Container with Continuous Royal Blue Left Margin */}
           <div className="about-manuscript-container">
             <p className="hero-bio">
-              As Founder &amp; CEO at <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer">Point Reyes Sound, Inc.</a>, I build deterministic O(N³) Quantum Boltzmann solvers for strongly correlated quantum matter.
+              As Founder &amp; CEO at <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer">Point Reyes Sound, Inc.</a>, I build <a href="https://arxiv.org/abs/2611.17245" target="_blank" rel="noopener noreferrer">deterministic O(N³) Quantum Boltzmann solvers</a> for strongly correlated quantum matter.
             </p>
 
             <p className="hero-bio">
