@@ -84,11 +84,7 @@ export default function Hero({ onSelectPillar, onOpenCV }) {
             </p>
 
             <p className="hero-bio">
-              For a concise outline of effective one-body constraints that are necessary Pure N-representability of the one-electron reduced density matrix (1-RDM) as well as their applications to chemical and biological systems, peruse my <a href="https://www.proquest.com/openview/4e94e4be5bd5b67d83add173091d5b31/1?pq-origsite=gscholar&cbl=18750" target="_blank" rel="noopener noreferrer">dissertation on this topic</a>.
-            </p>
-
-            <p className="hero-bio">
-              Following this journey of abstractions, I worked with Prof. Martin Head-Gordon at Berkeley where I assisted in the rational design efforts for clean energy materials: <a href="#research" onClick={handleMofClick}>metal-organic frameworks for gas storage and separations</a>.
+              For a concise outline of effective one-body constraints that are necessary to maintain Pure N-representability of the one-electron reduced density matrix (1-RDM) as well as their applications to chemical and biological systems, peruse my <a href="https://www.proquest.com/openview/4e94e4be5bd5b67d83add173091d5b31/1?pq-origsite=gscholar&cbl=18750" target="_blank" rel="noopener noreferrer">dissertation on this topic</a>. Following this journey of abstractions, I worked with Prof. Martin Head-Gordon at Berkeley where I assisted in the rational design efforts for clean energy materials: <a href="#research" onClick={handleMofClick}>metal-organic frameworks for gas storage and separations</a>.
             </p>
 
             <p className="hero-bio" style={{ marginBottom: 0 }}>
