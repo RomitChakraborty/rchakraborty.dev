@@ -638,13 +638,13 @@ a:hover .ext-arrow {
   font-style: italic;
 }
 
-/* Articles Section Header: UChicago Maroon Accent */
+/* Articles Section Header */
 .articles-header {
-  border-bottom: 2px solid var(--uchicago-maroon) !important;
+  border-bottom: 2px solid #000000 !important;
 }
 
 .articles-title {
-  color: var(--uchicago-maroon) !important;
+  color: #000000 !important;
 }
 
 /* 4 Differentiated Pillar Navigation Tabs */
