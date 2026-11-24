@@ -80,11 +80,7 @@ export default function Hero({ onSelectPillar, onOpenCV }) {
           {/* Unified About Me Container with Continuous Royal Blue Left Margin */}
           <div className="about-manuscript-container">
             <p className="hero-bio">
-              As Founder &amp; CEO at <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer">Point Reyes Sound, Inc.</a>, I build <a href="https://arxiv.org/abs/2611.17245" target="_blank" rel="noopener noreferrer">deterministic O(N³) Quantum Boltzmann solvers</a> for strongly correlated quantum matter.
-            </p>
-
-            <p className="hero-bio">
-              I develop Quantum Kinetic Boltzmann solvers that resolve correlated electrons sans factorial bottlenecks, as detailed in our <a href="https://arxiv.org/abs/2608.14979" target="_blank" rel="noopener noreferrer">technical report</a>.
+              As Founder &amp; CEO at <a href={profileData.links.prsWebsite} target="_blank" rel="noopener noreferrer">Point Reyes Sound, Inc.</a>, I build <a href="https://arxiv.org/abs/2611.17245" target="_blank" rel="noopener noreferrer">deterministic O(N³) Quantum Boltzmann solvers</a> for strongly correlated quantum matter. We have shown that the Quantum Boltzmann Equation Self-Consistent field can resolve singularities that arise from near degenerate electronic states sans factorial bottlenecks in our <a href="https://arxiv.org/abs/2608.14979" target="_blank" rel="noopener noreferrer">recently accepted manuscript at the Journal of Chemical Physics</a>.
             </p>
 
             <p className="hero-bio">
